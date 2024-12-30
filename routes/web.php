@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\BlogController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/offer', [BlogController::class, 'offer'])->name('offer');
+Route::get('/home', [BlogController::class, 'home'])->name('home');
