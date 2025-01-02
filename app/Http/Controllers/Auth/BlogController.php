@@ -15,4 +15,16 @@ class BlogController extends Controller
     {
         return view('components.offer');
     }
+    public function header()
+    {
+        return view('layouts.header');
+    }
+    public function booksnow()
+    {
+        return view('components.booksnow');
+    }
+    public function contact()
+    {
+        return view('components.contact');
+    }
 }

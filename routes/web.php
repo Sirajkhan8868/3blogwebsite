@@ -20,5 +20,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/', [BlogController::class, 'home'])->name('home');
+Route::get('/header', [BlogController::class, 'header'])->name('header');
 Route::get('/offer', [BlogController::class, 'offer'])->name('offer');
-Route::get('/home', [BlogController::class, 'home'])->name('home');
+Route::get('/bookssnow', [BlogController::class, 'booksnow'])->name('booksnow');
+Route::get('/contact', [BlogController::class, 'contact'])->name('contact');
+
