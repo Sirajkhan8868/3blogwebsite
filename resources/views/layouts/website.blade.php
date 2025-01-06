@@ -124,6 +124,64 @@
             animation: scroll 50s linear infinite;
         }
 
+.explore-btn {
+    background-color: rgb(235, 54, 180);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: rgb(210, 30, 150);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.social-icon:hover.bg-primary {
+    background-color: #006bb3;
+}
+
+.social-icon:hover[style*="background-color: #25d366"] {
+    background-color: #128c7e;
+}
+
+.social-icon:hover[style*="background-color: #0077b5"] {
+    background-color: #006097;
+}
+
+.social-icon:hover[style*="background-color: #1DA1F2"] {
+    background-color: #0d8bca;
+}
+
+.social-icon:hover[style*="background-color: #C13584"] {
+    background-color: #9b2a6f;
+}
+
+.social-icon:hover[style*="background-color: red"] {
+    background-color: #cc0000;
+}
+
+
+
         .category-card {
             background: white;
             padding: 1rem;
@@ -201,7 +259,7 @@
 
         @keyframes moveStars {
             0% {
-                transform: translateY(0) translateX(0);
+                transform: translateY(-50px) translateX(0);
             }
 
             100% {
@@ -214,10 +272,15 @@
         }
 
         .star {
-            animation: moveStars 5s ease-in-out infinite;
+            position: absolute;
+            background-image: url('path/to/your/star-image.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 50px;
+            height: 50px;
+            animation: twinkle 50s infinite, moveStars 13s ease-in-out infinite;
             animation-fill-mode: forwards;
         }
-
 
         .category-card {
             background: #f8f9fa;
@@ -289,6 +352,7 @@
         .card-container {
             margin-top: -6rem;
         }
+
 
         .flip-card {
             perspective: 1000px;
@@ -366,11 +430,13 @@
             display: none;
             padding-top: 10px;
         }
+
         .cards-container {
             width: 18rem;
             transition: transform 0.3s ease;
             margin-bottom: 20px;
         }
+
         .card-container:hover {
             transform: translateY(-5px);
         }
@@ -381,32 +447,33 @@
             transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
             opacity: 0;
         }
+
         .card-container:hover .hover-text {
             max-height: 100px;
             opacity: 1;
         }
 
         .card:hover .hover-img {
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
-    }
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
 
-    .card-img-wrapper {
-        position: relative;
-    }
+        .card-img-wrapper {
+            position: relative;
+        }
 
-    .hover-img {
-        transition: transform 0.3s ease;
-    }
+        .hover-img {
+            transition: transform 0.3s ease;
+        }
 
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
 
-    .custom-hover:hover {
-        background-color: #007bff !important;
-    }
+        .custom-hover:hover {
+            background-color: #007bff !important;
+        }
 
 
         footer {
@@ -479,47 +546,49 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto px-5">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                        <ul class="navbar-nav me-auto px-5 ">
+                            <li class="nav-item dropdown" >
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                     data-bs-toggle="dropdown">
                                     Endorsed Courses
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                     data-bs-toggle="dropdown">
                                     CPD Courses
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                     data-bs-toggle="dropdown">
                                     Phlebotomy
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                     data-bs-toggle="dropdown">
                                     Ofqual Qualifications
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                     data-bs-toggle="dropdown">
                                     CPD Video Training
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                     data-bs-toggle="dropdown">
                                     Care Courses
                                 </a>
                             </li>
                         </ul>
                         <div class="d-flex justify-content-center gap-3 px-5">
-                            <button class="btn px-3 text-white p-2 fw-bolder" style="background-color: #FF007F; border-radius: 50px;">Learning Platform</button>
-                            <button class="btn btn-vle px-3 p-2 fw-bolder" style="padding: 0px 70px; width: 180px;">VLE</button>
+                            <button class="btn px-3 text-white p-2 fw-bolder"
+                                style="background-color: #FF007F; border-radius: 50px;">Learning Platform</button>
+                            <button class="btn btn-vle px-3 p-2 fw-bolder"
+                                style="padding: 0px 70px; width: 180px;">VLE</button>
                         </div>
 
                     </div>
@@ -530,15 +599,15 @@
                 <div class="container-fluid d-flex">
                     <div class="row flex-grow-1">
                         <div class="col">
-                            <div class="category-card">
-                                <img src="{{ asset('assets/site/accounting-finance.jpg') }}" alt="Accounting & Finance"
-                                    class="category-image">
+                            <div class="category-card" >
+                                <img src="{{ asset('assets/site/accounting-finance.jpg') }}"
+                                    alt="Accounting & Finance" class="category-image">
                                 <div>Accounting & Finance</div>
                             </div>
                         </div>
 
                         <div class="col">
-                            <div class="category-card">
+                            <div class="category-card ">
                                 <img src="{{ asset('assets/site/admin-secretarial.jpg') }}" alt="Admin & Secretarial"
                                     class="category-image">
                                 <div>Admin & Secretarial</div>
@@ -596,20 +665,123 @@
                     let isHovering = false;
 
                     const categories = {
-                        'Endorsed Courses': ['Accounting & Finance', 'Admin & Secretarial', 'Business Management',
-                            'HR Management', 'Leadership $ Management', 'Project Management'
+                        'Endorsed Courses': [{
+                                name: 'Accounting & Finance',
+                                icon: '💼'
+                            },
+                            {
+                                name: 'Admin & Secretarial',
+                                icon: '📑'
+                            },
+                            {
+                                name: 'Business Management',
+                                icon: '📊'
+                            },
+                            {
+                                name: 'HR Management',
+                                icon: '👥'
+                            },
+                            {
+                                name: 'Leadership & Management',
+                                icon: '🌟'
+                            },
+                            {
+                                name: 'Project Management',
+                                icon: '📅'
+                            }
                         ],
-                        'CPD Courses': ['CPD Course 1', 'CPD Course 2', 'CPD Course 3', 'CPD Course 4', 'CPD Course 5',
-                            'CPD Course 6'
+                        'CPD Courses': [{
+                                name: 'courses',
+                                icon: '📚'
+                            },
+                            {
+                                name: 'Beauty Therapy',
+                                icon: '🎓'
+                            },
+                            {
+                                name: 'ChildPsychology',
+                                icon: '📖'
+                            },
+                            {
+                                name: 'HR Management',
+                                icon: '📜'
+                            },
+                            {
+                                name: 'Supply Chain Management',
+                                icon: '📝'
+                            },
+                            {
+                                name: 'Workplace Managnment',
+                                icon: '📘'
+                            }
                         ],
-                        'Phlebotomy': ['Phlebotomy Course 1', 'Phlebotomy Course 2', 'Phlebotomy Course 3',
-                            'Phlebotomy Course 4'
+                        'Phlebotomy': [{
+                                name: 'Level 3 Certificate in Phlebotomy (Part 2 $ 2)',
+                                icon: '🩸'
+                            },
+                            {
+                                name: 'Level 3 Certificate in Phlebotomy (Part 2)',
+                                icon: '🩺'
+                            },
+                            {
+                                name: 'Phlebotomist Placement Programme',
+                                icon: '💉'
+                            },
+                            {
+                                name: 'Level Bloods Practical Session',
+                                icon: '🩹'
+                            }
                         ],
-                        'Ofqual Qualifications': ['Qualification 1', 'Qualification 2', 'Qualification 3',
-                            'Qualification 4', 'Qualification 5', 'Qualification 6',
+                        'Ofqual Qualifications': [{
+                                name: 'Business Management',
+                                icon: '🏆'
+                            },
+                            {
+                                name: 'Cyber Security',
+                                icon: '🎓'
+                            },
+                            {
+                                name: 'Education $ Training',
+                                icon: '📝'
+                            },
+                            {
+                                name: 'Health $ Safery',
+                                icon: '📜'
+                            },
+                            {
+                                name: 'Health $ Socail Care',
+                                icon: '📘'
+                            },
+                            {
+                                name: 'Early Year Education $ Child Care',
+                                icon: '📚'
+                            }
                         ],
-                        'CPD Video Training': ['Video Training 1', 'Video Training 2'],
-                        'Care Courses': ['Care Course 1', 'Care Course 2']
+                        'CPD Video Training': [{
+                                name: 'Business Skills',
+                                icon: '🎥'
+                            },
+                            {
+                                name: 'Health $ Safety',
+                                icon: '📹'
+                            }
+                        ],
+                        'Care Courses': [
+
+                            {
+                                name: 'Mandatory Courses',
+                                icon: '📜'
+                            },
+                            {
+                                name: 'Specialist Courses',
+                                icon: '📘'
+                            },
+                            {
+                                name: 'Additional Courses',
+                                icon: '📚'
+                            }
+                        ]
+
                     };
 
                     function loadCategories(categoryName) {
@@ -621,8 +793,8 @@
                             row.innerHTML += `
                                 <div class="col">
                                     <div class="category-card">
-                                        <i class="category-icon">📘</i>
-                                        <div>${cat}</div>
+                                        <i class="category-icon">${cat.icon}</i>
+                                        <div>${cat.name}</div>
                                     </div>
                                 </div>`;
                         });
@@ -634,7 +806,6 @@
                                     <div>All Categories</div>
                                 </div>
                             </div>`;
-
                     }
 
                     function showCategorySection(categoryName) {
@@ -679,6 +850,8 @@
                 });
             </script>
 
+
+
             <div class="ticker-wrapper">
                 <div class="ticker-label mx-3 p-4">Latest News</div>
                 <div class="ticker">
@@ -714,45 +887,39 @@
                         <p class="card-text text-white">A flexible and convenient way of learning new skills. Find the
                             right Distance Learning Courses and CPD Training for you.</p>
 
-                        <a href="#"
-                            style="background-color: rgb(235, 54, 180); padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;">
+                            <a href="#"
+                            style="background-color: rgb(235, 54, 180); padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;"
+                            class="explore-btn">
                             Explore Our Courses
                         </a>
 
+
                         <div class="mt-3 d-flex justify-content-center gap-2 mt-4">
-                            <a href="#" class="btn p-0 bg-primary"
-                                style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; ">
+                            <a href="#" class="btn p-0 bg-primary social-icon">
                                 <i class="fab fa-facebook-f" style="font-size: 35px; color: white;"></i>
                             </a>
 
-                            <a href="#" class="btn p-0"
-                                style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #25d366; ">
+                            <a href="#" class="btn p-0 social-icon" style="background-color: #25d366;">
                                 <i class="fab fa-whatsapp" style="font-size: 35px; color: white;"></i>
                             </a>
 
-                            <a href="#" class="btn p-0"
-                                style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #0077b5; ">
+                            <a href="#" class="btn p-0 social-icon" style="background-color: #0077b5;">
                                 <i class="fab fa-linkedin-in" style="font-size: 35px; color: white;"></i>
                             </a>
 
-                            <a href="#" class="btn p-0"
-                                style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #1DA1F2; ">
+                            <a href="#" class="btn p-0 social-icon" style="background-color: #1DA1F2;">
                                 <i class="fab fa-twitter" style="font-size: 35px; color: white;"></i>
                             </a>
 
-
-                            <a href="#" class="btn p-0"
-                                style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: #C13584; ">
+                            <a href="#" class="btn p-0 social-icon" style="background-color: #C13584;">
                                 <i class="fab fa-instagram" style="font-size: 35px; color: white;"></i>
                             </a>
 
-
-                            <a href="#" class="btn p-0"
-                                style="width: 50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: red; ">
+                            <a href="#" class="btn p-0 social-icon" style="background-color: red;">
                                 <i class="fab fa-youtube" style="font-size: 35px; color: white;"></i>
                             </a>
-
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -841,9 +1008,8 @@
             <script>
                 document.addEventListener('DOMContentLoaded', () => {
                     const starContainer = document.querySelector('.star-container');
-                    const starCount = 500;
 
-                    for (let i = 0; i < starCount; i++) {
+                    function createStar() {
                         const star = document.createElement('div');
                         star.classList.add('star');
 
@@ -859,7 +1025,13 @@
                         star.style.height = `${size}px`;
 
                         starContainer.appendChild(star);
+
+                        star.addEventListener('animationend', () => {
+                            star.remove();
+                        });
                     }
+
+                    setInterval(createStar, 100);
                 });
             </script>
         </section>
@@ -874,11 +1046,11 @@
                     <h2 class="fw-bold mb-3 pt-2 text-start" style="padding-left: 60px">
                         Build Your Skills Online <br> Anytime
                     </h2>
-                    <p class="text-muted mb-3 text-start pt-2  pb-3" style="padding-left: 60px; line-height: 1.8">
+                    <p class="text-muted mb-3 text-start pt-2  pb-3 fs-5" style="padding-left: 60px; line-height: 1.8">
                         Inspire London College is the leading specialist provider of Distance Learning Courses
-                        UK.Weare<br>
-                        distinguished global distance and online learning platforms dedicated to providing
-                        online<br>
+                        UK<br>
+                        .Weare distinguished global distance and online learning platforms dedicated to providing
+                        <br>
                         courses UK, short courses online, CPD training in the UK and worldwide. We deliver a
                         wide<br>
                         range of online courses UK with certification from reputable awarding organisations.
@@ -903,19 +1075,23 @@
         <section class="p-5" style="background-color: ghostwhite">
             <div class="row align-items-center mb-5">
                 <div class="col-md-6 text-center pe-0">
-                    <img src="{{ asset('assets/site/healt.webp') }}" alt="Health and Social Care" class="img-fluid" style="width: 650px; padding-left: 5%">
+                    <img src="{{ asset('assets/site/healt.webp') }}" alt="Health and Social Care" class="img-fluid"
+                        style="width: 650px; padding-left: 5%">
                 </div>
 
                 <div class="col-md-6 text-start">
                     <h2 class="pb-2">Level 3 Diploma in Health and Social Care</h2>
                     <div class="d-flex align-items-center text-start mb-2">
-                        <span class="badge me-2 p-2 px-3 fw-bolder" style="background-color: #C13584">Qualification</span>
+                        <span class="badge me-2 p-2 px-3 fw-bolder"
+                            style="background-color: #C13584">Qualification</span>
                         <span class="text-warning">★★★★★</span>
                         <strong class="ms-2">500+</strong>
                         <span class="badge bg-primary ms-2 px-3 p-2 fw-bolder">Top Rated</span>
                     </div>
-                    <p class="fs-5 pb-2" style="line-height: 40px">With a focus on real-world application and progression opportunities, <br>the Qualifi
-                        Level 3 Diploma provides a stepping stone toward advanced <br>qualifications and rewarding roles.
+                    <p class="fs-5 pb-2" style="line-height: 40px">With a focus on real-world application and
+                        progression opportunities, <br>the Qualifi
+                        Level 3 Diploma provides a stepping stone toward advanced <br>qualifications and rewarding
+                        roles.
                     </p>
 
                     <div class="row mb-2 " style="gap: 10px">
@@ -938,10 +1114,12 @@
 
 
                     <div class="text-start">
-                        <button class="btn fw-bolder" style="background-color: #FF007F; color: white; padding-left: 2rem; padding-right: 2rem;">
+                        <button class="btn fw-bolder"
+                            style="background-color: #FF007F; color: white; padding-left: 2rem; padding-right: 2rem;">
                             Enrol Now
                         </button>
-                        <button class="btn fw-bolder" style="background-color: #25D366; color: white; padding-left: 2rem; padding-right: 2rem;">
+                        <button class="btn fw-bolder"
+                            style="background-color: #25D366; color: white; padding-left: 2rem; padding-right: 2rem;">
                             WhatsApp
                         </button>
                     </div>
@@ -956,7 +1134,10 @@
             <div class="container py-5">
                 <div class="d-flex justify-content-center align-items-center mb-5 w-100">
                     <h1 class="h2 mb-0 flex-grow-1 text-center">Courses Category</h1>
-                    <a href="{{ route('view') }}" class="view-all-btn ms-auto px-4 fw-bolder">View All</a>
+                    <a href="{{ route('view') }}" class="view-all-btn ms-auto px-4 fw-bolder">View All
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
                 </div>
 
                 <div class="row g-4">
@@ -968,7 +1149,10 @@
                                     alt="HR Icon">
                             </div>
                             <h3 class="h5 mb-4">HR Management</h3>
-                            <a href="{{ route('hr') }}" class="see-courses-btn">See Courses</a>
+                            <a href="{{ route('hr') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
                         </div>
                     </div>
 
@@ -980,7 +1164,9 @@
                                     alt="Project Icon">
                             </div>
                             <h3 class="h5 mb-4">Project Management</h3>
-                            <a href="{{ route('pm') }}" class="see-courses-btn">See Courses </a>
+                            <a href="{{ route('pm') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
 
@@ -991,9 +1177,11 @@
                                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300d4ff' stroke-width='2'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpolyline points='9 22 9 12 15 12 15 22'/%3E%3C/svg%3E"
                                     alt="Construction Icon">
                             </div>
-                            <h3 class="h5 mb-4">Construction Management</h3>
-                            <a href="{{ route('cm') }}" class="see-courses-btn">See Courses </a>
-                        </div>
+                            <h4 class="h5 mb-4">Contruction Management</h4>
+
+                            <a href="{{ route('cm') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>                        </div>
                     </div>
 
 
@@ -1003,9 +1191,10 @@
                                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300d4ff' stroke-width='2'%3E%3Cpath d='M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='9' cy='7' r='4'/%3E%3Cpath d='M23 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E"
                                     alt="Leadership Icon">
                             </div>
-                            <h3 class="h5 mb-4">Leadership and Management</h3>
-                            <a href="{{ route('lm') }}" class="see-courses-btn">See Courses </a>
-                        </div>
+                            <h4 class="h5 mb-4">Leadership Management</h4>
+                            <a href="{{ route('lm') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>                        </div>
                     </div>
 
 
@@ -1016,8 +1205,9 @@
                                     alt="Accounting Icon">
                             </div>
                             <h3 class="h5 mb-4">Accounting and Finance</h3>
-                            <a href="{{ route('af') }}" class="see-courses-btn">See Courses </a>
-                        </div>
+                            <a href="{{ route('af') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>                        </div>
                     </div>
 
 
@@ -1028,8 +1218,9 @@
                                     alt="Admin Icon">
                             </div>
                             <h3 class="h5 mb-4">Admin, Secretarial & PA</h3>
-                            <a href="{{ route('as') }}" class="see-courses-btn">See Courses</a>
-                        </div>
+                            <a href="{{ route('as') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>                        </div>
                     </div>
 
 
@@ -1039,9 +1230,10 @@
                                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300d4ff' stroke-width='2'%3E%3Cpath d='M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z'/%3E%3C/svg%3E"
                                     alt="Business Icon">
                             </div>
-                            <h3 class="h5 mb-4">Business Management</h3>
-                            <a href="{{ asset('bm') }}" class="see-courses-btn">See Courses </a>
-                        </div>
+                            <h4 class="h5 mb-4">Business Management</h4>
+                            <a href="{{ route('bm') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>                        </div>
                     </div>
 
 
@@ -1051,9 +1243,10 @@
                                 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300d4ff' stroke-width='2'%3E%3Cpath d='M22 10v6M2 10l10-5 10 5-10 5z'/%3E%3Cpath d='M6 12v5c3 3 9 3 12 0v-5'/%3E%3C/svg%3E"
                                     alt="Education Icon">
                             </div>
-                            <h3 class="h5 mb-4">Education and Training</h3>
-                            <a href="{{ route('et') }}" class="see-courses-btn">See Courses </a>
-                        </div>
+                            <h4 class="h5 mb-4">Education and Training</h4>
+                            <a href="{{ route('et') }}" class="see-courses-btn">See Courses
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>                        </div>
                     </div>
                 </div>
             </div>
@@ -1064,7 +1257,10 @@
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center mb-5 w-100">
                     <h1 class="h2 mb-0 flex-grow-1 text-center">Popular Course</h1>
-                    <a href="#" class="view-all-btn ms-auto">View All</a>
+                    <a href="{{ route('view') }}" class="view-all-btn ms-auto px-4 fw-bolder">View All
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
                 </div>
                 <div class="row g-2 mb-2">
 
@@ -1072,14 +1268,19 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/workplace.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/workplace.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 6 Diploma in Project Management</h5>
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 6 Diploma in
+                                        Project Management</h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1089,15 +1290,20 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/work 2.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/work 2.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 7 Diploma in HR Management
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 7 Diploma in
+                                        HR Management
                                     </h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1107,15 +1313,20 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/work 4.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/work 4.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 6 Diploma in the Professional Supervisor Training
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 6 Diploma in
+                                        the Professional Supervisor
                                     </h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1125,15 +1336,20 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/work 2.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/work 2.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584" >Level 7 Diploma in Operations Management
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 7 Diploma in
+                                        Operations Management
                                     </h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1147,15 +1363,20 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/work 6.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/work 6.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 5 Diploma in Facilities Management
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 5 Diploma in
+                                        Facilities Management
                                     </h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1165,15 +1386,20 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/work 7.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/work 7.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 7 Diploma in Counselling Skills
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 7 Diploma in
+                                        Counselling Skills
                                     </h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1183,15 +1409,20 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/work 3.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/work 3.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 4 Diploma in Child Psychology
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 4 Diploma in
+                                        Child Psychology
                                     </h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1201,15 +1432,20 @@
                         <div class="card-container mt-1">
                             <div class="card shadow">
                                 <div class="position-relative">
-                                    <img src="{{ asset('assets/site/work 2.webp') }}" class="card-img-top" alt="Education">
+                                    <img src="{{ asset('assets/site/work 2.webp') }}" class="card-img-top"
+                                        alt="Education">
                                     <div class="card-img-overlay"></div>
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 5 Diploma in Train the Trainer
+                                    <h5 class="card-title text-center mb-3" style="color: #C13584">Level 5 Diploma in
+                                        Train the Trainer
                                     </h5>
                                     <div class="hover-text">
-                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary px-2 border" style="border-radius: 50px; background-color:transparent">Know More</button>
+                                        <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
+                                            Certificate. 15 Modules.</p>
+                                        <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                            style="border-radius: 50px; background-color:transparent">Know
+                                            More</button>
                                     </div>
                                 </div>
                             </div>
@@ -1668,13 +1904,16 @@
             <div class="d-flex justify-content-center gap-4 pb-5">
                 <div class="card" style="width: 22rem;">
                     <div class="card-img-wrapper" style="overflow: hidden;">
-                        <img src="{{ asset('assets/site/cards.webp') }}" class="card-img-top hover-img" alt="...">
+                        <img src="{{ asset('assets/site/cards.webp') }}" class="card-img-top hover-img"
+                            alt="...">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Skills for Care Now Endorses Our Exceptional Training</h5>
-                        <p class="card-text">In the dynamic landscape of education and training, institutes that prioritise</p>
+                        <p class="card-text">In the dynamic landscape of education and training, institutes that
+                            prioritise</p>
                         <a href="#" class="text-decoration-none text-start ">
-                            <button type="button" class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                            <button type="button"
+                                class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
                                 Read More
                             </button>
                         </a>
@@ -1683,13 +1922,16 @@
 
                 <div class="card" style="width: 22rem;">
                     <div class="card-img-wrapper" style="overflow: hidden;">
-                        <img src="{{ asset('assets/site/card2.webp') }}" class="card-img-top hover-img" alt="...">
+                        <img src="{{ asset('assets/site/card2.webp') }}" class="card-img-top hover-img"
+                            alt="...">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">What is Phlebotomy</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="text-decoration-none text-start ">
-                            <button type="button" class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                            <button type="button"
+                                class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
                                 Read More
                             </button>
                         </a>
@@ -1698,13 +1940,16 @@
 
                 <div class="card pb-3" style="width: 22rem;">
                     <div class="card-img-wrapper" style="overflow: hidden;">
-                        <img src="{{ asset('assets/site/card3.webp') }}" class="card-img-top hover-img" alt="...">
+                        <img src="{{ asset('assets/site/card3.webp') }}" class="card-img-top hover-img"
+                            alt="...">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">What is Personal Development?</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
                         <a href="#" class="text-decoration-none text-start ">
-                            <button type="button" class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                            <button type="button"
+                                class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
                                 Read More
                             </button>
                         </a>
@@ -1792,7 +2037,7 @@
                             <li>Email: info@example.com</li>
                             <li>Phone: +123-456-7890</li>
                         </ul>
-                        <div class="mt-3 d-flex justify-content-start text-start gap-1 mt-4">
+                        <div class=" d-flex justify-content-start text-start gap-1 mt-4">
                             <a href="#" class="btn p-0 bg-primary"
                                 style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
                                 <i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i>

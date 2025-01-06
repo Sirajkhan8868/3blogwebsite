@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mt-5">
-                    <div class="form-container bg-primary p-3" >
+                    <div class="form-container p-3" style="background-color: #7dd3fc">
                         <div class="form-wrapper">
                             <h2 class="mb-4 text-white">Contact us</h2>
                             <p class="text-muted mb-4 text-white fs-3">We look forward to hearing from you.</p>

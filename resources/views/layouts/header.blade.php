@@ -256,37 +256,37 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto px-5">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown">
                                 Endorsed Courses
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown">
                                 CPD Courses
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown">
                                 Phlebotomy
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown">
                                 Ofqual Qualifications
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown">
                                 CPD Video Training
                             </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown">
                                 Care Courses
                             </a>
@@ -371,20 +371,123 @@
                 let isHovering = false;
 
                 const categories = {
-                    'Endorsed Courses': ['Accounting & Finance', 'Admin & Secretarial', 'Business Management',
-                        'HR Management', 'Leadership $ Management', 'Project Management'
+                    'Endorsed Courses': [{
+                            name: 'Accounting & Finance',
+                            icon: '💼'
+                        },
+                        {
+                            name: 'Admin & Secretarial',
+                            icon: '📑'
+                        },
+                        {
+                            name: 'Business Management',
+                            icon: '📊'
+                        },
+                        {
+                            name: 'HR Management',
+                            icon: '👥'
+                        },
+                        {
+                            name: 'Leadership & Management',
+                            icon: '🌟'
+                        },
+                        {
+                            name: 'Project Management',
+                            icon: '📅'
+                        }
                     ],
-                    'CPD Courses': ['CPD Course 1', 'CPD Course 2', 'CPD Course 3', 'CPD Course 4', 'CPD Course 5',
-                        'CPD Course 6'
+                    'CPD Courses': [{
+                            name: 'courses',
+                            icon: '📚'
+                        },
+                        {
+                            name: 'Beauty Therapy',
+                            icon: '🎓'
+                        },
+                        {
+                            name: 'ChildPsychology',
+                            icon: '📖'
+                        },
+                        {
+                            name: 'HR Management',
+                            icon: '📜'
+                        },
+                        {
+                            name: 'Supply Chain Management',
+                            icon: '📝'
+                        },
+                        {
+                            name: 'Workplace Managnment',
+                            icon: '📘'
+                        }
                     ],
-                    'Phlebotomy': ['Phlebotomy Course 1', 'Phlebotomy Course 2', 'Phlebotomy Course 3',
-                        'Phlebotomy Course 4'
+                    'Phlebotomy': [{
+                            name: 'Level 3 Certificate in Phlebotomy (Part 2 $ 2)',
+                            icon: '🩸'
+                        },
+                        {
+                            name: 'Level 3 Certificate in Phlebotomy (Part 2)',
+                            icon: '🩺'
+                        },
+                        {
+                            name: 'Phlebotomist Placement Programme',
+                            icon: '💉'
+                        },
+                        {
+                            name: 'Level Bloods Practical Session',
+                            icon: '🩹'
+                        }
                     ],
-                    'Ofqual Qualifications': ['Qualification 1', 'Qualification 2', 'Qualification 3',
-                        'Qualification 4', 'Qualification 5', 'Qualification 6',
+                    'Ofqual Qualifications': [{
+                            name: 'Business Management',
+                            icon: '🏆'
+                        },
+                        {
+                            name: 'Cyber Security',
+                            icon: '🎓'
+                        },
+                        {
+                            name: 'Education $ Training',
+                            icon: '📝'
+                        },
+                        {
+                            name: 'Health $ Safery',
+                            icon: '📜'
+                        },
+                        {
+                            name: 'Health $ Socail Care',
+                            icon: '📘'
+                        },
+                        {
+                            name: 'Early Year Education $ Child Care',
+                            icon: '📚'
+                        }
                     ],
-                    'CPD Video Training': ['Video Training 1', 'Video Training 2'],
-                    'Care Courses': ['Care Course 1', 'Care Course 2']
+                    'CPD Video Training': [{
+                            name: 'Business Skills',
+                            icon: '🎥'
+                        },
+                        {
+                            name: 'Health $ Safety',
+                            icon: '📹'
+                        }
+                    ],
+                    'Care Courses': [
+
+                        {
+                            name: 'Mandatory Courses',
+                            icon: '📜'
+                        },
+                        {
+                            name: 'Specialist Courses',
+                            icon: '📘'
+                        },
+                        {
+                            name: 'Additional Courses',
+                            icon: '📚'
+                        }
+                    ]
+
                 };
 
                 function loadCategories(categoryName) {
@@ -396,8 +499,8 @@
                         row.innerHTML += `
                             <div class="col">
                                 <div class="category-card">
-                                    <i class="category-icon">📘</i>
-                                    <div>${cat}</div>
+                                    <i class="category-icon">${cat.icon}</i>
+                                    <div>${cat.name}</div>
                                 </div>
                             </div>`;
                     });
@@ -409,7 +512,6 @@
                                 <div>All Categories</div>
                             </div>
                         </div>`;
-
                 }
 
                 function showCategorySection(categoryName) {
@@ -525,7 +627,7 @@
                         <li>Email: info@example.com</li>
                         <li>Phone: +123-456-7890</li>
                     </ul>
-                    <div class="mt-3 d-flex justify-content-start text-start gap-1 mt-4">
+                    <div class=" d-flex justify-content-start text-start gap-1 mt-4">
                         <a href="#" class="btn p-0 bg-primary"
                             style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
                             <i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i>
