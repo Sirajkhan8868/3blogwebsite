@@ -472,7 +472,7 @@
         }
 
         .custom-hover:hover {
-            background-color: #007bff !important;
+            background-color: #ff1493 !important;
         }
 
 
@@ -889,8 +889,9 @@
 
                             <a href="#"
                             style="background-color: rgb(235, 54, 180); padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;"
-                            class="explore-btn">
-                            Explore Our Courses
+                            class="explore-btn"> Explore Our Courses
+                            <i class="fa-solid fa-arrow-right"></i>
+
                         </a>
 
 
@@ -1134,10 +1135,12 @@
             <div class="container py-5">
                 <div class="d-flex justify-content-center align-items-center mb-5 w-100">
                     <h1 class="h2 mb-0 flex-grow-1 text-center">Courses Category</h1>
-                    <a href="{{ route('view') }}" class="view-all-btn ms-auto px-4 fw-bolder">View All
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <a href="{{ route('view') }}"
+                    style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;"
+                    class="explore-btn view-all-btn ms-auto px-4 fw-bolder"> View All
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                    </a>
+                </a>
                 </div>
 
                 <div class="row g-4">
@@ -1149,8 +1152,12 @@
                                     alt="HR Icon">
                             </div>
                             <h3 class="h5 mb-4">HR Management</h3>
-                            <a href="{{ route('hr') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
+                            <a href="{{ route('hr') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
                             </a>
 
                         </div>
@@ -1164,8 +1171,12 @@
                                     alt="Project Icon">
                             </div>
                             <h3 class="h5 mb-4">Project Management</h3>
-                            <a href="{{ route('pm') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
+                            <a href="{{ route('pm') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
                             </a>
                         </div>
                     </div>
@@ -1179,9 +1190,15 @@
                             </div>
                             <h4 class="h5 mb-4">Contruction Management</h4>
 
-                            <a href="{{ route('cm') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>                        </div>
+                            <a href="{{ route('cm') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+                            </a>
+
+                                              </div>
                     </div>
 
 
@@ -1192,9 +1209,13 @@
                                     alt="Leadership Icon">
                             </div>
                             <h4 class="h5 mb-4">Leadership Management</h4>
-                            <a href="{{ route('lm') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>                        </div>
+                            <a href="{{ route('lm') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+                            </a>                       </div>
                     </div>
 
 
@@ -1205,9 +1226,13 @@
                                     alt="Accounting Icon">
                             </div>
                             <h3 class="h5 mb-4">Accounting and Finance</h3>
-                            <a href="{{ route('af') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>                        </div>
+                            <a href="{{ route('af') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+                            </a>                       </div>
                     </div>
 
 
@@ -1218,9 +1243,14 @@
                                     alt="Admin Icon">
                             </div>
                             <h3 class="h5 mb-4">Admin, Secretarial & PA</h3>
-                            <a href="{{ route('as') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>                        </div>
+                            <a href="{{ route('as') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+                            </a>
+                                              </div>
                     </div>
 
 
@@ -1231,9 +1261,14 @@
                                     alt="Business Icon">
                             </div>
                             <h4 class="h5 mb-4">Business Management</h4>
-                            <a href="{{ route('bm') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>                        </div>
+                            <a href="{{ route('bm') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+                            </a>
+                        </div>
                     </div>
 
 
@@ -1244,9 +1279,14 @@
                                     alt="Education Icon">
                             </div>
                             <h4 class="h5 mb-4">Education and Training</h4>
-                            <a href="{{ route('et') }}" class="see-courses-btn">See Courses
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </a>                        </div>
+                            <a href="{{ route('et') }}" class="text-decoration-none text-start ">
+                                <button type="button"
+                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
+                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+                            </a>
+                                               </div>
                     </div>
                 </div>
             </div>
@@ -1257,10 +1297,11 @@
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center mb-5 w-100">
                     <h1 class="h2 mb-0 flex-grow-1 text-center">Popular Course</h1>
-                    <a href="{{ route('view') }}" class="view-all-btn ms-auto px-4 fw-bolder">View All
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </a>
+                    <a href="{{ route('view') }}"
+                    style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;"
+                    class="explore-btn view-all-btn ms-auto px-4 fw-bolder"> View All
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
                 </div>
                 <div class="row g-2 mb-2">
 
@@ -1780,7 +1821,7 @@
                         Don’t Delay – Enrol Today</p>
                     <button style="background-color: rgb(235, 54, 180); border-radius: 50px" class="p-2 border-0">
                         <a style="text-decoration: none;" href="#"
-                            class="card-link text-white fw-bolder px-3">Clim Certificate</a>
+                            class="card-link text-white fw-bolder px-3">Clims Certificate</a>
                     </button>
                     <div class="py-4">
                         <img src="{{ asset('assets/site/endorsed-1.webp') }}" alt="" width="90px"
@@ -1914,9 +1955,17 @@
                         <a href="#" class="text-decoration-none text-start ">
                             <button type="button"
                                 class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                Read More
+                                Read More   <i class="fa-solid fa-arrow-right"></i>
+
                             </button>
                         </a>
+                        <a href="" class="text-start"
+                                   style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold;
+                                   display: inline-block; text-align: start;"
+                                   class="explore-btn view-all-btn px-4 fw-bolder">
+                                    View All
+
+                                </a>
                     </div>
                 </div>
 
@@ -1932,7 +1981,7 @@
                         <a href="#" class="text-decoration-none text-start ">
                             <button type="button"
                                 class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                Read More
+                                Read More <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </a>
                     </div>
@@ -1950,7 +1999,7 @@
                         <a href="#" class="text-decoration-none text-start ">
                             <button type="button"
                                 class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                Read More
+                                Read More <i class="fa-solid fa-arrow-right"></i>
                             </button>
                         </a>
                     </div>
