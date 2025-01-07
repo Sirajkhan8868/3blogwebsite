@@ -9,7 +9,7 @@
                     learning courses.</p>
                 <p class="fs-3 text-white">Get any Endorsed or CPD course at 10% off for just £9.00 using the coupon code.
                 </p>
-                <button class="px-5 p-2 text-white fw-bolder border-0"
+                <button class="px-4 p-2 text-white fw-bolder border-0"
                     style="background-color: rgb(241, 50, 140)">INSPIRE2024</button>
             </div>
         </div>

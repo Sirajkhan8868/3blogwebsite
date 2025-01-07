@@ -73,7 +73,7 @@
         .ticker-wrapper {
             display: flex;
             align-items: stretch;
-            height: 60px;
+            height: 100px;
             background-color: #00C8E8;
         }
 
@@ -557,8 +557,7 @@
         </script>
 
         <div class="ticker-wrapper">
-            <div class="ticker-label mx-3 p-4">Latest News</div>
-            <div class="ticker">
+            <div class="ticker-label mx-3 p-5 fs-3 ">Latest News</div>            <div class="ticker">
                 <div class="ticker-content">
                     <span class="text-white fw-bolder" style="word-spacing: 5px">
                         First breaking news item Second important update Third news flash Fourth headline of the day

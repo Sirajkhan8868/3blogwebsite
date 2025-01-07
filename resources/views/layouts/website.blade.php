@@ -72,7 +72,7 @@
         .ticker-wrapper {
             display: flex;
             align-items: stretch;
-            height: 60px;
+            height: 90px;
             background-color: #00C8E8;
         }
 
@@ -179,9 +179,6 @@
 .social-icon:hover[style*="background-color: red"] {
     background-color: #cc0000;
 }
-
-
-
         .category-card {
             background: white;
             padding: 1rem;
@@ -509,7 +506,7 @@
                     </p>
                 </div>
 
-                <div class="d-flex gap-2">
+                <div class="d-flex gap-5">
                     <a href="{{ route('booksnow') }}">
                         <button type="button" class="btn btn-info border-0 text-white fw-bolder px-4"
                             style="border-radius: 50px; padding: 10px 0px">
@@ -534,11 +531,11 @@
                 </div>
             </div>
 
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg p-3">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img src="{{ asset('assets/site/ILC-logo-1024x616.webp') }}" alt="Inspire London College Logo"
-                            style="width: 100px; height: auto;">
+                            style="width: 150px; height: auto;">
                     </a>
 
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -853,7 +850,7 @@
 
 
             <div class="ticker-wrapper">
-                <div class="ticker-label mx-3 p-4">Latest News</div>
+                <div class="ticker-label mx-3 p-5 fs-3 ">Latest News</div>
                 <div class="ticker">
                     <div class="ticker-content">
                         <span class="text-white fw-bolder" style="word-spacing: 5px">
@@ -1074,7 +1071,7 @@
         </section>
 
         <section class="p-5" style="background-color: ghostwhite">
-            <div class="row align-items-center mb-5">
+            <div class="row align-items-center mb-5 g-0">
                 <div class="col-md-6 text-center pe-0">
                     <img src="{{ asset('assets/site/healt.webp') }}" alt="Health and Social Care" class="img-fluid"
                         style="width: 650px; padding-left: 5%">
@@ -1128,6 +1125,7 @@
 
             </div>
         </section>
+
 
 
 
@@ -1513,12 +1511,12 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row text-center d-flex justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1526,27 +1524,18 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
+                                            eum explicabo,</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1554,29 +1543,18 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">Laura
-                                            Evans
-                                        </h5>
-
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1584,19 +1562,9 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">Lydia
-                                            Gibbs
-                                        </h5>
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
                                     </div>
                                 </div>
                             </div>
@@ -1606,12 +1574,12 @@
 
                     <div class="carousel-item">
                         <div class="row text-center d-flex justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1619,58 +1587,18 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">Laura
-                                            Evans
-                                        </h5>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
-                                    <div class="card-body text-center">
-                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
-                                            alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit.
-                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
-                                            delectus
-                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
-                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
-                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
-                                            recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
+                                            eum explicabo,</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
-
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1678,20 +1606,28 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">Laura
-                                            Evans
-                                        </h5>
-
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
+                                    <div class="card-body text-center">
+                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
+                                            alt="" style="width: 150px">
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                            elit.
+                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
+                                            delectus
+                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
+                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
+                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
+                                            recusandae
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
                                     </div>
                                 </div>
                             </div>
@@ -1701,12 +1637,12 @@
 
                     <div class="carousel-item">
                         <div class="row text-center d-flex justify-content-center">
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1714,28 +1650,18 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">Lydia
-                                            Gibbs
-                                            <h5>
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card" style="width: 100%;">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1743,28 +1669,18 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">Lydia
-                                            Gibbs
-                                        </h5>
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
-                                <div class="card">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1772,20 +1688,9 @@
                                             assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
                                             obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
                                             recusandae
-                                            eum explicabo, minima eius ducimus doloribus beatae aspernatur impedit
-                                            odit
-                                            excepturi maxime fugiat eos blanditiis optio voluptate est quam dolore
-                                            tempora. Assumenda alias quas blanditiis eum explicabo? Mollitia
-                                            praesentium
-                                            itaque, laudantium a quia, earum impedit ullam consequuntur fuga veniam
-                                            nam
-                                            doloribus consectetur minus? Quia quibusdam mollitia non aperiam
-                                            praesentium
-                                            commodi dolores quas repellat alias atque.</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">Laura
-                                            Evans
-                                        </h5>
-
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
                                     </div>
                                 </div>
                             </div>
