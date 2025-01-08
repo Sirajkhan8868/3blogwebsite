@@ -1108,9 +1108,6 @@
                         </div>
                     </div>
 
-
-
-
                     <div class="text-start">
                         <button class="btn fw-bolder"
                             style="background-color: #FF007F; color: white; padding-left: 2rem; padding-right: 2rem;">
@@ -1154,7 +1151,6 @@
                                 <button type="button"
                                     class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
                                     See Courses   <i class="fa-solid fa-arrow-right"></i>
-
                                 </button>
                             </a>
 
@@ -1173,7 +1169,6 @@
                                 <button type="button"
                                     class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
                                     See Courses   <i class="fa-solid fa-arrow-right"></i>
-
                                 </button>
                             </a>
                         </div>

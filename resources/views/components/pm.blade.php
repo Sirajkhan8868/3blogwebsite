@@ -1,5 +1,6 @@
 @extends('layouts.header')
 
+
 @section('content')
     <section
         style="min-height: 50vh; background-image: linear-gradient(rgba(0, 32, 96, 0.8), rgba(0, 64, 128, 0.8)), url('{{ asset('assets/site/01.webp') }}'); background-size: cover; background-position: center;">
