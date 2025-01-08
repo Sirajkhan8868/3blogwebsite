@@ -124,61 +124,63 @@
             animation: scroll 50s linear infinite;
         }
 
-.explore-btn {
-    background-color: rgb(235, 54, 180);
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    text-align: center;
-    transition: all 0.3s ease;
-}
+        .explore-btn {
+            background-color: rgb(235, 54, 180);
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
 
-.explore-btn:hover {
-    background-color: rgb(210, 30, 150);
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-.social-icon {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
+        .explore-btn:hover {
+            background-color: rgb(210, 30, 150);
+            color: #fff;
+            transform: scale(1.05);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
 
-.social-icon:hover {
-    transform: scale(1.1);
-    opacity: 0.9;
-}
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
 
-.social-icon:hover.bg-primary {
-    background-color: #006bb3;
-}
+        .social-icon:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
 
-.social-icon:hover[style*="background-color: #25d366"] {
-    background-color: #128c7e;
-}
+        .social-icon:hover.bg-primary {
+            background-color: #006bb3;
+        }
 
-.social-icon:hover[style*="background-color: #0077b5"] {
-    background-color: #006097;
-}
+        .social-icon:hover[style*="background-color: #25d366"] {
+            background-color: #128c7e;
+        }
 
-.social-icon:hover[style*="background-color: #1DA1F2"] {
-    background-color: #0d8bca;
-}
+        .social-icon:hover[style*="background-color: #0077b5"] {
+            background-color: #006097;
+        }
 
-.social-icon:hover[style*="background-color: #C13584"] {
-    background-color: #9b2a6f;
-}
+        .social-icon:hover[style*="background-color: #1DA1F2"] {
+            background-color: #0d8bca;
+        }
 
-.social-icon:hover[style*="background-color: red"] {
-    background-color: #cc0000;
-}
+        .social-icon:hover[style*="background-color: #C13584"] {
+            background-color: #9b2a6f;
+        }
+
+        .social-icon:hover[style*="background-color: red"] {
+            background-color: #cc0000;
+        }
+
         .category-card {
             background: white;
             padding: 1rem;
@@ -353,7 +355,7 @@
 
         .flip-card {
             perspective: 1000px;
-            height: 200px;
+            height: 250px;
             margin-bottom: 1rem;
         }
 
@@ -389,7 +391,7 @@
         }
 
         .flip-card-back {
-            background: #f386c4;
+            background: rgba(243, 134, 196, 0.7);
             transform: rotateY(180deg);
             display: flex;
             align-items: center;
@@ -492,10 +494,13 @@
                     </h3>
                 </div>
                 <a href="{{ route('offer') }}">
-                    <button type="button" style="border: 4px solid white;" class="btn btn-danger fw-bolder px-4">
+                    <button type="button"
+                        style="border: 3px solid white; background-color:rgb(173, 30, 30); margin-right: 8rem;"
+                        class="fw-bolder px-5 p-2 text-white">
                         Click Here
                     </button>
                 </a>
+
             </div>
 
             <div class="header-sec d-flex justify-content-between align-items-center p-3"
@@ -510,7 +515,7 @@
                     <a href="{{ route('booksnow') }}">
                         <button type="button" class="btn btn-info border-0 text-white fw-bolder px-4"
                             style="border-radius: 50px; padding: 10px 0px">
-                            Booking Now
+                            Book Now
                         </button>
                     </a>
                     <a href="{{ route('contact') }}">
@@ -520,12 +525,14 @@
                         </button>
                     </a>
                     <form class="d-flex" role="search">
-                        <div class="input-group">
+                        <div class="input-group w-100">
                             <input class="form-control" type="search" placeholder="Search" aria-label="Search"
                                 style="border-radius: 50px 0 0 50px;">
                             <button class="btn btn-info text-white fw-bolder" type="submit"
                                 style="border-radius: 0 50px 50px 0;">Search</button>
                         </div>
+
+
                     </form>
 
                 </div>
@@ -544,7 +551,7 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto px-5 ">
-                            <li class="nav-item dropdown" >
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                     data-bs-toggle="dropdown">
                                     Endorsed Courses
@@ -582,9 +589,9 @@
                             </li>
                         </ul>
                         <div class="d-flex justify-content-center gap-3 px-5">
-                            <button class="btn px-3 text-white p-2 fw-bolder"
+                            <button class="btn px-4 text-white  "
                                 style="background-color: #FF007F; border-radius: 50px;">Learning Platform</button>
-                            <button class="btn btn-vle px-3 p-2 fw-bolder"
+                            <button class="btn btn-vle px-3 p-2 "
                                 style="padding: 0px 70px; width: 180px;">VLE</button>
                         </div>
 
@@ -596,7 +603,7 @@
                 <div class="container-fluid d-flex">
                     <div class="row flex-grow-1">
                         <div class="col">
-                            <div class="category-card" >
+                            <div class="category-card">
                                 <img src="{{ asset('assets/site/accounting-finance.jpg') }}"
                                     alt="Accounting & Finance" class="category-image">
                                 <div>Accounting & Finance</div>
@@ -871,26 +878,22 @@
         <section>
             <div class="d-flex justify-content-center align-items-center position-relative overflow-hidden bg-info"
                 style="min-height: 70vh; background-image: linear-gradient(rgba(0, 32, 96, 0.8), rgba(0, 64, 128, 0.8)), url('{{ asset('assets/site/bg.webp') }}'); background-size: cover; background-position: center;">
-
-
-
                 <div class="star-container position-absolute w-100 h-100"></div>
 
                 <div class="card p-5 mt-5 mb-5"
-                    style="width: 50rem; border-radius: 40px; background: transparent; border: 8px solid white; z-index: 2;">
+                    style="width: 65rem; border-radius: 40px; background: transparent; border: 15px solid white; z-index: 2;">
                     <div class="card-body text-center">
-                        <h1 class="card-title text-white">Learn & Get Endorsed</h1>
-                        <h3 class="card-subtitle mb-2 text-white">Distance Learning Courses UK</h3>
-                        <p class="card-text text-white">A flexible and convenient way of learning new skills. Find the
+                        <h1 class="card-title text-white fw-bolder pb-2">Learn & Get Endorsed</h1>
+                        <h3 class="card-subtitle mb-2 text-white pb-2">Distance Learning Courses UK</h3>
+                        <p class="card-text text-white fs-5 pb-2">A flexible and convenient way of learning new skills. Find the
                             right Distance Learning Courses and CPD Training for you.</p>
 
-                            <a href="#"
+                        <a href="#"
                             style="background-color: rgb(235, 54, 180); padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;"
-                            class="explore-btn"> Explore Our Courses
-                            <i class="fa-solid fa-arrow-right"></i>
+                            class="explore-btn mb-2"> Explore Our Courses
+                            <i class="fa-solid fa-arrow-right" style="font-size: 1.2em;"></i>
 
                         </a>
-
 
                         <div class="mt-3 d-flex justify-content-center gap-2 mt-4">
                             <a href="#" class="btn p-0 bg-primary social-icon">
@@ -913,9 +916,10 @@
                                 <i class="fab fa-instagram" style="font-size: 35px; color: white;"></i>
                             </a>
 
-                            <a href="#" class="btn p-0 social-icon" style="background-color: red;">
+                            <a href="#" class="btn p-0 social-icon" style="background-color: red; padding: 10px;">
                                 <i class="fab fa-youtube" style="font-size: 35px; color: white;"></i>
                             </a>
+
                         </div>
 
                     </div>
@@ -926,32 +930,26 @@
                 <div class="d-flex justify-content-center align-items-start">
                     <div class="row g-4 justify-content-center align-items-start">
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 18rem;">
-                                <div class="card-body d-flex align-items-center p-4">
+                            <div class="card text-center shadow-lg" style="width: 22rem;border-radius: 10px">
+                                <div class="card-body d-flex align-items-center p-4 gap-1">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="#FF007F" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                                        </svg>
+                                        <i class="fas fa-users" style="font-size: 50px; color: #FF007F; width: 70px; text-align: center;"></i>
                                     </div>
+
                                     <div class="px-4">
-                                        <h4 class="card-title fw-bolder" style="color: #FF007F">65,545+</h4>
-                                        <p class="card-text fw-bolder">Enrolled Students</p>
+                                        <h4 class="card-title" style="color: #FF007F; font-weight: 700;">65,545+</h4>
+                                        <p class="card-text " style="font-weight: 700">Enrolled Students</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 18rem;">
-                                <div class="card-body d-flex align-items-center p-4">
+                            <div class="card text-center shadow-lg" style="width: 22rem;border-radius:10px">
+                                <div class="card-body d-flex align-items-center p-4 gap-4">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="#FF007F" class="bi bi-book-half" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 0c.4 0 .7.3.7.7v14.6c0 .4-.3.7-.7.7-.2 0-.4-.1-.5-.3l-2.5-3.4-2.5 3.4c-.1.2-.3.3-.5.3-.4 0-.7-.3-.7-.7V.7C7.3.3 7.6 0 8 0z" />
-                                        </svg>
+                                       <i class="fas fa-book-open" style="font-size: 50px; color:#FF007F"></i>
                                     </div>
                                     <div class="px-4">
                                         <h4 class="card-title fw-bolder" style="color: #FF007F">450+</h4>
@@ -962,13 +960,11 @@
                         </div>
 
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 18rem; ">
-                                <div class="card-body d-flex align-items-center p-4">
+                            <div class="card text-center shadow-lg" style="width: 22rem; border-radius:10px">
+                                <div class="card-body d-flex align-items-center p-4 gap-1">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"
-                                            fill="#FF007F" class="bi bi-mortarboard" viewBox="0 0 16 16">
-                                            <path d="M8 0L0 4l8 4 8-4-8-4zM0 8l8 4 8-4-8-4-8 4z" />
-                                        </svg>
+                                        <i class="fas fa-graduation-cap" style="font-size: 50px; color:#FF007F"></i>
+
                                     </div>
                                     <div class="px-4">
                                         <h4 class="card-title fw-bolder" style="color: #FF007F">
@@ -981,14 +977,11 @@
                         </div>
 
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 18rem;">
-                                <div class="card-body d-flex align-items-center p-4">
+                            <div class="card text-center shadow-lg" style="width: 22rem; border-radius:10px">
+                                <div class="card-body d-flex align-items-center p-4 gap-2">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                            fill="#FF007F" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M12.974 4.026a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0l-3-3a1 1 0 0 1 1.414-1.414L7 8.586l5.974-5.96a1 1 0 0 1 1.414 0z" />
-                                        </svg>
+                                        <i class="fas fa-check-circle" style="font-size: 50px; color:#FF007F"></i>
+
                                     </div>
                                     <div class="px-4">
                                         <h4 class="card-title fw-bolder" style="color: #FF007F">
@@ -1036,7 +1029,7 @@
 
 
         <section class="px-3 px-md-5">
-            <div class="d-flex justify-content-evenly mt-5 mb-5">
+            <div class="d-flex justify-content-center mt-5 mb-5 gap-3">
                 <div class="mt-5 ">
                     <h6 class="text-uppercase text-info fw-bold mb-2 text-start " style="padding-left: 60px">
                         INSPIRE LONDON COLLEGE
@@ -1044,7 +1037,8 @@
                     <h2 class="fw-bold mb-3 pt-2 text-start" style="padding-left: 60px">
                         Build Your Skills Online <br> Anytime
                     </h2>
-                    <p class="text-muted mb-3 text-start pt-2  pb-3 fs-5" style="padding-left: 60px; line-height: 1.8">
+                    <p class="text-muted mb-3 text-start pt-2  pb-3 fs-5"
+                        style="padding-left: 60px; line-height: 1.8">
                         Inspire London College is the leading specialist provider of Distance Learning Courses
                         UK<br>
                         .Weare distinguished global distance and online learning platforms dedicated to providing
@@ -1065,62 +1059,61 @@
                 </div>
                 <div>
                     <img src="{{ asset('assets/site/card-image.webp') }}" alt="Inspire London College"
-                        class="img-fluid">
+                        class="img-fluid" style="width: 110%; max-width: none;">
                 </div>
+
             </div>
         </section>
 
         <section class="p-5" style="background-color: ghostwhite">
-            <div class="row align-items-center mb-5 g-0">
-                <div class="col-md-6 text-center pe-0">
+            <div class="d-flex justify-content-center align-items-center mb-5 gap-4">
+                <div class="text-center pe-0">
                     <img src="{{ asset('assets/site/healt.webp') }}" alt="Health and Social Care" class="img-fluid"
-                        style="width: 650px; padding-left: 5%">
+                        style="width: 650px; padding-left: 5%;">
                 </div>
 
-                <div class="col-md-6 text-start">
-                    <h2 class="pb-2">Level 3 Diploma in Health and Social Care</h2>
-                    <div class="d-flex align-items-center text-start mb-2">
-                        <span class="badge me-2 p-2 px-3 fw-bolder"
-                            style="background-color: #C13584">Qualification</span>
-                        <span class="text-warning">★★★★★</span>
-                        <strong class="ms-2">500+</strong>
-                        <span class="badge bg-primary ms-2 px-3 p-2 fw-bolder">Top Rated</span>
+                <div class="text-start">
+                    <h2 class="pb-3">Level 3 Diploma in Health and Social Care</h2>
+                    <div class="d-flex align-items-center text-start mb-3">
+                        <span class="badge me-2 p-2 px-3  fs-6" style="background-color: #C13584">Qualification</span>
+                        <span class="text-warning" style="font-size: 1.5rem">★★★★★</span>
+                        <strong class="ms-2 fs-6">500+</strong>
+                        <span class="badge bg-primary ms-2 px-3 p-2 fw-bolder fs-6">Top Rated</span>
                     </div>
-                    <p class="fs-5 pb-2" style="line-height: 40px">With a focus on real-world application and
-                        progression opportunities, <br>the Qualifi
+                    <p class="fs-5 pb-2" style="line-height: 40px">
+                        With a focus on real-world application and progression opportunities, <br>the Qualifi
                         Level 3 Diploma provides a stepping stone toward advanced <br>qualifications and rewarding
                         roles.
                     </p>
 
-                    <div class="row mb-2 " style="gap: 10px">
-                        <div class="col-md-3 p-2 border-dotted mb-3">
-                            <h6 class="text-pink fw-bolder " style="color: #FF007F">Duration</h6>
+                    <div class="d-flex mb-3" style="gap: 10px;">
+                        <div class="text-start fs-5" style="padding: 0px 20px; padding-top:10px; border: 3px dashed rgb(68, 168, 199)">
+                            <h6 class="text-pink fw-bolder fs-3" style="color: #FF007F">Duration</h6>
                             <p>6 months - 12 months</p>
                         </div>
-                        <div class="col-md-3 p-2 border-dotted mb-3">
-                            <h6 class="text-pink fw-bolder " style="color: #FF007F">Assesment Method</h6>
-                            <p>Assignments / Report
-                            </p>
+                        <div class=" p-2 border-dotted text-start  fs-4" style="padding: 10px 20px; border: 3px dashed rgb(68, 168, 199)">
+                            <h6 class="text-pink fw-bolder fs-5" style="color: #FF007F">Assessment Method</h6>
+                            <p>Assignments / Report</p>
                         </div>
-                        <div class="col-md-3 p-2 border-dotted mb-3">
-                            <h6 class="text-pink fw-bolder " style="color: #FF007F">Awarding Body</h6>
+                        <div class=" p-2 border-dotted text-start fs-5" style="padding: 10px 20px; border: 3px dashed rgb(68, 168, 199)">
+                            <h6 class="text-pink fw-bolder fs-4" style="color: #FF007F">Awarding Body</h6>
                             <p>Qualifi Ltd.</p>
                         </div>
                     </div>
 
-                    <div class="text-start">
-                        <button class="btn fw-bolder"
+                    <div class="text-start mt-4">
+                        <button class="btn fw-bolder p-2 px-5 "
                             style="background-color: #FF007F; color: white; padding-left: 2rem; padding-right: 2rem;">
                             Enrol Now
                         </button>
-                        <button class="btn fw-bolder"
+                        <button class="btn fw-bolder p-2 px-5"
                             style="background-color: #25D366; color: white; padding-left: 2rem; padding-right: 2rem;">
                             WhatsApp
                         </button>
                     </div>
                 </div>
-
             </div>
+
         </section>
 
 
@@ -1130,13 +1123,14 @@
             <div class="container py-5">
                 <div class="d-flex justify-content-center align-items-center mb-5 w-100">
                     <h1 class="h2 mb-0 flex-grow-1 text-center">Courses Category</h1>
-                    <a href="{{ route('view') }}"
-                    style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;"
-                    class="explore-btn view-all-btn ms-auto px-4 fw-bolder"> View All
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
+                    <a href="{{ route('view') }}" class="text-decoration-none text-start">
+                        <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                            View All
+                            <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
+                        </button>
+                    </a>
                 </div>
+
 
                 <div class="row g-4">
 
@@ -1147,10 +1141,10 @@
                                     alt="HR Icon">
                             </div>
                             <h3 class="h5 mb-4">HR Management</h3>
-                            <a href="{{ route('hr') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+                            <a href="{{ route('hr') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
                             </a>
 
@@ -1165,10 +1159,10 @@
                                     alt="Project Icon">
                             </div>
                             <h3 class="h5 mb-4">Project Management</h3>
-                            <a href="{{ route('pm') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
+                            <a href="{{ route('pm') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
                             </a>
                         </div>
@@ -1183,15 +1177,14 @@
                             </div>
                             <h4 class="h5 mb-4">Contruction Management</h4>
 
-                            <a href="{{ route('cm') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
-
+                            <a href="{{ route('cm') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
                             </a>
 
-                                              </div>
+                        </div>
                     </div>
 
 
@@ -1202,13 +1195,13 @@
                                     alt="Leadership Icon">
                             </div>
                             <h4 class="h5 mb-4">Leadership Management</h4>
-                            <a href="{{ route('lm') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
-
+                            <a href="{{ route('lm') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
-                            </a>                       </div>
+                            </a>
+                        </div>
                     </div>
 
 
@@ -1219,13 +1212,13 @@
                                     alt="Accounting Icon">
                             </div>
                             <h3 class="h5 mb-4">Accounting and Finance</h3>
-                            <a href="{{ route('af') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
-
+                            <a href="{{ route('af') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
-                            </a>                       </div>
+                            </a>
+                        </div>
                     </div>
 
 
@@ -1236,14 +1229,13 @@
                                     alt="Admin Icon">
                             </div>
                             <h3 class="h5 mb-4">Admin, Secretarial & PA</h3>
-                            <a href="{{ route('as') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
-
+                            <a href="{{ route('as') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
                             </a>
-                                              </div>
+                        </div>
                     </div>
 
 
@@ -1254,11 +1246,10 @@
                                     alt="Business Icon">
                             </div>
                             <h4 class="h5 mb-4">Business Management</h4>
-                            <a href="{{ route('bm') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
-
+                            <a href="{{ route('bm') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
                             </a>
                         </div>
@@ -1272,14 +1263,14 @@
                                     alt="Education Icon">
                             </div>
                             <h4 class="h5 mb-4">Education and Training</h4>
-                            <a href="{{ route('et') }}" class="text-decoration-none text-start ">
-                                <button type="button"
-                                    class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                    See Courses   <i class="fa-solid fa-arrow-right"></i>
-
+                            <a href="{{ route('et') }}" class="text-decoration-none text-start">
+                                <button type="button" class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover" style="font-weight: 500">
+                                    See Courses
+                                    <i class="fa-solid fa-arrow-right ms-2" style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; font-size: 14px;"></i>
                                 </button>
                             </a>
-                                               </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1291,10 +1282,13 @@
                 <div class="d-flex justify-content-center align-items-center mb-5 w-100">
                     <h1 class="h2 mb-0 flex-grow-1 text-center">Popular Course</h1>
                     <a href="{{ route('view') }}"
-                    style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; display: inline-block; text-align: center;"
-                    class="explore-btn view-all-btn ms-auto px-4 fw-bolder"> View All
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                        style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; justify-content: center;"
+                        class="explore-btn view-all-btn ms-auto px-4 fw-bolder">
+                        View All
+                        <i id="arrowIcon" class="fa-solid fa-arrow-right fw-bolder px-1 "
+                           style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; margin-left: 8px; font-size:13px">
+                        </i>
+                    </a>
                 </div>
                 <div class="row g-2 mb-2">
 
@@ -1312,7 +1306,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1335,7 +1330,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1358,7 +1354,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1381,7 +1378,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1408,7 +1406,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1431,7 +1430,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1454,7 +1454,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                            <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1477,7 +1478,8 @@
                                     <div class="hover-text">
                                         <p class="card-text text-start" style="font-size: 14px">Endorsed by TQUK
                                             Certificate. 15 Modules.</p>
-                                        <button class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
+                                        <button
+                                            class="text-center mx-auto d-block border border-primary text-primary px-4 p-2 border"
                                             style="border-radius: 50px; background-color:transparent">Know
                                             More</button>
                                     </div>
@@ -1511,7 +1513,8 @@
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1530,7 +1533,8 @@
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1549,70 +1553,8 @@
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit.
-                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
-                                            delectus
-                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
-                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
-                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
-                                            recusandae
-                                            eum explicabo,</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
-                                            Leach</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row text-center d-flex justify-content-center">
-                            <div class="col-sm-3">
-                                <div class="card" style="width: 100%">
-                                    <div class="card-body text-center">
-                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
-                                            alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit.
-                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
-                                            delectus
-                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
-                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
-                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
-                                            recusandae
-                                            eum explicabo,</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
-                                            Leach</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card" style="width: 100%">
-                                    <div class="card-body text-center">
-                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
-                                            alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit.
-                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
-                                            delectus
-                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
-                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
-                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
-                                            recusandae
-                                            eum explicabo,</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
-                                            Leach</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="card" style="width: 100%">
-                                    <div class="card-body text-center">
-                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
-                                            alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1637,7 +1579,8 @@
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1656,7 +1599,8 @@
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1675,7 +1619,74 @@
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
+                                            elit.
+                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
+                                            delectus
+                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
+                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
+                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
+                                            recusandae
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row text-center d-flex justify-content-center">
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
+                                    <div class="card-body text-center">
+                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
+                                            alt="" style="width: 150px">
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
+                                            elit.
+                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
+                                            delectus
+                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
+                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
+                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
+                                            recusandae
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
+                                    <div class="card-body text-center">
+                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
+                                            alt="" style="width: 150px">
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
+                                            elit.
+                                            Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
+                                            delectus
+                                            ipsum ut quo impedit molestiae minus exercitationem praesentium facere
+                                            assumenda ullam cupiditate quod repellendus! Explicabo laborum illo
+                                            obcaecati hic eum. Quas, nulla. Dolorum ratione molestiae soluta
+                                            recusandae
+                                            eum explicabo,</p>
+                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
+                                            Leach</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card" style="width: 100%">
+                                    <div class="card-body text-center">
+                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
+                                            alt="" style="width: 150px">
+                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing
                                             elit.
                                             Neque odit modi, aut voluptates fuga nesciunt aperiam accusantium
                                             delectus
@@ -1754,7 +1765,7 @@
             <div class="container card-container pt-5">
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="flip-card">
+                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
@@ -1766,7 +1777,7 @@
                                     </div>
                                     <h5>Dedicated Tutor Support</h5>
                                 </div>
-                                <div class="flip-card-back">
+                                <div class="flip-card-back text-white">
                                     <p>Get personalized support from our experienced tutors throughout your learning
                                         journey.</p>
                                 </div>
@@ -1775,7 +1786,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="flip-card">
+                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
@@ -1787,7 +1798,7 @@
                                     </div>
                                     <h5>Self-Study Courses</h5>
                                 </div>
-                                <div class="flip-card-back">
+                                <div class="flip-card-back text-white">
                                     <p>All courses are specially designed for self-study and are often personalised to
                                         fit the needs of individual students.</p>
                                 </div>
@@ -1796,7 +1807,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="flip-card">
+                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
@@ -1808,7 +1819,7 @@
                                     </div>
                                     <h5>Easy Access</h5>
                                 </div>
-                                <div class="flip-card-back">
+                                <div class="flip-card-back text-white">
                                     <p>Access your courses anytime, anywhere with our user-friendly platform.</p>
                                 </div>
                             </div>
@@ -1816,7 +1827,7 @@
                     </div>
 
                     <div class="col-md-3">
-                        <div class="flip-card">
+                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
@@ -1828,7 +1839,7 @@
                                     </div>
                                     <h5>Accredited Certificates</h5>
                                 </div>
-                                <div class="flip-card-back">
+                                <div class="flip-card-back text-white">
                                     <p>Earn recognized certificates upon successful completion of your courses.</p>
                                 </div>
                             </div>
@@ -1855,17 +1866,10 @@
                         <a href="#" class="text-decoration-none text-start ">
                             <button type="button"
                                 class="btn btn-info border-0 text-white fw-bold px-4 py-2 rounded-pill custom-hover">
-                                Read More   <i class="fa-solid fa-arrow-right"></i>
+                                Read More <i class="fa-solid fa-arrow-right"></i>
 
                             </button>
                         </a>
-                        <a href="" class="text-start"
-                                   style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold;
-                                   display: inline-block; text-align: start;"
-                                   class="explore-btn view-all-btn px-4 fw-bolder">
-                                    View All
-
-                                </a>
                     </div>
                 </div>
 
