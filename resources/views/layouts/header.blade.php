@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,6 +42,11 @@
 
         }
 
+        .icon-hover:hover {
+            color: #00bcd4;
+            transition: color 0.1s ease;
+        }
+
         .btn-platform {
             background-color: #e91e63;
             color: white;
@@ -66,6 +72,7 @@
         .latest-news {
             background-color: #e91e63;
             color: white;
+
             padding: 1rem 2rem;
             margin-right: 1rem;
         }
@@ -155,9 +162,6 @@
             flex: 1;
         }
 
-
-
-
         .category-card {
             background: #f8f9fa;
             border-radius: 8px;
@@ -191,6 +195,7 @@
     </style>
 
 </head>
+
 <body>
     <header>
         <div class="header-sec d-flex justify-content-between align-items-center p-3 "
@@ -203,10 +208,13 @@
                 </h3>
             </div>
             <a href="{{ route('offer') }}">
-                <button type="button" style="border: 4px solid white;" class="btn btn-danger fw-bolder px-4">
+                <button type="button"
+                    style="border: 3px solid white; background-color:rgb(173, 30, 30); margin-right: 8rem;"
+                    class="fw-bolder px-5 p-2 text-white">
                     Click Here
                 </button>
             </a>
+
         </div>
 
         <div class="header-sec d-flex justify-content-between align-items-center p-3"
@@ -217,36 +225,38 @@
                 </p>
             </div>
 
-            <div class="d-flex gap-4">
+            <div class="d-flex gap-5">
                 <a href="{{ route('booksnow') }}">
-                    <button type="button" class="btn btn-info border-0 text-white fw-bolder px-5"
+                    <button type="button" class="btn btn-info border-0 text-white fw-bolder px-4"
                         style="border-radius: 50px; padding: 10px 0px">
-                        Booking Now
+                        Book Now
                     </button>
                 </a>
                 <a href="{{ route('contact') }}">
-                    <button type="button" class="btn btn-info border-0 text-white fw-bolder px-5 "
+                    <button type="button" class="btn btn-info border-0 text-white fw-bolder px-4 "
                         style="border-radius: 50px; padding: 10px 0">
                         Contact Us
                     </button>
                 </a>
                 <form class="d-flex" role="search">
-                    <div class="input-group">
+                    <div class="input-group w-100">
                         <input class="form-control" type="search" placeholder="Search" aria-label="Search"
                             style="border-radius: 50px 0 0 50px;">
                         <button class="btn btn-info text-white fw-bolder" type="submit"
                             style="border-radius: 0 50px 50px 0;">Search</button>
                     </div>
+
+
                 </form>
 
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg p-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="{{ asset('assets/site/ILC-logo-1024x616.webp') }}" alt="Inspire London College Logo"
-                        style="width: 100px; height: auto;">
+                        style="width: 150px; height: auto;">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -254,7 +264,7 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto px-5">
+                    <ul class="navbar-nav me-auto px-5 ">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
                                 data-bs-toggle="dropdown">
@@ -293,8 +303,9 @@
                         </li>
                     </ul>
                     <div class="d-flex justify-content-center gap-3 px-5">
-                        <button class="btn px-4 text-white  fw-bolder" style="background-color: #FF007F; border-radius: 50px;">Learning Platform</button>
-                        <button class="btn btn-vle px-3 p-2 fw-bolder" style="padding: 0px 70px; width: 180px;">VLE</button>
+                        <button class="btn px-4 text-white  "
+                            style="background-color: #FF007F; border-radius: 50px;">Learning Platform</button>
+                        <button class="btn btn-vle px-3 p-2 " style="padding: 0px 70px; width: 180px;">VLE</button>
                     </div>
 
                 </div>
@@ -313,7 +324,7 @@
                     </div>
 
                     <div class="col">
-                        <div class="category-card">
+                        <div class="category-card ">
                             <img src="{{ asset('assets/site/admin-secretarial.jpg') }}" alt="Admin & Secretarial"
                                 class="category-image">
                             <div>Admin & Secretarial</div>
@@ -322,8 +333,8 @@
 
                     <div class="col">
                         <div class="category-card">
-                            <img src="{{ asset('assets/site/business-management.jpg') }}"
-                                alt="Business Management" class="category-image">
+                            <img src="{{ asset('assets/site/business-management.jpg') }}" alt="Business Management"
+                                class="category-image">
                             <div>Business Management</div>
                         </div>
                     </div>
@@ -373,122 +384,117 @@
                 const categories = {
                     'Endorsed Courses': [{
                             name: 'Accounting & Finance',
-                            icon: '💼'
+                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Admin & Secretarial',
-                            icon: '📑'
+                            icon: '<i class="fas fa-user-cog icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Business Management',
-                            icon: '📊'
+                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'HR Management',
-                            icon: '👥'
+                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Leadership & Management',
-                            icon: '🌟'
+                            icon: '<i class="fas fa-user-check icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Project Management',
-                            icon: '📅'
+                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         }
                     ],
                     'CPD Courses': [{
                             name: 'courses',
-                            icon: '📚'
+                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Beauty Therapy',
-                            icon: '🎓'
+                            icon: '<i class="fas fa-leaf icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'ChildPsychology',
-                            icon: '📖'
+                            icon: '<i class="fas fa-child icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'HR Management',
-                            icon: '📜'
+                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Supply Chain Management',
-                            icon: '📝'
+                            icon: '<i class="fas fa-link icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
-                            name: 'Workplace Managnment',
-                            icon: '📘'
+                            name: 'Workplace Management',
+                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         }
                     ],
                     'Phlebotomy': [{
                             name: 'Level 3 Certificate in Phlebotomy (Part 2 $ 2)',
-                            icon: '🩸'
+                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Level 3 Certificate in Phlebotomy (Part 2)',
-                            icon: '🩺'
+                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Phlebotomist Placement Programme',
-                            icon: '💉'
+                            icon: '<i class="fas fa-user-nurse icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Level Bloods Practical Session',
-                            icon: '🩹'
+                            icon: '<i class="fas fa-eye-dropper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         }
                     ],
                     'Ofqual Qualifications': [{
                             name: 'Business Management',
-                            icon: '🏆'
+                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
                             name: 'Cyber Security',
-                            icon: '🎓'
+                            icon: '<i class="fas fa-unlock-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
-                            name: 'Education $ Training',
-                            icon: '📝'
+                            name: 'Education & Training',
+                            icon: '<i class="fas fa-book-open icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
-                            name: 'Health $ Safery',
-                            icon: '📜'
+                            name: 'Health & Safety',
+                            icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
-                            name: 'Health $ Socail Care',
-                            icon: '📘'
+                            name: 'Health & Social Care',
+                            icon: '<i class="fas fa-hand-holding-medical icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
-                        {
-                            name: 'Early Year Education $ Child Care',
-                            icon: '📚'
-                        }
+
                     ],
                     'CPD Video Training': [{
                             name: 'Business Skills',
-                            icon: '🎥'
+                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
                         {
-                            name: 'Health $ Safety',
-                            icon: '📹'
-                        }
+                            name: 'Health & Safety',
+                            icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                        },
+                        {
+                            name: 'Business Skills',
+                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                        },
                     ],
-                    'Care Courses': [
-
-                        {
+                    'Care Courses': [{
                             name: 'Mandatory Courses',
-                            icon: '📜'
+                            icon: '<i class="far fa-newspaper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         },
-                        {
-                            name: 'Specialist Courses',
-                            icon: '📘'
-                        },
+
                         {
                             name: 'Additional Courses',
-                            icon: '📚'
+                            icon: '<i class="far fa-list-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                         }
                     ]
-
-                };
+                }
 
                 function loadCategories(categoryName) {
                     const row = categorySection.querySelector('.row');
@@ -508,7 +514,7 @@
                     row.innerHTML += `
                         <div class="col">
                             <div class="category-card">
-                                <i class="category-icon">≡</i>
+                                <i class="category-icon" style="font-size: 40px">≡</i>
                                 <div>All Categories</div>
                             </div>
                         </div>`;
@@ -556,8 +562,11 @@
             });
         </script>
 
-        <div class="ticker-wrapper">
-            <div class="ticker-label mx-3 p-5 fs-3 ">Latest News</div>            <div class="ticker">
+
+
+        {{-- <div class="ticker-wrapper">
+            <div class="ticker-label mx-3 p-5 fs-3 ">Latest News</div>
+            <div class="ticker">
                 <div class="ticker-content">
                     <span class="text-white fw-bolder" style="word-spacing: 5px">
                         First breaking news item Second important update Third news flash Fourth headline of the day
@@ -568,7 +577,7 @@
                 <img src="{{ asset('assets/site/skill-for-care.webp') }}" alt="" style="width: 200px;"
                     class="mx-3">
             </div>
-        </div>
+        </div> --}}
 
 
     </header>
@@ -665,4 +674,5 @@
         </div>
     </footer>
 </body>
+
 </html>
