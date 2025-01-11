@@ -27,9 +27,9 @@
                     <div class="card g-3 mb-4" style="border: none; background-color: transparent;">
                         <h1 class="px-5 p-3">HR Management courses online UK
                         </h1>
-                        <div class="row px-5 g-3">
+                        <div class="row px-5 g-5">
                             <div class="col-sm-3 p-2 text-center">
-                                <div style="border: 2px solid grey; border-radius: 8px; background-color: transparent;">
+                                <div style="border: 2px solid grey; width:18rem; border-radius: 8px; background-color: transparent;">
                                     <img src="{{ asset('assets/site/02.webp') }}" alt="" style="width: 100%; height: auto;">
                                     <div class="px-3 mt-3">
                                         <p class="fw-bolder">Level 7 Diploma in Learning and Development</p>
@@ -43,7 +43,7 @@
                             </div>
 
                             <div class="col-sm-3 p-2 text-center">
-                                <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
+                                <div style="border: 2px solid grey; width:18rem; border-radius: 8px;  background-color: transparent;">
                                     <img src="{{ asset('assets/site/03.webp') }}" alt="" style="width: 100%; height: auto;">
                                     <div class="px-3 mt-3">
                                         <p class="fw-bolder">Level 7 Dioploma in HR Management</p>
@@ -58,7 +58,7 @@
                             </div>
 
                             <div class="col-sm-3 p-2 text-center">
-                                <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
+                                <div style="border: 2px solid grey; width:18rem; border-radius: 8px;  background-color: transparent;">
                                     <img src="{{ asset('assets/site/04.webp') }}" alt="" style="width: 100%; height: auto;">
                                     <div class="px-3 mt-3">
                                         <p class="fw-bolder">Level 5 Dioploma in Recruitment Consultant </p>
@@ -73,7 +73,7 @@
                             </div>
 
                             <div class="col-sm-3 p-2 text-center">
-                                <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
+                                <div style="border: 2px solid grey; width:18rem; border-radius: 8px;  background-color: transparent;">
                                     <img src="{{ asset('assets/site/05.webp') }}" alt="" style="width: 100%; height: auto;">
                                     <div class="px-3 mt-3">
                                         <p class="fw-bolder">Level 5 Dioploma in Recruitment Consultant </p>
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-3  text-center">
-                                <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
+                                <div style="border: 2px solid grey; width:18rem; border-radius: 8px;  background-color: transparent;">
                                     <img src="{{ asset('assets/site/06.webp') }}" alt="" style="width: 100%; height: auto;">
                                     <div class="px-3 mt-3">
                                         <p class="fw-bolder">Level 5 Dioploma in Recruitment Consultant </p>

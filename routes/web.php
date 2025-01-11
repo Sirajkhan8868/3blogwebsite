@@ -22,18 +22,18 @@ Auth::routes();
 
 Route::get('/', [BlogController::class, 'home'])->name('home');
 Route::get('/header', [BlogController::class, 'header'])->name('header');
-Route::get('/offer', [BlogController::class, 'offer'])->name('offer');
+Route::get('/christmas', [BlogController::class, 'christmas'])->name('christmas');
 Route::get('/bookssnow', [BlogController::class, 'booksnow'])->name('booksnow');
 Route::get('/contact', [BlogController::class, 'contact'])->name('contact');
-Route::get('/hr', [BlogController::class, 'hr'])->name('hr');
+Route::get('/human', [BlogController::class, 'human'])->name('human');
 Route::get('/view', [BlogController::class, 'view'])->name('view');
-Route::get('/pm', [BlogController::class, 'pm'])->name('pm');
-Route::get('/cm', [BlogController::class, 'cm'])->name('cm');
-Route::get('/lm', [BlogController::class, 'lm'])->name('lm');
-Route::get('/af', [BlogController::class, 'af'])->name('af');
-Route::get('/as', [BlogController::class, 'as'])->name('as');
-Route::get('/et', [BlogController::class, 'et'])->name('et');
-Route::get('/bm', [BlogController::class, 'bm'])->name('bm');
+Route::get('/project', [BlogController::class, 'project'])->name('project');
+Route::get('/construction', [BlogController::class, 'construction'])->name('construction');
+Route::get('/leadership', [BlogController::class, 'leadership'])->name('leadership');
+Route::get('/accounting', [BlogController::class, 'accounting'])->name('accounting');
+Route::get('/admin', [BlogController::class, 'admin'])->name('admin');
+Route::get('/education', [BlogController::class, 'education'])->name('education');
+Route::get('/business', [BlogController::class, 'business'])->name('business');
 
 
 

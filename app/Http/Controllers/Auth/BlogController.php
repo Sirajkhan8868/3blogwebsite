@@ -13,9 +13,9 @@ class BlogController extends Controller
     {
         return view('layouts.website');
     }
-    public function offer()
+    public function christmas()
     {
-        return view('components.offer');
+        return view('components.christmas');
     }
     public function header()
     {
@@ -33,36 +33,36 @@ class BlogController extends Controller
     {
         return view('components.view');
     }
-    public function hr()
+    public function human()
     {
-        return View('components.hr');
+        return View('components.human');
     }
-    public function pm()
+    public function project()
     {
-        return view('components.pm');
+        return view('components.project');
     }
-    public function cm()
+    public function construction()
     {
-        return view('components.cm');
+        return view('components.construction');
     }
-    public function lm()
+    public function leadership()
     {
-        return view('components.lm');
+        return view('components.leadership');
     }
-    public function as()
+    public function admin()
     {
-        return view('components.as');
+        return view('components.admin');
     }
-    public function et()
+    public function education()
     {
-        return view('components.et');
+        return view('components.education');
     }
-    public function bm()
+    public function business()
     {
-        return view('components.bm');
+        return view('components.business');
     }
-    public function af()
+    public function accounting()
     {
-        return view('components.af');
+        return view('components.accounting');
     }
 }

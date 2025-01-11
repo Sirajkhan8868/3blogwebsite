@@ -189,8 +189,83 @@
         }
 
 
-        footer {
-            background-color: rgb(95, 93, 93);
+        .footer-container {
+            position: relative;
+            overflow: hidden;
+            background-color: rgb(36, 35, 35);
+        }
+
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move-up {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes move-down {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(-100vw);
+                opacity: 0;
+            }
+        }
+
+        @keyframes move-right {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(100vw);
+                opacity: 0;
+            }
+        }
+
+        .move-up {
+            animation-name: move-up;
+        }
+
+        .move-down {
+            animation-name: move-down;
+        }
+
+        .move-left {
+            animation-name: move-left;
+        }
+
+        .move-right {
+            animation-name: move-right;
         }
     </style>
 
@@ -207,7 +282,7 @@
                     <span class="text-warning">30%</span> Off on Bundle Video Courses.
                 </h3>
             </div>
-            <a href="{{ route('offer') }}">
+            <a href="{{ route('christmas') }}">
                 <button type="button"
                     style="border: 3px solid white; background-color:rgb(173, 30, 30); margin-right: 8rem;"
                     class="fw-bolder px-5 p-2 text-white">
@@ -564,36 +639,52 @@
 
 
 
-        {{-- <div class="ticker-wrapper">
-            <div class="ticker-label mx-3 p-5 fs-3 ">Latest News</div>
-            <div class="ticker">
-                <div class="ticker-content">
-                    <span class="text-white fw-bolder" style="word-spacing: 5px">
-                        First breaking news item Second important update Third news flash Fourth headline of the day
-                    </span>
-                </div>
-            </div>
-            <div class="position-relative">
-                <img src="{{ asset('assets/site/skill-for-care.webp') }}" alt="" style="width: 200px;"
-                    class="mx-3">
-            </div>
-        </div> --}}
-
-
     </header>
 
 
     @yield('content')
 
-    <footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const starContainer = document.querySelector('.footer-container'); // Updated selector for footer
+
+            function createStar() {
+                const star = document.createElement('div');
+                star.classList.add('star');
+
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                const delay = Math.random() * 2;
+                const size = Math.random() * 8 + 2;
+                const direction = Math.floor(Math.random() * 4); // 0 to 3 for four directions
+
+                star.style.left = `${x}vw`;
+                star.style.top = `${y}vh`;
+                star.style.animationDelay = `${delay}s`;
+                star.style.width = `${size}px`;
+                star.style.height = `${size}px`;
+
+                star.classList.add(['move-up', 'move-down', 'move-left', 'move-right'][direction]);
+
+                starContainer.appendChild(star);
+
+                star.addEventListener('animationend', () => {
+                    star.remove();
+                });
+            }
+
+            setInterval(createStar, 100);
+        });
+    </script>
+    <footer class="footer-container" style="position: relative; overflow: hidden;">
         <div class="container py-4">
             <div class="row flex-wrap">
                 <div class="col-sm-3">
                     <h3 class="text-white fw-bolder">Information</h3>
                     <ul class="text-white px-1" style="list-style: none">
                         <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a>
-                        </li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
                         <li><a href="#" class="text-white text-decoration-none">FAQ's</a></li>
@@ -606,14 +697,12 @@
                     <ul class="text-white text-decoration-none px-1" style="list-style: none">
                         <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Fees & Pricing</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Apply For
-                                Certificate</a>
+                        <li><a href="#" class="text-white text-decoration-none">Apply For Certificate</a>
                         </li>
                         <li><a href="#" class="text-white text-decoration-none">Apply Student Discount
                                 Card</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Apply H&S Care
-                                Certificate</a>
-                        </li>
+                                Certificate</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Request Info</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Jobs</a></li>
@@ -625,7 +714,7 @@
                     <p class="text-white">Level 3 Certificate in Phlebotomy (Part 1) Phlebotomy Course</p>
                     <button class="px-3 p-2 fs-5 border-0" style="border: 18px solid green">Review as on <img
                             src="{{ asset('assets/site/star-removebg-preview.png') }}" alt=""
-                            style="width: 30px; "><span class="fw-bolder">Trustpilot</span></button>
+                            style="width: 30px;"><span class="fw-bolder">Trustpilot</span></button>
                 </div>
 
                 <div class="col-sm-3">
@@ -635,7 +724,7 @@
                         <li>Email: info@example.com</li>
                         <li>Phone: +123-456-7890</li>
                     </ul>
-                    <div class=" d-flex justify-content-start text-start gap-1 mt-4">
+                    <div class="d-flex justify-content-start text-start gap-1 mt-4">
                         <a href="#" class="btn p-0 bg-primary"
                             style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
                             <i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i>
@@ -661,16 +750,13 @@
                             <i class="fab fa-youtube" style="font-size: 20px; color: white;"></i>
                         </a>
                     </div>
-
                 </div>
             </div>
-
-            <div class="text-center text-white mt-4">
-                <p>© Copyright 2013 – 2024
-                    <span class="text-danger">Inspire London College </span> All Rights Reserved | Powered by
-                    <span class="text-danger">Whoopit Agency</span>
-                </p>
-            </div>
+        </div>
+        <div class="text-center text-white mt-4 bg-black p-3">
+            <p class="mt-3 text-center fs-5">© Copyright 2013 – 2024 <span style="color: #FF007F">Inspire London
+                    College </span> All Rights Reserved | Powered by <span style="color: #FF007F">Whoopit
+                    Agency</span></p>
         </div>
     </footer>
 </body>

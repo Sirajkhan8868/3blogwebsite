@@ -251,9 +251,14 @@
 
         .star {
             position: absolute;
-            background: white;
-            border-radius: 50%;
-            animation: twinkle 50s, moveStars 25s linear infinite;
+            background-image: url('path/to/your/star-image.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 40px;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
         }
 
         @keyframes twinkle {
@@ -265,34 +270,69 @@
             }
 
             50% {
-                opacity: 4;
+                opacity: 0.5;
                 transform: scale(1.5);
             }
         }
 
-        @keyframes moveStars {
+        @keyframes move-up {
             0% {
-                transform: translateY(-50px) translateX(0);
+                transform: translateY(0);
             }
 
             100% {
-                transform: translateY(100vh) translateX(50px);
+                transform: translateY(-100vh);
             }
         }
 
-        :root {
-            --primary-color: #00d4ff;
+        @keyframes move-down {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(100vh);
+            }
         }
 
-        .star {
-            position: absolute;
-            background-image: url('path/to/your/star-image.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            width: 50px;
-            height: 50px;
-            animation: twinkle 50s infinite, moveStars 13s ease-in-out infinite;
-            animation-fill-mode: forwards;
+        @keyframes move-left {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100vw);
+            }
+        }
+
+        @keyframes move-right {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+
+        .move-up {
+            animation-name: twinkle, move-up;
+            animation-duration: 50s, 25s;
+        }
+
+        .move-down {
+            animation-name: twinkle, move-down;
+            animation-duration: 50s, 25s;
+        }
+
+        .move-left {
+            animation-name: twinkle, move-left;
+            animation-duration: 50s, 25s;
+        }
+
+        .move-right {
+            animation-name: twinkle, move-right;
+            animation-duration: 50s, 25s;
         }
 
         .category-card {
@@ -503,35 +543,94 @@
         }
 
         @keyframes scrollUp {
-        0% {
-            transform: translateY(100%);
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+            }
         }
-        100% {
-            transform: translateY(-100%);
-        }
-    }
 
 
-        footer {
-            background-color: rgb(95, 93, 93);
+        .footer-container {
+            position: relative;
+            overflow: hidden;
+            background-color: rgb(36, 35, 35);
         }
+
         .star {
-        position: absolute;
-        background-color: white;
-        border-radius: 50%;
-        animation: fall 30s linear infinite;
-    }
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
 
-    @keyframes fall {
-        from {
-            transform: translateY(0);
-            opacity: 1;
+        @keyframes move-up {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
         }
-        to {
-            transform: translateY(100vh);
-            opacity: 0;
+
+        @keyframes move-down {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
         }
-    }
+
+        @keyframes move-left {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(-100vw);
+                opacity: 0;
+            }
+        }
+
+        @keyframes move-right {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateX(100vw);
+                opacity: 0;
+            }
+        }
+
+        .move-up {
+            animation-name: move-up;
+        }
+
+        .move-down {
+            animation-name: move-down;
+        }
+
+        .move-left {
+            animation-name: move-left;
+        }
+
+        .move-right {
+            animation-name: move-right;
+        }
     </style>
 </head>
 
@@ -547,7 +646,7 @@
                         <span class="text-warning">30%</span> Off on Bundle Video Courses.
                     </h3>
                 </div>
-                <a href="{{ route('offer') }}">
+                <a href="{{ route('christmas') }}">
                     <button type="button"
                         style="border: 3px solid white; background-color:rgb(173, 30, 30); margin-right: 8rem;"
                         class="fw-bolder px-5 p-2 text-white">
@@ -727,6 +826,7 @@
                                 icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                             },
                             {
+
                                 name: 'Admin & Secretarial',
                                 icon: '<i class="fas fa-user-cog icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
                             },
@@ -854,7 +954,7 @@
                         row.innerHTML += `
                             <div class="col">
                                 <div class="category-card">
-                                    <i class="category-icon" style="font-size: 40px">≡</i>
+                                    <i class="category-icon" style="font-size: 40px; font:weight:bold">≡</i>
                                     <div>All Categories</div>
                                 </div>
                             </div>`;
@@ -980,7 +1080,7 @@
                 <div class="d-flex justify-content-center align-items-start">
                     <div class="row g-4 justify-content-center align-items-start">
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 22rem;border-radius: 10px">
+                            <div class="card text-center shadow-lg" style="width: 24rem;border-radius: 10px">
                                 <div class="card-body d-flex align-items-center p-4 gap-1">
                                     <div>
                                         <i class="fas fa-users"
@@ -997,7 +1097,7 @@
                         </div>
 
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 22rem;border-radius:10px">
+                            <div class="card text-center shadow-lg" style="width: 24rem;border-radius:10px">
                                 <div class="card-body d-flex align-items-center p-4 gap-4">
                                     <div>
                                         <i class="fas fa-book-open" style="font-size: 50px; color:#FF007F"></i>
@@ -1011,7 +1111,7 @@
                         </div>
 
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 22rem; border-radius:10px">
+                            <div class="card text-center shadow-lg" style="width: 24rem; border-radius:10px">
                                 <div class="card-body d-flex align-items-center p-4 gap-1">
                                     <div>
                                         <i class="fas fa-graduation-cap" style="font-size: 50px; color:#FF007F"></i>
@@ -1028,7 +1128,7 @@
                         </div>
 
                         <div class="col-md-3 d-flex justify-content-center">
-                            <div class="card text-center shadow-lg" style="width: 22rem; border-radius:10px">
+                            <div class="card text-center shadow-lg" style="width: 24rem; border-radius:10px">
                                 <div class="card-body d-flex align-items-center p-4 gap-2">
                                     <div>
                                         <i class="fas fa-check-circle" style="font-size: 50px; color:#FF007F"></i>
@@ -1059,12 +1159,28 @@
                         const y = Math.random() * 100;
                         const delay = Math.random() * 2;
                         const size = Math.random() * 8 + 2;
+                        const direction = Math.floor(Math.random() * 4);
 
                         star.style.left = `${x}vw`;
                         star.style.top = `${y}vh`;
                         star.style.animationDelay = `${delay}s`;
                         star.style.width = `${size}px`;
                         star.style.height = `${size}px`;
+
+                        switch (direction) {
+                            case 0:
+                                star.classList.add('move-up');
+                                break;
+                            case 1:
+                                star.classList.add('move-down');
+                                break;
+                            case 2:
+                                star.classList.add('move-left');
+                                break;
+                            case 3:
+                                star.classList.add('move-right');
+                                break;
+                        }
 
                         starContainer.appendChild(star);
 
@@ -1076,27 +1192,25 @@
                     setInterval(createStar, 100);
                 });
             </script>
+
         </section>
 
 
         <section class="px-3 px-md-5">
-            <div class="d-flex justify-content-center mt-5 mb-5 gap-3">
+            <div class="d-flex justify-content-evenly mt-5 mb-5 " style="padding: 0px 10rem">
                 <div class="mt-5 ">
-                    <h6 class="text-uppercase text-info fw-bold mb-2 text-start " style="padding-left: 60px">
+                    <h6 class="text-uppercase fw-bold mb-2 text-start " style="padding-left: 60px;color:#FF007F">
                         INSPIRE LONDON COLLEGE
                     </h6>
                     <h2 class="fw-bold mb-3 pt-2 text-start" style="padding-left: 60px">
                         Build Your Skills Online <br> Anytime
                     </h2>
-                    <p class="text-muted mb-3 text-start pt-2  pb-3 fs-5"
+                    <p class="text-black mb-3 text-start pt-2  pb-3 fs-5"
                         style="padding-left: 60px; line-height: 1.8">
-                        Inspire London College is the leading specialist provider of Distance Learning Courses
-                        UK<br>
-                        .Weare distinguished global distance and online learning platforms dedicated to providing
-                        <br>
-                        courses UK, short courses online, CPD training in the UK and worldwide. We deliver a
-                        wide<br>
-                        range of online courses UK with certification from reputable awarding organisations.
+                        Inspire London College is the leading specialist provider of Distance <br>Learning CoursesUK
+                        .Weare distinguished global distance and online<br> learning platforms dedicated to providing
+                        courses UK, short courses online, <br>CPD training in the UK and worldwide. We deliver a
+                        wide range of online courses <br> UK with certification from reputable awarding organisations.
                     </p>
                     </p>
 
@@ -1117,6 +1231,13 @@
         </section>
 
         <section class="p-5" style="background-color: ghostwhite">
+            <div class="text-center pb-3">
+
+            <h2 class="fs-2 p-2 fw-bolder">Our Best Selling Course</h2>
+            <p class="fs-5 pb-2">Take a look at our best-selling online qualification that thousands of learners have availed to make mark rewarding career.
+            </p>
+        </div>
+
             <div class="d-flex justify-content-center align-items-center mb-5 gap-4">
                 <div class="text-center pe-0">
                     <img src="{{ asset('assets/site/healt.webp') }}" alt="Health and Social Care" class="img-fluid"
@@ -1124,7 +1245,7 @@
                 </div>
 
                 <div class="text-start">
-                    <h2 class="pb-3">Level 3 Diploma in Health and Social Care</h2>
+                    <h2 class="pb-3 fw-bolder">Level 3 Diploma in Health and Social Care</h2>
                     <div class="d-flex align-items-center text-start mb-3">
                         <span class="badge me-2 p-2 px-3  fs-6" style="background-color: #C13584">Qualification</span>
                         <span class="text-warning" style="font-size: 1.5rem">★★★★★</span>
@@ -1195,10 +1316,10 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/team.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h3 class="h5 mb-4">HR Management</h3>
-                            <a href="{{ route('hr') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('human') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1215,10 +1336,10 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/project-management.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h3 class="h5 mb-4">Project Management</h3>
-                            <a href="{{ route('pm') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('project') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1235,11 +1356,11 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/down-time.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h4 class="h5 mb-4">Contruction Management</h4>
 
-                            <a href="{{ route('cm') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('construction') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1257,10 +1378,10 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/management.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h4 class="h5 mb-4">Leadership Management</h4>
-                            <a href="{{ route('lm') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('leadership') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1277,10 +1398,10 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/estimate.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h3 class="h5 mb-4">Accounting and Finance</h3>
-                            <a href="{{ route('af') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('accounting') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1297,10 +1418,10 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/user.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h3 class="h5 mb-4">Admin, Secretarial & PA</h3>
-                            <a href="{{ route('as') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('admin') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1317,10 +1438,10 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/leadership.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h4 class="h5 mb-4">Business Management</h4>
-                            <a href="{{ route('bm') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('business') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1337,10 +1458,10 @@
                         <div class="category-card">
                             <div class="icon-circle">
                                 <img src="{{ asset('assets/site/education.png') }}" alt=""
-                                    style="width: 45px; height:auto">
+                                    style="width: 50px; height:auto">
                             </div>
                             <h4 class="h5 mb-4">Education and Training</h4>
-                            <a href="{{ route('et') }}" class="text-decoration-none text-start">
+                            <a href="{{ route('education') }}" class="text-decoration-none text-start">
                                 <button type="button"
                                     class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
                                     style="font-weight: 500">
@@ -1822,7 +1943,7 @@
                 <div class="pt-5 px-4">
                     <h1 class="fw-bolder mb-2" style="font-weight: 900; font-size: 48px">
                         Get an Additional <span style="color: #FF007F">10% Discount <br>On Certificates.</span></h1>
-                    <p class="pt-3 fs-5">Supercharge your career growth with an inclusive 10% discount on all
+                    <p class="pt-3 fs-5 text-secondary">Supercharge your career growth with an inclusive 10% discount on all
                         certificates.<br> Don’t Delay – Enrol Today</p>
                     <button
                         style="background-color: rgb(235, 54, 180); border-radius: 50px; border: 4px solid rgb(147, 227, 247)"
@@ -1852,10 +1973,10 @@
         </section>
 
         <section
-            style="background-image: url({{ asset('assets/site/abc.webp') }}); background-position:center; background-repeat:no-repeat; height: 70vh;">
+            style="background-image: url({{ asset('assets/site/abc.webp') }}); background-position:center; background-repeat:no-repeat; height: 60vh;">
             <div class="text-center pb-5 pt-5">
-                <h4 class="text-white">Flexible & Convenient Learning</h4>
-                <h3 class="h4 mt-3 pb-5 text-white">Experience The Best Online Study Scheme</h3>
+                <h4 class="text-white fs-3">Flexible & Convenient Learning</h4>
+                <h3 class="h4 mt-3 pb-5 text-white fs-3">Experience The Best Online Study Scheme</h3>
             </div>
 
             <div class="container card-container pt-5">
@@ -1942,7 +2063,7 @@
         <section class="mb-5" style="background-color: ghostwhite">
             <h1 class="pb-5 text-center pt-5">Blogs</h1>
             <div class="d-flex justify-content-center gap-4 pb-5">
-                <div class="card" style="width: 22rem; background: transparent;border:none">
+                <div class="card" style="width: 24rem; background: transparent;border:none">
                     <div class="card-img-wrapper" style="overflow: hidden;">
                         <img src="{{ asset('assets/site/cards.webp') }}" class="card-img-top hover-img"
                             alt="...">
@@ -1959,9 +2080,7 @@
                         </a>
                     </div>
                 </div>
-
-
-                <div class="card" style="width: 22rem;background:transparent;border:none">
+                <div class="card" style="width: 24rem;background:transparent;border:none">
                     <div class="card-img-wrapper" style="overflow: hidden;">
                         <img src="{{ asset('assets/site/card2.webp') }}" class="card-img-top hover-img"
                             alt="...">
@@ -1979,7 +2098,7 @@
                     </div>
                 </div>
 
-                <div class="card pb-3" style="width: 22rem;background:transparent;border:none">
+                <div class="card pb-3" style="width: 24rem;background:transparent;border:none">
                     <div class="card-img-wrapper" style="overflow: hidden;">
                         <img src="{{ asset('assets/site/card3.webp') }}" class="card-img-top hover-img"
                             alt="...">
@@ -2003,27 +2122,41 @@
             <div class="container my-5">
                 <div class="row align-items-center">
                     <div class="col-md-6 text-end">
-                        <img src="{{ asset('assets/site/care.webp') }}" alt="" class="img-fluid" width="600px">
+                        <img src="{{ asset('assets/site/care.webp') }}" alt="" class="img-fluid"
+                            width="600px">
                     </div>
 
                     <div class="col-md-6">
-                        <button class="text-white fs-4 p-2 text-start px-4 fw-bolder mb-3" style="background-color: #FF007F; border: none;">Latest News</button>
+                        <button class="text-white fs-4 p-2 text-start px-4 fw-bolder mb-3"
+                            style="background-color: #FF007F; border: none;">Latest News</button>
                         <div class="scrolling-text p-1 " style="overflow: hidden; position: relative; height: 435px;">
                             <div style="position: absolute; animation: scrollUp 10s linear infinite;">
-                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat
+                                <h4>Inspire London College Has Officially Achieved Skills for Care Approval
+                                </h4>
+                                <p class="lead mb-4 ">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet
+                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat
+                                    fugiat
                                     totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat
+                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet
+                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat
+                                    fugiat
                                     totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat
+                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet
+                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat
+                                    fugiat
                                     totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat
+                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet
+                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat
+                                    fugiat
                                     totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet
-                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat
+                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet
+                                    consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat
+                                    fugiat
                                     totam beatae. Officia, ipsa eligendi!</p>
                             </div>
                         </div>
@@ -2045,12 +2178,15 @@
                     const y = Math.random() * 100;
                     const delay = Math.random() * 2;
                     const size = Math.random() * 8 + 2;
+                    const direction = Math.floor(Math.random() * 4); // 0 to 3 for four directions
 
                     star.style.left = `${x}vw`;
                     star.style.top = `${y}vh`;
                     star.style.animationDelay = `${delay}s`;
                     star.style.width = `${size}px`;
                     star.style.height = `${size}px`;
+
+                    star.classList.add(['move-up', 'move-down', 'move-left', 'move-right'][direction]);
 
                     starContainer.appendChild(star);
 
@@ -2062,6 +2198,7 @@
                 setInterval(createStar, 100);
             });
         </script>
+
 
         <footer class="footer-container" style="position: relative; overflow: hidden;">
             <div class="container py-4">
@@ -2083,9 +2220,12 @@
                         <ul class="text-white text-decoration-none px-1" style="list-style: none">
                             <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Fees & Pricing</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Apply For Certificate</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Apply Student Discount Card</a></li>
-                            <li><a href="#" class="text-white text-decoration-none">Apply H&S Care Certificate</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Apply For Certificate</a>
+                            </li>
+                            <li><a href="#" class="text-white text-decoration-none">Apply Student Discount
+                                    Card</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Apply H&S Care
+                                    Certificate</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Request Info</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
                             <li><a href="#" class="text-white text-decoration-none">Jobs</a></li>
@@ -2095,7 +2235,9 @@
                     <div class="col-sm-3">
                         <h3 class="text-white fw-bolder">Popular Courses</h3>
                         <p class="text-white">Level 3 Certificate in Phlebotomy (Part 1) Phlebotomy Course</p>
-                        <button class="px-3 p-2 fs-5 border-0" style="border: 18px solid green">Review as on <img src="{{ asset('assets/site/star-removebg-preview.png') }}" alt="" style="width: 30px;"><span class="fw-bolder">Trustpilot</span></button>
+                        <button class="px-3 p-2 fs-5 border-0" style="border: 18px solid green">Review as on <img
+                                src="{{ asset('assets/site/star-removebg-preview.png') }}" alt=""
+                                style="width: 30px;"><span class="fw-bolder">Trustpilot</span></button>
                     </div>
 
                     <div class="col-sm-3">
@@ -2106,31 +2248,38 @@
                             <li>Phone: +123-456-7890</li>
                         </ul>
                         <div class="d-flex justify-content-start text-start gap-1 mt-4">
-                            <a href="#" class="btn p-0 bg-primary" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
+                            <a href="#" class="btn p-0 bg-primary"
+                                style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
                                 <i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i>
                             </a>
-                            <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #25d366;">
+                            <a href="#" class="btn p-0"
+                                style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #25d366;">
                                 <i class="fab fa-whatsapp" style="font-size: 20px; color: white;"></i>
                             </a>
-                            <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #0077b5;">
+                            <a href="#" class="btn p-0"
+                                style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #0077b5;">
                                 <i class="fab fa-linkedin-in" style="font-size: 20px; color: white;"></i>
                             </a>
-                            <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #1DA1F2;">
+                            <a href="#" class="btn p-0"
+                                style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #1DA1F2;">
                                 <i class="fab fa-twitter" style="font-size: 20px; color: white;"></i>
                             </a>
-                            <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #C13584;">
+                            <a href="#" class="btn p-0"
+                                style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #C13584;">
                                 <i class="fab fa-instagram" style="font-size: 20px; color: white;"></i>
                             </a>
-                            <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: red;">
+                            <a href="#" class="btn p-0"
+                                style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: red;">
                                 <i class="fab fa-youtube" style="font-size: 20px; color: white;"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
-                <div class="text-center text-white mt-4">
-                    <p>© Copyright 2013 – 2024 <span class="text-danger">Inspire London College </span> All Rights Reserved | Powered by <span class="text-danger">Whoopit Agency</span></p>
-                </div>
+            </div>
+            <div class="text-center text-white mt-4 bg-black p-3">
+                <p class="mt-3 text-center fs-5">© Copyright 2013 – 2024 <span style="color: #FF007F">Inspire London
+                        College </span> All Rights Reserved | Powered by <span style="color: #FF007F">Whoopit
+                        Agency</span></p>
             </div>
         </footer>
 
