@@ -5,10 +5,10 @@
 <style>
       <style>
         .form-container {
-            background-color: #7dd3fc;
-            min-height: 100vh;
-            padding: 2rem;
-        }
+    background-color: rgba(125, 211, 252, 0.8);
+    min-height: 100vh;
+    padding: 2rem;
+}
         .form-wrapper {
             background-color: white;
             border-radius: 10px;
@@ -34,25 +34,25 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="pt-5">
-                        <h4 style="line-height: 30px" class="mb-3">
+                        <h4 style="line-height: 30px" class="mb-3 pt-4">
                             <i><span class="fa fa-map-marker"></span> First Floor, Fairlawn High Street<br>
                                 Southall London UB1 3HB United Kingdom</i>
                         </h4>
                     </div>
                     <div class="p-1">
-                        <h4 style="line-height: 30px" class="mb-3">
+                        <h4 style="line-height: 30px" class="mb-3 p-3">
                             <i><span class="fa fa-phone"></span> +44 (0) 20 7101 9543<br>
                                 +44 (0) 20 7193 1649</i>
                         </h4>
                     </div>
                     <div class="p-2">
-                        <h4 class="mb-2">
+                        <h4 class="mb-2 p-3">
                             <i><span class="fa fa-clock-o"></span> 10:00 – 17:00<br>
                                 Monday – Friday</i>
                         </h4>
                     </div>
                     <div class="p-1">
-                        <h4 class="mb-2 ">
+                        <h4 class="mb-2 p-3">
                             <i><span class="fa fa-envelope"></span> Fill Contact form for General<br>
                                 Enquiries/IT Support :</i>
                         </h4>
@@ -72,14 +72,14 @@
 
                             <form>
                                 <div class="row mb-3">
-                                    <div class="col-md-6 mb-3 mb-md-0 ">
+                                    <div class="md-6 mb-3 mb-md-0 ">
                                         <label for="firstName" class="form-label text-white">First Name*</label>
                                         <input type="text" class="form-control" id="firstName" required>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label for="lastName" class="form-label text-white">Last Name*</label>
-                                        <input type="text" class="form-control" id="lastName" required>
-                                    </div>
+                                </div>
+                                <div class="md-6">
+                                    <label for="lastName" class="form-label text-white">Last Name*</label>
+                                    <input type="text" class="form-control" id="lastName" required>
                                 </div>
 
                                 <div class="mb-3">

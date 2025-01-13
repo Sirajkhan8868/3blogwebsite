@@ -104,6 +104,13 @@
                     </div>
                 </div>
             </section>
+
+            <button class="px-5 p-2" style="background-color: #25D366; color: white; border-radius: 8px; display: flex;">
+                <i class="fab fa-whatsapp" style="margin-right: 10px;"></i>
+                WhatsApp
+            </button>
+            <i class="fas fa-phone-alt" style="margin-right: 10px;"></i>
+
         </div>
 
     @endsection
