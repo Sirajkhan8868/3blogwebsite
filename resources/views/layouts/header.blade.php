@@ -64,7 +64,7 @@
 
         .category-section {
             display: none;
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             padding: 1rem 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
@@ -714,7 +714,7 @@
                     <p class="text-white">Level 3 Certificate in Phlebotomy (Part 1) Phlebotomy Course</p>
                     <button class="px-3 p-2 fs-5 border-0" style="border: 18px solid green">Review as on <img
                             src="{{ asset('assets/site/star-removebg-preview.png') }}" alt=""
-                            style="width: 30px;"><span class="fw-bolder">Trustpilot</span></button>
+                            style="width: 30px;height:auto"><span class="fw-bolder">Trustpilot</span></button>
                 </div>
 
                 <div class="col-sm-3">

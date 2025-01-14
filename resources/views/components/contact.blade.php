@@ -65,49 +65,49 @@
                     </div>
                 </div>
                 <div class="col-md-6 mt-5">
-                    <div class="form-container p-3" style="background-color: #7dd3fc">
-                        <div class="form-wrapper">
-                            <h2 class="mb-4 text-white">Contact us</h2>
-                            <p class="text-muted mb-4 text-white fs-3">We look forward to hearing from you.</p>
+                    <div class="form-container p-3" style="background-color: #a1d7f0;border-radius: 20px">
+                        <div class="form-wrapper p-3">
+                            <h2 class="mb-2 text-black">Contact us</h2>
+                            <p class="text-muted mb-4 text-white fs-6 fs-bolder">We look forward to hearing from you.</p>
 
                             <form>
                                 <div class="row mb-3">
-                                    <div class="md-6 mb-3 mb-md-0 ">
-                                        <label for="firstName" class="form-label text-white">First Name*</label>
-                                        <input type="text" class="form-control" id="firstName" required>
+                                    <div class="md-6 mb-3 mb-md-0">
+                                        <label for="firstName" class="form-label text-black">First Name*</label>
+                                        <input type="text" style="border: 2px solid black;padding:12px 0px" class="form-control" id="firstName" required>
                                     </div>
                                 </div>
                                 <div class="md-6">
-                                    <label for="lastName" class="form-label text-white">Last Name*</label>
-                                    <input type="text" class="form-control" id="lastName" required>
+                                    <label for="lastName" class="form-label text-black">Last Name*</label>
+                                    <input type="text px-2" class="form-control" style="border: 2px solid black;padding:12px 0px" id="lastName" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="email" class="form-label text-white">Email*</label>
-                                    <input type="email" class="form-control" id="email" required>
+                                    <label for="email" class="form-label text-black">Email*</label>
+                                    <input type="email" class="form-control" style="border: 2px solid black;padding:12px 0px" id="email" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="phone" class="form-label text-white">Phone*</label>
-                                    <input type="tel" class="form-control" id="phone" required>
+                                    <label for="phone" class="form-label text-black">Phone*</label>
+                                    <input type="tel" class="form-control" style="border: 2px solid black;padding:12px 0px" id="phone" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="subject" class="form-label text-white">Subject*</label>
-                                    <input type="text" class="form-control" id="subject" required>
+                                    <label for="subject" class="form-label text-black">Subject*</label>
+                                    <input type="text" class="form-control" style="border: 2px solid black;padding:12px 0px" id="subject" required>
                                 </div>
 
                                 <div class="mb-3">
-                                    <label for="message" class="form-label text-white">Your message</label>
-                                    <textarea class="form-control" id="message" rows="4"></textarea>
+                                    <label for="message" class="form-label text-black">Your message</label>
+                                    <textarea class="form-control" style="border: 2px solid black;padding:12px 0px" id="message" rows="4"></textarea>
                                 </div>
 
                                 <div class="mb-3">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
-                                        <label class="form-check-label text-white" for="privacyPolicy">
-                                            I agree to the <a href="#" class="text-light">Privacy Policy</a> and
-                                            <a href="#" class="text-light">Terms & Conditions</a>
+                                        <label class="form-check-label text-black" for="privacyPolicy">
+                                            I agree to the <a href="#" class="text-danger">Privacy Policy</a> and
+                                            <a href="#" class="text-danger">Terms & Conditions</a>
                                         </label>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
                                 <div class="mb-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="emailOffers">
-                                        <label class="form-check-label text-white" for="emailOffers">
+                                        <label class="form-check-label text-black" for="emailOffers">
                                             I would like to receive further email offers
                                         </label>
                                     </div>

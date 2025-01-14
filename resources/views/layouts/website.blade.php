@@ -206,7 +206,7 @@
 
         .category-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
 
         .category-icon {
@@ -336,9 +336,9 @@
         }
 
         .category-card {
-            background: #f8f9fa;
+            background: #faf8f8;
             border-radius: 8px;
-            padding: 2rem;
+            padding: 3rem 2rem;
             text-align: center;
             transition: transform 0.2s;
         }
@@ -685,7 +685,6 @@
                                 style="border-radius: 0 50px 50px 0;">Search</button>
                         </div>
 
-
                     </form>
 
                 </div>
@@ -751,12 +750,12 @@
                 </div>
             </nav>
 
-            <div class="category-section" id="categorySection">
+            <div class="category-section bg-white" id="categorySection">
                 <div class="container-fluid d-flex">
                     <div class="row flex-grow-1">
                         <div class="col">
                             <div class="category-card">
-                                <img src="{{ asset('assets/site/accounting-finance.jpg') }}"
+                                <img src="{{ route('contact') }}"
                                     alt="Accounting & Finance" class="category-image">
                                 <div>Accounting & Finance</div>
                             </div>
@@ -823,33 +822,41 @@
                     const categories = {
                         'Endorsed Courses': [{
                                 name: 'Accounting & Finance',
-                                icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/accounting'
                             },
                             {
 
                                 name: 'Admin & Secretarial',
-                                icon: '<i class="fas fa-user-cog icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-user-cog icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/admin'
+
                             },
                             {
                                 name: 'Business Management',
-                                icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/business'
                             },
                             {
                                 name: 'HR Management',
-                                icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/human'
                             },
                             {
                                 name: 'Leadership & Management',
-                                icon: '<i class="fas fa-user-check icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-user-check icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/leadership'
                             },
                             {
                                 name: 'Project Management',
-                                icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: 'project'
                             }
                         ],
                         'CPD Courses': [{
-                                name: 'courses',
-                                icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                name: 'Accounting $ Finance',
+                                icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/accounting'
                             },
                             {
                                 name: 'Beauty Therapy',
@@ -861,7 +868,8 @@
                             },
                             {
                                 name: 'HR Management',
-                                icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/human'
                             },
                             {
                                 name: 'Supply Chain Management',
@@ -874,11 +882,14 @@
                         ],
                         'Phlebotomy': [{
                                 name: 'Level 3 Certificate in Phlebotomy (Part 2 $ 2)',
-                                icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/bookssnow'
                             },
                             {
                                 name: 'Level 3 Certificate in Phlebotomy (Part 2)',
-                                icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/bookssnow'
+
                             },
                             {
                                 name: 'Phlebotomist Placement Programme',
@@ -891,7 +902,8 @@
                         ],
                         'Ofqual Qualifications': [{
                                 name: 'Business Management',
-                                icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/business'
                             },
                             {
                                 name: 'Cyber Security',
@@ -899,7 +911,8 @@
                             },
                             {
                                 name: 'Education & Training',
-                                icon: '<i class="fas fa-book-open icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-book-open icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/education'
                             },
                             {
                                 name: 'Health & Safety',
@@ -926,39 +939,45 @@
                         ],
                         'Care Courses': [{
                                 name: 'Mandatory Courses',
-                                icon: '<i class="far fa-newspaper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="far fa-newspaper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/contact'
+
                             },
 
                             {
                                 name: 'Additional Courses',
-                                icon: '<i class="far fa-list-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="far fa-list-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
                             }
                         ]
                     }
 
                     function loadCategories(categoryName) {
-                        const row = categorySection.querySelector('.row');
-                        row.innerHTML = '';
+    const row = categorySection.querySelector('.row');
+    row.innerHTML = '';
 
-                        const catList = categories[categoryName] || [];
-                        catList.forEach(cat => {
-                            row.innerHTML += `
-                                <div class="col">
-                                    <div class="category-card">
-                                        <i class="category-icon">${cat.icon}</i>
-                                        <div>${cat.name}</div>
-                                    </div>
-                                </div>`;
-                        });
+    const catList = categories[categoryName] || [];
+    catList.forEach(cat => {
+        row.innerHTML += `
+            <div class="col">
+                <div class="category-card">
+                    <a href="${cat.route || '#'}" class="category-link" style="text-decoration:none;color:black ;font-size:16px">
+                        <i class="category-icon">${cat.icon}</i>
+                        <div>${cat.name}</div>
+                    </a>
+                </div>
+            </div>`;
+    });
 
-                        row.innerHTML += `
-                            <div class="col">
-                                <div class="category-card">
-                                    <i class="category-icon" style="font-size: 40px; font:weight:bold">≡</i>
-                                    <div>All Categories</div>
-                                </div>
-                            </div>`;
-                    }
+    row.innerHTML += `
+       <div class="col">
+    <div class="category-card">
+        <a href="/all-categories" class="d-block text-decoration-none">
+            <i class="category-icon" style="font-size: 40px; font-weight: bold;">≡</i>
+            <div class="text-dark">All Categories</div>
+        </a>
+    </div>
+</div>`;
+}
 
                     function showCategorySection(categoryName) {
                         loadCategories(categoryName);
@@ -1482,13 +1501,14 @@
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center mb-5 w-100">
                     <h1 class="h2 mb-0 flex-grow-1 text-center">Popular Course</h1>
-                    <a href="{{ route('view') }}"
-                        style="padding: 10px 20px; border-radius: 50px; color: white; text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; justify-content: center;"
-                        class="explore-btn view-all-btn ms-auto px-4 fw-bolder">
-                        View All
-                        <i id="arrowIcon" class="fa-solid fa-arrow-right fw-bolder px-1 "
-                            style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px; margin-left: 8px; font-size:13px">
-                        </i>
+                    <a href="{{ route('view') }}" class="text-decoration-none text-start">
+                        <button type="button"
+                            class="btn btn-info border-0 text-white  px-4 py-2 rounded-pill custom-hover"
+                            style="font-weight: 500">
+                            View All
+                            <i class="fa-solid fa-arrow-right ms-2"
+                                style="border-radius: 50%; background-color: #fbfcfd; color: rgb(65, 241, 247); padding: 2px 2px; font-size: 14px;"></i>
+                        </button>
                     </a>
                 </div>
                 <div class="row g-2 mb-2">

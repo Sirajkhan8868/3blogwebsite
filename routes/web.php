@@ -35,6 +35,38 @@ Route::get('/admin', [BlogController::class, 'admin'])->name('admin');
 Route::get('/education', [BlogController::class, 'education'])->name('education');
 Route::get('/business', [BlogController::class, 'business'])->name('business');
 
+Route::get('/beauty', [BlogController::class, 'beauty'])->name('beauty');
+Route::get('/childphychology', [BlogController::class, 'childphychology'])->name('childphychology');
+Route::get('/supply', [BlogController::class, 'supply'])->name('supply');
+Route::get('/workplace', [BlogController::class, 'workplace'])->name('workplace');
+
+Route::get('/phlebotmist', [BlogController::class, 'phlebotmist'])->name('phlebotmist');
+Route::get('/level', [BlogController::class, 'level'])->name('level');
+
+Route::get('/cyber', [BlogController::class, 'cyber'])->name('cyber');
+Route::get('/health', [BlogController::class, 'health'])->name('health');
+Route::get('/social', [BlogController::class, 'social'])->name('socail');
+
+
+
+Route::get('/additional', [BlogController::class, 'additional'])->name('additional');
+Route::get('/mandatory', [BlogController::class, 'mandatory'])->name('mandatory');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

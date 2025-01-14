@@ -7,7 +7,7 @@
     .course-card {
             border: 2px solid #ff69b4;
             border-radius: 15px;
-            padding: 15px;
+            padding: 0px 15px;
             margin-bottom: 15px;
             background: white;
             transition: transform 0.2s;
@@ -62,11 +62,50 @@
             text-align: center;
             margin-right: 10px;
         }
+        .form-select {
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+            padding: 0.5rem;
+            width: 100%;
+            margin-bottom: 1rem;
+            background-color: white;
+        }
+
+        .form-select:focus {
+            border-color: #7FE1EA;
+            box-shadow: 0 0 0 0.25rem rgba(127, 225, 234, 0.25);
+        }
+
+        .form-control:focus {
+            border-color: #7FE1EA;
+            box-shadow: 0 0 0 0.25rem rgba(127, 225, 234, 0.25);
+        }
+
+        .btn-info {
+            background-color: #7FE1EA;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .btn-info:hover {
+            background-color: #6CD1DA;
+            color: white;
+        }
+
+        .text-info {
+            color: #7FE1EA !important;
+        }
+
+        .quantity-input {
+            width: 70px !important;
+        }
 </style>
 
 
 @section('content')
-    <div style="background-color: ghostwhite; " class="p-5">
+    <div style="background-color: ghostwhite; border-bottom: 2px solid red" class="p-5">
         <section>
             <div class="text-sec d-flex">
                 <div class="flex-shrink-0" style="max-width: 50%; padding-right: 20px;">
@@ -79,39 +118,39 @@
                     <h3 class="px-5">Level 3 Certificate in Phlebotomy (Part 1)</h3>
                     <div class="row g-3 px-5">
                         <div class="col-md-4">
-                            <div class="card border-dotted p-4 text-center" style="background-color: #ffffff;">
+                            <div class="card border-dotted p-4 text-center" style="background-color: #ffffff; border:1px solid #f8f7f7; border-radius: 0px 13px 13px 13px">
                                 <h6>COURSE LEVEL</h6>
-                                <h4 class="text-primary">Level 3</h4>
+                                <h4 class="text-primary p-3">Level 3</h4>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #000;">
-                                <h6>COURSE TYPE</h6>
-                                <h4 class="text-primary">CPD Accredited Course</h4>
+                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 0px 13px 13px 13px">
+                                <h6 class="pb-3">COURSE TYPE</h6>
+                                <h4 class="text-primary p-2">CPD Accredited Course</h4>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #000;">
-                                <h6 class="fw-bolder">AWARDING BODY</h6>
-                                <h4 class="text-primary fs-3">Step Ahead CPD </h4>
+                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 0px 13px 13px 13px">
+                                <h6>AWARDING BODY</h6>
+                                <h4 class="text-primary fs-3 p-3">Step Ahead CPD </h4>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card border-dotted p-4 text-center" style="background-color: #ffffff;">
+                            <div class="card border-dotted p-4 text-center" style="background-color: #ffffff; border:1px solid #f8f7f7;  border-radius: 0px 13px 13px 13px">
                                 <h6>DURATION</h6>
-                                <h3 class="text-primary">1 Day (10 am – 5 pm)</h3>
+                                <h4 class="text-primary p-3">1 Day (10 am – 5 pm)</h4>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #000;">
+                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 0px 13px 13px 13px">
                                 <h6>STUDY METHOD</h6>
-                                <h3 class="text-primary">Classroom traning</h3>
+                                <h3 class="text-primary p-3">Classroom traning</h3>
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="card text-center p-4" style="background-color: #ffffff; border: 1px dotted #000;">
+                            <div class="card text-center p-4" style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 13px 13px 0px 13px">
                                 <h6>CERTIFICATE</h6>
-                                <h3 class="text-primary">Certificate Included</h3>
+                                <h4 class="text-primary p-3">Certificate Included</h4>
                             </div>
                         </div>
                     </div>
@@ -122,42 +161,42 @@
                 <div class="col-md-6">
                     <div class="row text-center">
                         <div class="col-md-5">
-                            <div class="course-card">
+                            <div class="course-card" style="background: transparent">
                                 <h6>11 January 2025 (Saturday) - Special Offer £80</h6>
                                 <p class="mb-1">Location: <a href="#" class="location">Southall London UB1 3HB</a></p>
                                 <p class="fully-booked mb-0">Fully Booked</p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="course-card">
-                                <h6>25 January 2025 (Saturday) - Special Offer £80</h6>
+                            <div class="course-card" style="background: transparent">
+                                <h6 class="fs-6">25 January 2025 (Saturday) - Special Offer £80</h6>
                                 <p class="mb-1">Location: <a href="#" class="location">Southall London UB1 3HB</a></p>
                                 <p class="seats-available mb-0">10 Seats Available</p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="course-card">
-                                <h6>08 February 2025 (Saturday) - Special Offer £80</h6>
+                            <div class="course-card" style="background: transparent">
+                                <h6>08 February 2025 (Saturday) - Special  £80</h6>
                                 <p class="mb-1">Location: <a href="#" class="location">Southall London UB1 3HB</a></p>
                                 <p class="seats-available mb-0">10 Seats Available</p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="course-card">
-                                <h6>22 February 2025 (Saturday) - Special Offer £80</h6>
+                            <div class="course-card" style="background: transparent">
+                                <h6>22 February 2025 (Saturday) - Special  £80</h6>
                                 <p class="mb-1">Location: <a href="#" class="location">Southall London UB1 3HB</a></p>
                                 <p class="seats-available mb-0">12 Seats Available</p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="course-card">
+                            <div class="course-card" style="background: transparent">
                                 <h6>08 March 2025 (Saturday) - Special Offer £80</h6>
                                 <p class="mb-1">Location: <a href="#" class="location">Southall London UB1 3HB</a></p>
                                 <p class="seats-available mb-0">12 Seats Available</p>
                             </div>
                         </div>
                         <div class="col-md-5">
-                            <div class="course-card">
+                            <div class="course-card" style="background: transparent">
                                 <h6>22 March 2025 (Saturday) - Special Offer £80</h6>
                                 <p class="mb-1">Location: <a href="#" class="location">Southall London UB1 3HB</a></p>
                                 <p class="seats-available mb-0">12 Seats Available</p>
@@ -169,8 +208,8 @@
                 <div class="col-lg-6">
                     <div class="selection-panel" >
                         <div class="form-group mb-3 p-5 d-flex justify-content-between text-danger align-items-center" >
-                            <label for="courseDate" class="form-label me-3">Select Course Date</label>
-                            <select class="form-select text-danger" id="courseDate" style="width: auto;">
+                            <label for="courseDate" class="form-label me-3 fs-5 " style="font-weight: 500">Select Course Date</label>
+                            <select class="form-select text-danger w-75" id="courseDate" style="background-color: transparent; border:none">
                                 <option selected>Choose an option</option>
                                 <option value="25-jan">25 January 2025</option>
                                 <option value="08-feb">08 February 2025</option>
@@ -178,29 +217,31 @@
                                 <option value="08-mar">08 March 2025</option>
                                 <option value="22-mar">22 March 2025</option>
                             </select>
+
                         </div>
 
-                        <div class="d-flex align-items-center px-5">
-                            <input type="number" class="form-control quantity-input p-2 mt-3 fs-5" value="1" min="1" max="10" id="quantity"
-                                style="background-color: transparent; width: 90px; text-align: center; border-radius: 20px 0px 0px 20px;border:2x solid #f51ab3">
-                            <button class="add-basket-btn ms-2" onclick="addToBasket()" style="width: 100%;">Add to basket</button>
+                        <div class="d-flex align-items-center px-5 pb-4">
+                            <input type="number" class="form-control quantity-input p-2 mt-3 fs-4 fw-bolder text-danger" value="1" min="1" max="10" id="quantity"
+                                style="background-color: transparent; width: 90px; text-align: center; border-radius: 20px 0px 0px 20px;border:2px solid #f51ab3">
+                            <button class="add-basket-btn ms-2 fs-5" onclick="addToBasket()" style="width: 100%">Add to basket</button>
                         </div>
                     </div>
                 </div>
 
             </div>
+
             <div class="text-center p-5">
                 <h4 class="text-primary">Part 2: Advanced Practical Session/Live Blood Session</h4>
-                <h6 class="fw-bolder">Phlebotomy Training Cost</h6>
-                <p class="text-danger fw-bolder">Get it Now £270 (Offer For Limited Time Only for GP Clinic)
+                <h6 class="fw-bolder fs-4">Phlebotomy Training Cost</h6>
+                <p class="text-danger fw-bolder fs-4">Get it Now £270 (Offer For Limited Time Only for GP Clinic)
                 </p>
                 <h1><a href="">Book Now</a></h1>
 
             </div>
-        </div>
+         </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+         <script>
             function addToBasket() {
                 const courseDate = document.getElementById('courseDate').value;
                 const quantity = document.getElementById('quantity').value;
@@ -212,7 +253,7 @@
 
                 alert(`Added ${quantity} seat(s) for ${courseDate} to basket`);
             }
-        </script>
+         </script>
 
         </section>
 
@@ -221,7 +262,7 @@
     <section style="overflow-x: hidden;">
         <div class="row p-5 mt-5">
             <div class="col-md-4 text-left p-4"
-                style="width: 100%; max-width: 500px; height: 600px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); border-radius: 0px 30px 30px 0px; line-height: 50px; border: none; background-color:#eaf1f7">
+                style="width: 100%; max-width: 500px; height: 600px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); border-radius: 0px 30px 30px 0px; line-height: 50px; border: none; background-color:#eaf1f7; position:relative; top:0px;left:0px">
                 <h6 class="text-end p-4 fs-4" style="color: #f06ac8">COURSE OVERVIEW</h6>
                 <h6 class="text-end p-4 fs-4" style="color: #64a1da">COURSE OUTLINE</h6>
                 <h6 class="text-end p-4 fs-4" style="color: #64a1da">REQUIREMENTS</h6>
@@ -307,9 +348,38 @@
         </div>
     </section>
 
+<section>
+
+</section>
 
 
     <section class="container">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            document.querySelectorAll('.play-button').forEach(button => {
+                button.addEventListener('click', function() {
+                    const videoId = this.getAttribute('data-video');
+                    const container = this.parentElement;
+                    const iframe = document.createElement('iframe');
+
+                    iframe.setAttribute('src', `https://www.youtube.com/embed/${videoId}?autoplay=1`);
+                    iframe.setAttribute('frameborder', '0');
+                    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+                    iframe.setAttribute('allowfullscreen', '');
+                    iframe.style.position = 'absolute';
+                    iframe.style.top = '0';
+                    iframe.style.left = '0';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+
+                    container.innerHTML = '';
+                    container.appendChild(iframe);
+                });
+            });
+        </script>
         <div style="background-color: #f06ac8; padding: 20px; border-radius: 30px" class="m-4">
             <p>Hello</p>
             <p class="fs-5 ">
@@ -437,5 +507,91 @@
             </p>
         </div>
 
+    </section>
+    <section class="mb-4" style="background-color: #f8f7f7">
+
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-start g-4">
+                <div class="col-12 col-md-6" style="padding-left: 15rem">
+                    <h2 class="mb-4 fw-bold pt-5 fs-1">Course Price</h2>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="text-decoration-line-through text-muted fs-2">£199.00</span>
+                        <span class="fs-2 fw-bold text-danger">£80.00</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6" style="border-radius:20px; background-color:hsl(120, 12%, 94%)">
+                    <div class=" p-4 rounded" style="margin: 20px 20px;">
+                        <div class="mb-3 p-4" style="background-color: #e8f0f0;">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <label class="form-label text-info fs-5 fw-bolder">Select Course Date</label>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <select class="form-select fs-5" id="courseDate" style="color: #7FE1EA; background-color:transparent;border:none">
+                                        <option value="" style="background-color: #ffffff;">Choose an option</option>
+                                        <option value="1" style="background-color: #fff;">January 2025</option>
+                                        <option value="2" style="background-color: #fff;">February 2025</option>
+                                        <option value="3" style="background-color: #fff;">March 2025</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="d-flex gap-2 align-items-stretch
+                        ">
+                            <input
+                                type="number"
+                                class="form-control quantity-input fw-bolder"
+                                id="quantity"
+                                min="1"
+                                value="1"
+                                style="border-radius: 20px 0px 0px 20px; padding:12px 0px; border: 2px solid rgb(118, 222, 248);color:#7FE1EA"
+                            >
+                            <button
+                                class="btn btn-info flex-grow-1 fs-4"
+                                id="addToBasket" style="border-radius: 0px 20px 20px 0px;color:white;font-weight:bolder; word-spacing:2px"
+                            >
+                                Add to basket
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const courseDate = document.getElementById('courseDate');
+                const quantity = document.getElementById('quantity');
+                const addToBasket = document.getElementById('addToBasket');
+
+                quantity.addEventListener('change', function() {
+                    if (this.value < 1) {
+                        this.value = 1;
+                    }
+                });
+
+                addToBasket.addEventListener('click', function() {
+                    if (!courseDate.value) {
+                        alert('Please select a course date');
+                        return;
+                    }
+
+                    const order = {
+                        date: courseDate.options[courseDate.selectedIndex].text,
+                        quantity: parseInt(quantity.value),
+                        price: 80.00
+                    };
+
+                    console.log('Order details:', order);
+                    alert('Added to basket: ' + order.quantity + ' course(s) for ' + order.date);
+                });
+            });
+        </script>
     </section>
 @endsection

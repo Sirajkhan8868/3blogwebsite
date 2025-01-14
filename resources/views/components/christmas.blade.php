@@ -102,6 +102,8 @@
 
         .faq-question {
             width: 100%;
+            font-weight: 600;
+            font-size: 20px;
             padding: 1rem;
             text-align: left;
             background: none;
@@ -116,6 +118,7 @@
         .faq-answer {
             display: none;
             padding: 1rem;
+            font-size: 20px;
             background-color: #f8f9fa;
             border-top: 1px solid #dee2e6;
             background-color: white;
@@ -126,15 +129,21 @@
         }
 
         .plus-icon {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-right: 0.5rem;
-            transition: transform 0.3s;
+     font-size: 1.5rem;
+     font-weight: bold;
+     margin-right: 0.5rem;
+     transition: transform 0.3s;
+     border: 3px solid black;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     width: 20px;
+     height: 28px;
         }
 
-        .plus-icon.active {
+        /* .plus-icon.active {
             transform: rotate(45deg);
-        }
+        } */
 
         .feature-card {
             border: 1px solid #e0e0e0;
@@ -367,13 +376,13 @@
                     <div class="row px-5 g-3">
                         <div class="col-sm-4 p-2 text-center">
                             <div
-                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: transparent;">
+                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: #ffffff;">
                                 <img src="{{ asset('assets/site/Business-Skills.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
                                 <div class="px-3 mt-3">
-                                    <h3>Business Skills</h3>
-                                    <p class="fw-bolder">Bundle of 6 – Get 30% OFF</p>
-                                    <button class="px-4 py-2 border-0 text-white custom-hover-red me-2 fw-bolder"
+                                    <h3 class="fs-3">Business Skills</h3>
+                                    <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
+                                    <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
                                         style="background-color: rgb(3, 63, 3); border-radius: 8px;">
                                         Explore Courses
                                     </button>
@@ -383,13 +392,13 @@
 
                         <div class="col-sm-4 p-2 text-center">
                             <div
-                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: transparent;">
+                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: #ffffff;">
                                 <img src="{{ asset('assets/site/Health-Safety.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
                                 <div class="px-3 mt-3">
                                     <h3>Health & Safety</h3>
-                                    <p class="fw-bolder">Bundle of 6 – Get 30% OFF</p>
-                                    <button class="px-4 py-2 border-0 text-white custom-hover-red me-2 fw-bolder"
+                                    <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
+                                    <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
                                         style="background-color: rgb(3, 63, 3); border-radius: 8px;">
                                         Explore Courses
                                     </button>
@@ -399,13 +408,13 @@
 
                         <div class="col-sm-4 p-2 text-center">
                             <div
-                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: transparent;">
+                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: #ffffff;">
                                 <img src="{{ asset('assets/site/Health-and-social-care-4.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
                                 <div class="px-3 mt-3">
                                     <h3>Health & Social Care</h3>
-                                    <p class="fw-bolder">Bundle of 6 – Get 30% OFF</p>
-                                    <button class="px-4 py-2 border-0 text-white custom-hover-red me-2 fw-bolder"
+                                    <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
+                                    <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
                                         style="background-color: rgb(3, 63, 3); border-radius: 8px;">
                                         Explore Courses
                                     </button>
@@ -460,13 +469,13 @@
                                 </div>
                                 <img src="https://www.google.com/favicon.ico" alt="Google" class="google-icon">
                             </div>
-                            <div class="star-rating mb-2">
+                            <div class="star-rating mb-2 fs-3 fw-bolder">
                                 ★★★★★
                             </div>
                             <p class="review-text mb-2">My decision to enrol with Inspire London College is one of the
                                 best in my quest of learning, it has been mind-blowing, I now understand service users
                                 better and I...</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more fs-5">Read more</a>
                         </div>
                     </div>
 
@@ -482,12 +491,12 @@
                                 </div>
                                 <img src="https://www.google.com/favicon.ico" alt="Google" class="google-icon">
                             </div>
-                            <div class="star-rating mb-2">
+                            <div class="star-rating mb-2 fs-3 fw-bolder">
                                 ★★★★★
                             </div>
                             <p class="review-text mb-2">I recently completed the Level 5 Diploma in Health and Social
                                 Care, I am delighted to share my positive experience with others...</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more fs-5">Read more</a>
                         </div>
                     </div>
 
@@ -503,13 +512,13 @@
                                 </div>
                                 <img src="https://www.google.com/favicon.ico" alt="Google" class="google-icon">
                             </div>
-                            <div class="star-rating mb-2">
+                            <div class="star-rating mb-2 fs-3 fw-bolder">
                                 ★★★★★
                             </div>
                             <p class="review-text mb-2">I have taken the Business Management, Risk Management and
                                 Project Management Level 4 Diploma and on each of these courses the response I have
                                 received fro...</p>
-                            <a href="#" class="read-more">Read more</a>
+                            <a href="#" class="read-more fs-5">Read more</a>
                         </div>
                     </div>
                 </div>
