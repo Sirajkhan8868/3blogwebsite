@@ -13,7 +13,7 @@
     </section>
 
     <div class="" style="background-color: ghostwhite;">
-        <section>
+        <section style="overflow: hidden">
             <div class="card g-3" style="border: none; background-color: transparent;">
                 <div class="card g-3 mb-4" style="border: none; background-color: transparent;">
                     <div class="row px-5 g-3 pt-4">
@@ -26,7 +26,7 @@
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
                                     <button
                                         class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                         Add to Basket
                                     </button>
                                 </div>
@@ -43,7 +43,7 @@
 
                                     <button
                                         class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                         Add to Basket
                                     </button>
                                 </div>
@@ -59,7 +59,7 @@
 
                                     <button
                                         class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                         Add to Basket
                                     </button>
                                 </div>
@@ -75,7 +75,7 @@
 
                                     <button
                                         class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                         Add to Basket
                                     </button>
                                 </div>
@@ -91,30 +91,29 @@
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Add to Basket
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Add to Basket
+                                </button>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-sm-3 p-2 text-center">
+                        <div class="col-sm-3  text-center">
                             <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
-                                <img src="{{ asset('assets/site/b6.jpg') }}" alt=""
+                                <img src="{{ asset('assets/site/b7.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
                                 <div class="px-3 mt-3">
-                                    <p>Level 6 in Busniess Management </p>
+                                    <p>Level 2 in Busniess Management</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Add to Basket
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Add to Basket
+                                </button>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-sm-3  text-center">
                             <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
@@ -125,10 +124,10 @@
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Add to Basket
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Add to Basket
+                                </button>
                                 </div>
                             </div>
                         </div>

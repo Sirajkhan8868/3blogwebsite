@@ -21,7 +21,7 @@
     </section>
 
     <div class="" style="background-color: ghostwhite;">
-        <section>
+        <section style="overflow: hidden">
             <div class="card g-3" style="border: none; background-color: transparent;">
                 <div class="card g-3 mb-4" style="border: none; background-color: transparent;">
                     <h1 class="px-5 p-3">Leadership and Management Courses
@@ -36,10 +36,10 @@
                                     <p class="fw-bolder">Level 7 Diploma in Learning and Development</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Add to Basket
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Add to Basket
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
 
                                     <button
                                         class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                         Add to Basket
                                     </button>
                                 </div>

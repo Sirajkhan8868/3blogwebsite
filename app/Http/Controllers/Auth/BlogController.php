@@ -65,4 +65,44 @@ class BlogController extends Controller
     {
         return view('components.accounting');
     }
+    public function beauty()
+    {
+        return view('components.beauty');
+    }
+    public function childphychology()
+    {
+        return view('components.childphychology');
+    }
+    public function supply()
+    {
+        return view('components.supply');
+    }
+    public function workplace()
+    {
+        return view('components.workplace');
+    }
+    public function level()
+    {
+        return view('components.level');
+    }
+    public function cyber()
+    {
+        return view('components.cyber');
+    }
+    public function health()
+    {
+        return view('components.health');
+    }
+    public function social()
+    {
+        return view('components.social');
+    }
+    public function additional()
+    {
+        return view('components.additional');
+    }
+    public function mandatory()
+    {
+        return view('components.mandatory');
+    }
 }

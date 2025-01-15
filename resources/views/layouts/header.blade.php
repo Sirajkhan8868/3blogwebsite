@@ -459,61 +459,80 @@
                 const categories = {
                     'Endorsed Courses': [{
                             name: 'Accounting & Finance',
-                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/accounting'
                         },
                         {
+
                             name: 'Admin & Secretarial',
-                            icon: '<i class="fas fa-user-cog icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-user-cog icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/admin'
+
                         },
                         {
                             name: 'Business Management',
-                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/business'
                         },
                         {
                             name: 'HR Management',
-                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/human'
                         },
                         {
                             name: 'Leadership & Management',
-                            icon: '<i class="fas fa-user-check icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-user-check icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/leadership'
                         },
                         {
                             name: 'Project Management',
-                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: 'project'
                         }
                     ],
                     'CPD Courses': [{
-                            name: 'courses',
-                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            name: 'Accounting $ Finance',
+                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/accounting'
                         },
                         {
                             name: 'Beauty Therapy',
-                            icon: '<i class="fas fa-leaf icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-leaf icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/beauty'
+
                         },
                         {
                             name: 'ChildPsychology',
-                            icon: '<i class="fas fa-child icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-child icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/childphychology'
+
                         },
                         {
                             name: 'HR Management',
-                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/human'
                         },
                         {
                             name: 'Supply Chain Management',
-                            icon: '<i class="fas fa-link icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-link icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/supply'
                         },
                         {
                             name: 'Workplace Management',
-                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/workplace'
                         }
                     ],
                     'Phlebotomy': [{
                             name: 'Level 3 Certificate in Phlebotomy (Part 2 $ 2)',
-                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/bookssnow'
                         },
                         {
                             name: 'Level 3 Certificate in Phlebotomy (Part 2)',
-                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/bookssnow'
+
                         },
                         {
                             name: 'Phlebotomist Placement Programme',
@@ -521,28 +540,34 @@
                         },
                         {
                             name: 'Level Bloods Practical Session',
-                            icon: '<i class="fas fa-eye-dropper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-eye-dropper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/level'
                         }
                     ],
                     'Ofqual Qualifications': [{
                             name: 'Business Management',
-                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/business'
                         },
                         {
                             name: 'Cyber Security',
-                            icon: '<i class="fas fa-unlock-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-unlock-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/cyber'
                         },
                         {
                             name: 'Education & Training',
-                            icon: '<i class="fas fa-book-open icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-book-open icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/education'
                         },
                         {
                             name: 'Health & Safety',
-                            icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/health'
                         },
                         {
                             name: 'Health & Social Care',
-                            icon: '<i class="fas fa-hand-holding-medical icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="fas fa-hand-holding-medical icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/social'
                         },
 
                     ],
@@ -561,39 +586,47 @@
                     ],
                     'Care Courses': [{
                             name: 'Mandatory Courses',
-                            icon: '<i class="far fa-newspaper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="far fa-newspaper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/mandatory'
+
                         },
 
                         {
                             name: 'Additional Courses',
-                            icon: '<i class="far fa-list-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: '<i class="far fa-list-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            route: '/additional'
+
                         }
                     ]
                 }
 
                 function loadCategories(categoryName) {
-                    const row = categorySection.querySelector('.row');
-                    row.innerHTML = '';
+                     const row = categorySection.querySelector('.row');
+                   row.innerHTML = '';
 
-                    const catList = categories[categoryName] || [];
-                    catList.forEach(cat => {
+                 const catList = categories[categoryName] || [];
+                      catList.forEach(cat => {
+                 row.innerHTML += `
+                 <div class="col">
+                    <div class="category-card">
+                <a href="${cat.route || '#'}" class="category-link" style="text-decoration:none;color:black ;font-size:16px">
+                    <i class="category-icon">${cat.icon}</i>
+                    <div>${cat.name}</div>
+                </a>
+                      </div>
+                     </div>`;
+                        });
+
                         row.innerHTML += `
-                            <div class="col">
-                                <div class="category-card">
-                                    <i class="category-icon">${cat.icon}</i>
-                                    <div>${cat.name}</div>
-                                </div>
-                            </div>`;
-                    });
-
-                    row.innerHTML += `
-                        <div class="col">
-                            <div class="category-card">
-                                <i class="category-icon" style="font-size: 40px">≡</i>
-                                <div>All Categories</div>
-                            </div>
-                        </div>`;
-                }
+                      <div class="col">
+                  <div class="category-card">
+                      <a href="/all-categories" class="d-block text-decoration-none">
+               <i class="category-icon" style="font-size: 40px; font-weight: bold;">≡</i>
+                 <div class="text-dark">All Categories</div>
+                </a>
+                 </div>
+                 </div>`;
+                 }
 
                 function showCategorySection(categoryName) {
                     loadCategories(categoryName);
@@ -647,7 +680,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const starContainer = document.querySelector('.footer-container'); // Updated selector for footer
+            const starContainer = document.querySelector('.footer-container');
 
             function createStar() {
                 const star = document.createElement('div');
@@ -657,7 +690,7 @@
                 const y = Math.random() * 100;
                 const delay = Math.random() * 2;
                 const size = Math.random() * 8 + 2;
-                const direction = Math.floor(Math.random() * 4); // 0 to 3 for four directions
+                const direction = Math.floor(Math.random() * 4);
 
                 star.style.left = `${x}vw`;
                 star.style.top = `${y}vh`;

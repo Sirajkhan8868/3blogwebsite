@@ -14,7 +14,7 @@
     </section>
 
     <div class="" style="background-color: ghostwhite;">
-        <section>
+        <section style="overflow: hidden">
             <div class="card g-3" style="border: none; background-color: transparent;">
                 <div class="card g-3 mb-4" style="border: none; background-color: transparent;">
                     <h1 class="px-5 pt-4">Education and Training Qualification Courses
@@ -28,10 +28,10 @@
                                     <p>Level 6 in Education Management and Leadership</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Select Options
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -45,10 +45,10 @@
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Select Options
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -61,10 +61,10 @@
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Select Options
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -78,8 +78,8 @@
 
                                     <button
                                     class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                    style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                    Select Options
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
                                 </button>
                                 </div>
                             </div>
@@ -95,8 +95,8 @@
 
                                     <button
                                     class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                    style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                    Select Options
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
                                 </button>
                                 </div>
                             </div>
@@ -109,10 +109,10 @@
                                     <p>Level 8 Certificate of Assessment Process</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Select Options
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -124,10 +124,10 @@
                                     <p>Level 3 Assessing Vocational</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
                                     <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                        Select Options
-                                    </button>
+                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
+                                </button>
                                 </div>
                             </div>
                         </div>
@@ -140,8 +140,8 @@
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
                                     <button
                                     class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                    style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                    Select Options
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
                                 </button>
                                 </div>
                             </div>
@@ -156,8 +156,8 @@
 
                                     <button
                                     class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                                    style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                    Select Options
+                                    style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                    Select Option
                                 </button>
                                 </div>
                             </div>

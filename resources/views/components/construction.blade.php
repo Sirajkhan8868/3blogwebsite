@@ -22,9 +22,11 @@
                                     <div class="px-3 mt-3">
                                         <p >Level 7 Diploma in Construction Health and Safety</p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
-                                        <button class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>
@@ -36,9 +38,11 @@
                                         <p>Level 7 Diploma in Construction Project Management</p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
-                                        <button class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>
@@ -50,9 +54,11 @@
                                         <p >Single Subject Dioploma in Quality Control in Construction </p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
-                                        <button class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>
@@ -64,9 +70,11 @@
                                         <p>Single Subject Diopoma in Construction Contract Management </p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
-                                        <button class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>
@@ -77,9 +85,11 @@
                                         <p >Single Subject Construction Contract Management </p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
-                                        <button class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>
@@ -90,9 +100,11 @@
                                         <p >Level 5 Dioploma in Recruitment Consultant </p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
-                                        <button class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>
@@ -103,9 +115,11 @@
                                         <p>Single Subject  in Construction Equipment Planning </p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
-                                        <button class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>
@@ -116,9 +130,11 @@
                                         <p>Single Subject  in Construction Material Management</p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
-                                        <button class="px-4 py-2 mb-3 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder" style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                                            Add to Basket
-                                        </button>
+                                        <button
+                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        style="background-color: rgb(113, 178, 231); border-radius: 40px">
+                                        Add to Basket
+                                    </button>
                                     </div>
                                 </div>
                             </div>

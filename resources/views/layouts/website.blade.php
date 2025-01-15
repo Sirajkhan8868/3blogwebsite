@@ -860,11 +860,15 @@
                             },
                             {
                                 name: 'Beauty Therapy',
-                                icon: '<i class="fas fa-leaf icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-leaf icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/beauty'
+
                             },
                             {
                                 name: 'ChildPsychology',
-                                icon: '<i class="fas fa-child icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-child icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/childphychology'
+
                             },
                             {
                                 name: 'HR Management',
@@ -873,11 +877,13 @@
                             },
                             {
                                 name: 'Supply Chain Management',
-                                icon: '<i class="fas fa-link icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-link icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/supply'
                             },
                             {
                                 name: 'Workplace Management',
-                                icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/workplace'
                             }
                         ],
                         'Phlebotomy': [{
@@ -897,7 +903,8 @@
                             },
                             {
                                 name: 'Level Bloods Practical Session',
-                                icon: '<i class="fas fa-eye-dropper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-eye-dropper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/level'
                             }
                         ],
                         'Ofqual Qualifications': [{
@@ -907,7 +914,8 @@
                             },
                             {
                                 name: 'Cyber Security',
-                                icon: '<i class="fas fa-unlock-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-unlock-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/cyber'
                             },
                             {
                                 name: 'Education & Training',
@@ -916,11 +924,13 @@
                             },
                             {
                                 name: 'Health & Safety',
-                                icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/health'
                             },
                             {
                                 name: 'Health & Social Care',
-                                icon: '<i class="fas fa-hand-holding-medical icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                                icon: '<i class="fas fa-hand-holding-medical icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/social'
                             },
 
                         ],
@@ -940,44 +950,46 @@
                         'Care Courses': [{
                                 name: 'Mandatory Courses',
                                 icon: '<i class="far fa-newspaper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                                route: '/contact'
+                                route: '/mandatory'
 
                             },
 
                             {
                                 name: 'Additional Courses',
                                 icon: '<i class="far fa-list-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                                route: '/additional'
+
                             }
                         ]
                     }
 
                     function loadCategories(categoryName) {
-    const row = categorySection.querySelector('.row');
-    row.innerHTML = '';
+                         const row = categorySection.querySelector('.row');
+                       row.innerHTML = '';
 
-    const catList = categories[categoryName] || [];
-    catList.forEach(cat => {
-        row.innerHTML += `
-            <div class="col">
-                <div class="category-card">
+                     const catList = categories[categoryName] || [];
+                          catList.forEach(cat => {
+                     row.innerHTML += `
+                     <div class="col">
+                        <div class="category-card">
                     <a href="${cat.route || '#'}" class="category-link" style="text-decoration:none;color:black ;font-size:16px">
                         <i class="category-icon">${cat.icon}</i>
                         <div>${cat.name}</div>
                     </a>
-                </div>
-            </div>`;
-    });
+                          </div>
+                         </div>`;
+                            });
 
-    row.innerHTML += `
-       <div class="col">
-    <div class="category-card">
-        <a href="/all-categories" class="d-block text-decoration-none">
-            <i class="category-icon" style="font-size: 40px; font-weight: bold;">≡</i>
-            <div class="text-dark">All Categories</div>
-        </a>
-    </div>
-</div>`;
-}
+                            row.innerHTML += `
+                          <div class="col">
+                      <div class="category-card">
+                          <a href="/all-categories" class="d-block text-decoration-none">
+                   <i class="category-icon" style="font-size: 40px; font-weight: bold;">≡</i>
+                     <div class="text-dark">All Categories</div>
+                    </a>
+                     </div>
+                     </div>`;
+                     }
 
                     function showCategorySection(categoryName) {
                         loadCategories(categoryName);
