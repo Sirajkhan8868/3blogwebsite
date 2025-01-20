@@ -85,6 +85,14 @@ class BlogController extends Controller
     {
         return view('components.level');
     }
+    public function phlebotomy()
+    {
+        return view('components.phlebotomy');
+    }
+    public function phlebotmists()
+    {
+        return view('components.phlebotmists');
+    }
     public function cyber()
     {
         return view('components.cyber');

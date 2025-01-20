@@ -39,7 +39,7 @@
                                 <img src="{{ asset('assets/site/03.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
                                 <div class="px-3 mt-3">
-                                    <p>Level 5 Bookkeeping in Accounting and finance</p>
+                                    <p> Bookkeeping in Accounting and finance</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button

@@ -422,30 +422,30 @@
         <section class="p-5" style="background-color: rgb(122, 7, 7);">
             <div class=" container text-sec" >
                 <div class="d-flex justify-content-center justify-content-md-start">
-                    <h1 class="px-3 py-4 text-start text-md-start" style="color: white;">
+                    <h1 class="px-3 py-5 text-start text-md-start" style="color: white;">
                         Want to Know More About Our Festive Special <br> Offers?
                     </h1>
                 </div>
 
 
             </div>
-            <div class="d-flex flex-wrap justify-content-center g-3">
-                <div>
-                    <p class="text-white fs-5 p-1 p-sm-3 p-md-4 text-start text-md-start">
-                        Reach out to our friendly team and get your queries resolved quickly to avail these limited-time <br> offers.
+            <div class="d-flex flex-wrap justify-content-center align-items-center g-3 px-5">
+                <div class="col-12 col-md-7 text-md-start">
+                    <p class="text-white fs-5 p-2 p-sm-3 text-start text-md-start ms-lg-5">
+                        Reach out to our friendly team and get your queries resolved quickly to avail these limited-time offers.
                     </p>
-                </div>
-                <div class="d-flex flex-column justify-content-center align-items-center" style="position:relative; top:-20px">
-                    <button class="px-4 py-2 text-danger fs-4 mb-3 mb-md-0" style="border-radius:7px; border:none;">
-                        <i class="fa-solid fa-phone"></i> Call Now
-                    </button>
-                    <button class="px-4 py-2 fs-4 w-md-auto mb-3 mb-md-0" style="background-color: #25D366; color:white; border-radius:7px; border:none">
-                        <i class="fab fa-whatsapp" style="margin-right: 5px;"></i> WhatsApp
-                    </button>
-                </div>
 
-
+                </div>
+                <div class="col-12 col-md-5 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+                    <button class="btn  px-4 py-2 fs-5 color:" style="border-radius: 7px;background-color:whitesmoke">
+                        <i class="fa-solid fa-phone me-2"></i>Call Now
+                    </button>
+                    <button class="btn text-white px-4 py-2 fs-5" style="background-color: #25D366; border-radius: 7px;">
+                        <i class="fab fa-whatsapp me-2"></i>WhatsApp
+                    </button>
+                </div>
             </div>
+
         </section>
 
         <section style="background-color: #ffffff">

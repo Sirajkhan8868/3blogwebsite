@@ -658,10 +658,11 @@
             background-color: #ff1493 !important;
         }
 
-       @keyframes scrollUp {
+        @keyframes scrollUp {
             from {
                 bottom: 0;
             }
+
             to {
                 bottom: 100%;
             }
@@ -780,7 +781,8 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="d-flex flex-column flex-md-row align-items-center justify-content-lg-end gap-2">
-                                <a href="{{ route('booksnow') }}" class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Book
+                                <a href="{{ route('booksnow') }}"
+                                    class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Books
                                     Now</a>
                                 <a href="/contact"
                                     class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Contact Us</a>
@@ -922,7 +924,8 @@
                                             Certicate Phebotomy (part 2 $ 2) </a></li>
                                     <li class="nav-item"><a class="nav-link" href="{{ route('level') }}">Level 3
                                             Certicate Phelotomy (Part 2)</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="{{ route('level') }}">Phebotmist Placement</a>
+                                    <li class="nav-item"><a class="nav-link" href="{{ route('level') }}">Phebotmist
+                                            Placement</a>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="">Live Blood Practical</a>
                                     </li>
@@ -1096,12 +1099,12 @@
                             'Phlebotomy': [{
                                     name: 'Phlebotomy Level 3 Part 1 & 2',
                                     icon: 'fas fa-syringe',
-                                    route: '/booksnow'
+                                    route: '/phlebotomy'
                                 },
                                 {
                                     name: 'Phlebotomist Placement',
                                     icon: 'fas fa-hands-helping',
-                                    route: '/placement-programme'
+                                    route: '/phlebotmists'
                                 },
                                 {
                                     name: 'Blood Level',
@@ -1440,12 +1443,12 @@
 
             <div class="container mb-5">
                 <div class="row align-items-center g-4">
-                    <div class="col-12 col-md-6 text-center">
+                    <div class="col-12 col-sm-12 col-md-6 text-center">
                         <img src="{{ asset('assets/site/healt.webp') }}" alt="Health and Social Care"
                             class="img-fluid" style="width: 100%; max-width: 650px;">
                     </div>
 
-                    <div class="col-12 col-md-6 text-start">
+                    <div class="col-12 col-sm-12 col-md-6 text-start">
                         <h2 class="pb-3 fw-bolder">Level 3 Diploma in Health and Social Care</h2>
                         <div class="d-flex flex-wrap align-items-center mb-3">
                             <span class="badge me-2 p-2 px-3 fs-6"
@@ -1495,6 +1498,7 @@
                     </div>
                 </div>
             </div>
+
 
 
 
@@ -1911,101 +1915,46 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row text-center d-flex justify-content-center">
-                            <div class="col-12 col-sm-3 mb-4">
-                                <div class="card" style="width: 100%">
-                                    <div class="card-body text-center">
-                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
-                                            alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor, sit amet
-                                            consectetur adipisicing elit. Dicta blanditiis nobis consectetur, eveniet,
-                                            alias distinctio aspernatur sit delectus consequuntur, optio error deserunt
-                                            itaque animi cumque qui? Quia impedit maxime excepturi recusandae ratione
-                                            eum beatae reprehenderit, doloribus alias rem ad aliquam!</p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
-                                            Leach</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-3 mb-4">
+                            <div class="col-12 col-sm-12 col-md-3 mb-4">
                                 <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
                                         <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
+                                            adipisicing elit. Odit voluptatum unde perferendis ea dolorum voluptatem
+                                            animi quo rem alias sunt earum omnis dignissimos quam a inventore, nostrum
+                                            eos laudantium atque ducimus! Sit distinctio quisquam odit nulla reiciendis
+                                            ab nihil expedita.</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-3 mb-4">
+                            <div class="col-12 col-sm-12 col-md-3 mb-4">
                                 <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
                                         <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
+                                            adipisicing elit. Odit voluptatum unde perferendis ea dolorum voluptatem
+                                            animi quo rem alias sunt earum omnis dignissimos quam a inventore, nostrum
+                                            eos laudantium atque ducimus! Sit distinctio quisquam odit nulla reiciendis
+                                            ab nihil expedita.</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="row text-center d-flex justify-content-center">
-                            <div class="col-12 col-sm-3 mb-4">
+                            <div class="col-12 col-sm-12 col-md-3 mb-4">
                                 <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
                                         <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
-                                            Leach</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-3 mb-4">
-                                <div class="card" style="width: 100%">
-                                    <div class="card-body text-center">
-                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
-                                            alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
-                                        <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
-                                            Leach</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-3 mb-4">
-                                <div class="card" style="width: 100%">
-                                    <div class="card-body text-center">
-                                        <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
-                                            alt="" style="width: 150px">
-                                        <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
+                                            adipisicing elit. Odit voluptatum unde perferendis ea dolorum voluptatem
+                                            animi quo rem alias sunt earum omnis dignissimos quam a inventore, nostrum
+                                            eos laudantium atque ducimus! Sit distinctio quisquam odit nulla reiciendis
+                                            ab nihil expedita.</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
                                     </div>
@@ -2016,49 +1965,46 @@
 
                     <div class="carousel-item">
                         <div class="row text-center d-flex justify-content-center">
-                            <div class="col-12 col-sm-3 mb-4">
+                            <div class="col-12 col-sm-12 col-md-3 mb-4">
                                 <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
                                         <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
+                                            adipisicing elit. Odit voluptatum unde perferendis ea dolorum voluptatem
+                                            animi quo rem alias sunt earum omnis dignissimos quam a inventore, nostrum
+                                            eos laudantium atque ducimus! Sit distinctio quisquam odit nulla reiciendis
+                                            ab nihil expedita.</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-3 mb-4">
+                            <div class="col-12 col-sm-12 col-md-3 mb-4">
                                 <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
                                         <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
+                                            adipisicing elit. Odit voluptatum unde perferendis ea dolorum voluptatem
+                                            animi quo rem alias sunt earum omnis dignissimos quam a inventore, nostrum
+                                            eos laudantium atque ducimus! Sit distinctio quisquam odit nulla reiciendis
+                                            ab nihil expedita.</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-3 mb-4">
+                            <div class="col-12 col-sm-12 col-md-3 mb-4">
                                 <div class="card" style="width: 100%">
                                     <div class="card-body text-center">
                                         <img src="{{ asset('assets/site/starts-removebg-preview.png') }}"
                                             alt="" style="width: 150px">
                                         <p class="card-text fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Ratione magni ullam ducimus? Quisquam, rerum. Ipsum beatae
-                                            odit nemo exercitationem magnam enim ea unde illo ducimus laboriosam
-                                            reiciendis officiis qui, quia quaerat consequatur veritatis dolor recusandae
-                                            iure facere. Ad, ut culpa?
-                                        </p>
+                                            adipisicing elit. Odit voluptatum unde perferendis ea dolorum voluptatem
+                                            animi quo rem alias sunt earum omnis dignissimos quam a inventore, nostrum
+                                            eos laudantium atque ducimus! Sit distinctio quisquam odit nulla reiciendis
+                                            ab nihil expedita.</p>
                                         <h5><img src="{{ asset('assets/site/iii.webp') }}" alt="">George
                                             Leach</h5>
                                     </div>
@@ -2067,6 +2013,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel"
                     data-bs-slide="prev">
@@ -2086,7 +2033,8 @@
             <div class="container pt-5 pb-5">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-md-6 text-center">
-                        <img src="{{ asset('assets/site/New.webp') }}" alt="" class="img-fluid" style="max-width: 100%; height: auto;">
+                        <img src="{{ asset('assets/site/New.webp') }}" alt="" class="img-fluid"
+                            style="max-width: 100%; height: auto;">
                     </div>
 
                     <div class="col-12 col-md-6 pt-5 pt-md-0 px-4 text-center text-md-start">
@@ -2094,21 +2042,31 @@
                             Get an Additional <span style="color: #FF007F">10% Discount <br>On Certificates.</span>
                         </h1>
                         <p class="pt-3 fs-5 text-secondary">
-                            Supercharge your career growth with an inclusive 10% discount on all certificates.<br> Don’t Delay – Enrol Today
+                            Supercharge your career growth with an inclusive 10% discount on all certificates.<br> Don’t
+                            Delay – Enrol Today
                         </p>
-                        <button style="background-color: rgb(235, 54, 180); border-radius: 50px; border: 4px solid rgb(147, 227, 247)"
-                                class="p-2 mt-2 px-3 fs-5">
-                            <a style="text-decoration: none;" href="#" class="card-link text-white fw-bolder px-3">Clims Certificate</a>
+                        <button
+                            style="background-color: rgb(235, 54, 180); border-radius: 50px; border: 4px solid rgb(147, 227, 247)"
+                            class="p-2 mt-2 px-3 fs-5">
+                            <a style="text-decoration: none;" href="#"
+                                class="card-link text-white fw-bolder px-3">Clims Certificate</a>
                         </button>
 
                         <div class="py-4 d-flex flex-wrap justify-content-center gap-3">
-                            <img src="{{ asset('assets/site/endorsed-1.webp') }}" alt="" width="70px" class="p-3" style="border: 2px dashed #d2d3d4;">
-                            <img src="{{ asset('assets/site/end 2.webp') }}" alt="" width="70px" class="p-3" style="border: 2px dashed #d2d3d4;">
-                            <img src="{{ asset('assets/site/end 3.jpg') }}" alt="" width="70px" class="p-3" style="border: 2px dashed #d2d3d4;">
-                            <img src="{{ asset('assets/site/end 4.webp') }}" alt="" width="70px" class="p-3" style="border: 2px dashed #d2d3d4;">
-                            <img src="{{ asset('assets/site/end 5.webp') }}" alt="" width="70px" class="p-3" style="border: 2px dashed #d2d3d4;">
-                            <img src="{{ asset('assets/site/end 7.webp') }}" alt="" width="70px" class="p-3" style="border: 2px dashed #d2d3d4;">
-                            <img src="{{ asset('assets/site/end 4.webp') }}" alt="" width="70px" class="p-3" style="border: 2px dashed #d2d3d4;">
+                            <img src="{{ asset('assets/site/endorsed-1.webp') }}" alt="" width="70px"
+                                class="p-3" style="border: 2px dashed #d2d3d4;">
+                            <img src="{{ asset('assets/site/end 2.webp') }}" alt="" width="70px"
+                                class="p-3" style="border: 2px dashed #d2d3d4;">
+                            <img src="{{ asset('assets/site/end 3.jpg') }}" alt="" width="70px"
+                                class="p-3" style="border: 2px dashed #d2d3d4;">
+                            <img src="{{ asset('assets/site/end 4.webp') }}" alt="" width="70px"
+                                class="p-3" style="border: 2px dashed #d2d3d4;">
+                            <img src="{{ asset('assets/site/end 5.webp') }}" alt="" width="70px"
+                                class="p-3" style="border: 2px dashed #d2d3d4;">
+                            <img src="{{ asset('assets/site/end 7.webp') }}" alt="" width="70px"
+                                class="p-3" style="border: 2px dashed #d2d3d4;">
+                            <img src="{{ asset('assets/site/end 4.webp') }}" alt="" width="70px"
+                                class="p-3" style="border: 2px dashed #d2d3d4;">
                         </div>
 
                     </div>
@@ -2117,7 +2075,8 @@
         </section>
 
 
-        <section style="background-image: url({{ asset('assets/site/abc.webp') }}); background-position: center; background-repeat: no-repeat; background-size: cover;">
+        <section
+            style="background-image: url({{ asset('assets/site/abc.webp') }}); background-position: center; background-repeat: no-repeat; background-size: cover;">
             <div class="text-center pb-5 pt-5">
                 <h4 class="text-white fs-3">Flexible & Convenient Learning</h4>
                 <h3 class="h4 mt-3 pb-5 text-white fs-3">Experience The Best Online Study Scheme</h3>
@@ -2126,43 +2085,51 @@
             <div class="container card-container pt-5">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-6 col-md-3 mb-4">
-                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
+                        <div class="flip-card"
+                            style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/site/customer-service.png') }}" alt="" class="img-white">
+                                        <img src="{{ asset('assets/site/customer-service.png') }}" alt=""
+                                            class="img-white">
                                     </div>
                                     <h5>Dedicated Tutor Support</h5>
                                 </div>
                                 <div class="flip-card-back text-white">
-                                    <p>Get personalized support from our experienced tutors throughout your learning journey.</p>
+                                    <p>Get personalized support from our experienced tutors throughout your learning
+                                        journey.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-3 mb-4">
-                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
+                        <div class="flip-card"
+                            style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/site/clock-with-white-face.png') }}" alt="" class="img-white">
+                                        <img src="{{ asset('assets/site/clock-with-white-face.png') }}"
+                                            alt="" class="img-white">
                                     </div>
                                     <h5>Self-Study Courses</h5>
                                 </div>
                                 <div class="flip-card-back text-white">
-                                    <p>All courses are specially designed for self-study and are often personalised to fit the needs of individual students.</p>
+                                    <p>All courses are specially designed for self-study and are often personalised to
+                                        fit the needs of individual students.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-3 mb-4">
-                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
+                        <div class="flip-card"
+                            style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/site/palm.png') }}" alt="" class="img-white">
+                                        <img src="{{ asset('assets/site/palm.png') }}" alt=""
+                                            class="img-white">
                                     </div>
                                     <h5>Easy Access</h5>
                                 </div>
@@ -2174,11 +2141,13 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-3 mb-4">
-                        <div class="flip-card" style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
+                        <div class="flip-card"
+                            style="border-radius: 15px; box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3); min-width: 250px;">
                             <div class="flip-card-inner">
                                 <div class="flip-card-front">
                                     <div class="icon">
-                                        <img src="{{ asset('assets/site/medal.png') }}" alt="" class="img-white">
+                                        <img src="{{ asset('assets/site/medal.png') }}" alt=""
+                                            class="img-white">
                                     </div>
                                     <h5>Accredited Certificates</h5>
                                 </div>
@@ -2198,15 +2167,21 @@
             <div class="container">
                 <div class="row justify-content-center pb-5">
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <div class="card d-flex flex-column" style="background: transparent; border: none; min-height: 400px;">
+                        <div class="card d-flex flex-column"
+                            style="background: transparent; border: none; min-height: 400px;">
                             <div class="card-img-wrapper" style="overflow: hidden;">
-                                <img src="{{ asset('assets/site/cards.webp') }}" class="card-img-top hover-img" alt="...">
+                                <img src="{{ asset('assets/site/cards.webp') }}" class="card-img-top hover-img"
+                                    alt="...">
                             </div>
-                            <div class="card-body" style="border-left: 12px solid #fff; border-right: 12px solid #fff;">
+                            <div class="card-body"
+                                style="border-left: 12px solid #fff; border-right: 12px solid #fff;">
                                 <h5 class="card-title">Skills for Care Now Endorses Our Exceptional Training</h5>
-                                <p class="card-text">In the dynamic landscape of education and training, institutes that prioritise</p>
+                                <p class="card-text">In the dynamic landscape of education and training, institutes
+                                    that prioritise</p>
                                 <a href="#" class="text-decoration-none text-start">
-                                    <button type="button" class="btn border-0 text-info fw-bold px-4 py-2 custom-hover" style="background-color: #fff">
+                                    <button type="button"
+                                        class="btn border-0 text-info fw-bold px-4 py-2 custom-hover"
+                                        style="background-color: #fff">
                                         Read More
                                     </button>
                                 </a>
@@ -2215,15 +2190,21 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <div class="card d-flex flex-column" style="background: transparent; border: none; min-height: 400px;">
+                        <div class="card d-flex flex-column"
+                            style="background: transparent; border: none; min-height: 400px;">
                             <div class="card-img-wrapper" style="overflow: hidden;">
-                                <img src="{{ asset('assets/site/card2.webp') }}" class="card-img-top hover-img" alt="...">
+                                <img src="{{ asset('assets/site/card2.webp') }}" class="card-img-top hover-img"
+                                    alt="...">
                             </div>
-                            <div class="card-body" style="border-left: 12px solid #fff; border-right: 12px solid #fff;">
+                            <div class="card-body"
+                                style="border-left: 12px solid #fff; border-right: 12px solid #fff;">
                                 <h5 class="card-title">What is Phlebotomy</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                                 <a href="#" class="text-decoration-none text-start">
-                                    <button type="button" class="btn border-0 text-info fw-bold px-4 py-2 mt-3 custom-hover" style="background-color: #fff">
+                                    <button type="button"
+                                        class="btn border-0 text-info fw-bold px-4 py-2 mt-3 custom-hover"
+                                        style="background-color: #fff">
                                         Read More
                                     </button>
                                 </a>
@@ -2232,15 +2213,21 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-md-4 col-lg-4 mb-4">
-                        <div class="card d-flex flex-column" style="background: transparent; border: none; min-height: 400px;">
+                        <div class="card d-flex flex-column"
+                            style="background: transparent; border: none; min-height: 400px;">
                             <div class="card-img-wrapper" style="overflow: hidden;">
-                                <img src="{{ asset('assets/site/card3.webp') }}" class="card-img-top hover-img" alt="...">
+                                <img src="{{ asset('assets/site/card3.webp') }}" class="card-img-top hover-img"
+                                    alt="...">
                             </div>
-                            <div class="card-body" style="border-left: 12px solid #fff; border-right: 12px solid #fff;">
+                            <div class="card-body"
+                                style="border-left: 12px solid #fff; border-right: 12px solid #fff;">
                                 <h5 class="card-title">What is Personal Development?</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                                 <a href="#" class="text-decoration-none text-start">
-                                    <button type="button" class="btn border-0 text-info fw-bold px-4 py-2 mt-3 custom-hover" style="background-color: #fff">
+                                    <button type="button"
+                                        class="btn border-0 text-info fw-bold px-4 py-2 mt-3 custom-hover"
+                                        style="background-color: #fff">
                                         Read More
                                     </button>
                                 </a>
@@ -2257,27 +2244,41 @@
         <section>
             <div class="container my-5">
                 <div class="row align-items-center">
-                    <div class="col-md-6 text-end">
-                        <img src="{{ asset('assets/site/care.webp') }}" alt="" class="img-fluid" width="600px">
+                    <div class="col-12 col-md-6 text-end">
+                        <img src="{{ asset('assets/site/care.webp') }}" alt="" class="img-fluid"
+                            width="600px">
                     </div>
 
-                    <div class="col-md-6">
-                        <button class="text-white fs-4 p-2 text-start px-4 fw-bolder mb-3 mt-3 mt-sm-4 mt-md-0" style="background-color: #FF007F; border: none;">Latest News</button>
+                    <div class="col-12 col-md-6">
+                        <button class="text-white fs-4 p-2 text-start px-4 fw-bolder mb-3 mt-3 mt-sm-4 mt-md-0"
+                            style="background-color: #FF007F; border: none;">Latest News</button>
 
                         <div class="scrolling-text p-1" style="overflow: hidden; position: relative; height: 435px;">
                             <div style="position: absolute; animation: scrollUp 10s linear infinite;">
                                 <h4>Inspire London College Has Officially Achieved Skills for Care Approval</h4>
-                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
-                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
+                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate
+                                    repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
+                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate
+                                    repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
+                                <p class="lead mb-4">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate
+                                    repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
+                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate
+                                    repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
+                                <p class="lead mb-0">This text is scrolling from bottom to top. Lorem ipsum, dolor sit
+                                    amet consectetur adipisicing elit. Velit laboriosam voluptates ipsa voluptate
+                                    repellat fugiat totam beatae. Officia, ipsa eligendi!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
 
         <script>

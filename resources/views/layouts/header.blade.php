@@ -358,7 +358,7 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="d-flex flex-column flex-md-row align-items-center justify-content-lg-end gap-2">
-                            <a href="/booksnow" class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Book
+                            <a href="/bookssnow" class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Books
                                 Now</a>
                             <a href="/contact"
                                 class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Contact Us</a>
@@ -475,9 +475,9 @@
                         </a>
                         <div class="collapse" id="phlebotomyCollapse">
                             <ul class="nav flex-column ms-3">
-                                <li class="nav-item"><a class="nav-link" href="{{ route('booksnow') }}">Level 3 Certicate Phebotomy (part 2 $ 2) </a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('level') }}">Level 3 Certicate Phelotomy (Part 2)</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Phebotmist Placement</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('phlebotomy') }}">Level 3 Certicate Phebotomy (part 2 $ 2) </a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('phlebotmists') }}">Level 3 Certicate Phelotomy (Part 2)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('level') }}">Phebotmist Placement</a></li>
                                 <li class="nav-item"><a class="nav-link" href="">Live Blood Practical</a></li>
 
                             </ul>
@@ -606,7 +606,7 @@
                         {
                             name: 'Child Psychology',
                             icon: 'fas fa-child',
-                            route: '/childpsychology'
+                            route: '/childphychology'
                         },
                         {
                             name: 'HR Management',
@@ -627,17 +627,17 @@
                     'Phlebotomy': [{
                             name: 'Phlebotomy Level 3 Part 1 & 2',
                             icon: 'fas fa-syringe',
-                            route: '/phlebotomy-lvl3'
+                            route: '/phlebotomy'
                         },
                         {
                             name: 'Phlebotomist Placement',
                             icon: 'fas fa-hands-helping',
-                            route: '/placement-programme'
+                            route: '/phlebotmists'
                         },
                         {
-                            name: 'Practical Sessions',
+                            name: 'Blood Level Practice',
                             icon: 'fas fa-vials',
-                            route: '/practical-sessions'
+                            route: '/level'
                         }
                     ],
                     'Ofqual Qualifications': [{
@@ -648,7 +648,7 @@
                         {
                             name: 'Cyber Security',
                             icon: 'fas fa-unlock-alt',
-                            route: '/cyber-security'
+                            route: '/cyber'
                         },
                         {
                             name: 'Education & Training',
@@ -658,18 +658,18 @@
                         {
                             name: 'Health & Safety',
                             icon: 'fas fa-heartbeat',
-                            route: '/health-safety'
+                            route: '/health'
                         }
                     ],
                     'CPD Video Training': [{
                             name: 'Business Skills',
                             icon: 'fas fa-briefcase',
-                            route: '/business-skills'
+                            route: '/business'
                         },
                         {
                             name: 'Health & Safety',
                             icon: 'fas fa-heartbeat',
-                            route: '/health-safety'
+                            route: '/health'
                         },
                         {
                             name: 'Professional Development',
@@ -680,12 +680,12 @@
                     'Care Courses': [{
                             name: 'Mandatory Training',
                             icon: 'fas fa-file-alt',
-                            route: '/mandatory-training'
+                            route: '/mandatory'
                         },
                         {
                             name: 'Additional Courses',
                             icon: 'fas fa-plus-circle',
-                            route: '/additional-courses'
+                            route: '/additional'
                         }
                     ]
                 };

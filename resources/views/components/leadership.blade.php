@@ -33,7 +33,7 @@
                                 <img src="{{ asset('assets/site/015.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
                                 <div class="px-3 mt-3">
-                                    <p class="fw-bolder">Level 7 Diploma in Learning and Development</p>
+                                    <p class="fw-bolder"> Diploma in Learning and Development</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
                                     <button
                                     class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"

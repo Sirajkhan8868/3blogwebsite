@@ -41,7 +41,7 @@
                                 <img src="{{ asset('assets/site/03.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
                                 <div class="px-3 mt-3">
-                                    <p class="fw-bolder">Level 7 Dioploma in HR Management</p>
+                                    <p class="fw-bolder">Level 7 Dioploma in Human Resourse Management</p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button

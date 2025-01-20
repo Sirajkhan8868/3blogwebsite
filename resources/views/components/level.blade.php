@@ -244,7 +244,7 @@
                                 </div>
 
                                 <div class="form-check mb-3">
-                                    <input class="form-check-input is-invalid text-secondary" type="checkbox" id="invalidCheck1" required>
+                                    <input class="form-check-input is-invalid text-green" type="checkbox" id="invalidCheck1" required>
                                     <label class="form-check-label" for="invalidCheck1">
                                         I agree to ILC <span style="color: #64a1da;">Privacy Policy</span> and <span style="color: #64a1da;">Terms and Conditions</span>.
                                     </label>
