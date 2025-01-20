@@ -20,6 +20,141 @@
             margin: 0;
             padding: 0;
         }
+        @media (min-width: 768px) {
+            .custom-md-margin {
+                margin-right: 5rem;
+            }
+        }
+
+        .top-banner {
+            background-image: url('assets/site/Chistmas-scaled.webp');
+            background-size: cover;
+            background-position: top;
+        }
+
+        .secondary-header {
+            background-color: rgb(235, 54, 180);
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .category-section .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin: 10px 10px;
+        }
+
+        .category-section .category-card {
+            flex: 0 0 calc(13.66% - 1rem);
+            max-width: calc(13.66% - 1rem);
+            min-width: 200px;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .category-card a {
+            display: block;
+            height: 100%;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .category-card i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card:hover {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .category-section .category-card {
+                flex: 0 0 calc(33.33% - 1rem);
+            }
+        }
+
+
+        @media (max-width: 480px) {
+            .category-section .category-card {
+                flex: 0 0 calc(50% - 1rem);
+            }
+        }
+
+        .category-icon {
+            color: #000;
+            transition: color 0.3s ease;
+        }
+
+
+        .category-card:hover .category-icon {
+            color: #68adf7;
+        }
+
+
+        .news-ticker {
+    background-color: #00bfff;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+}
+
+.news-button {
+    background-color: #ff0099;
+    color: #ffffff;
+    border: none;
+    height: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    padding: 0 15px;
+}
+        .news-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .news-content {
+            background-color: #00bcd4;
+            height: 100%;
+            overflow: hidden;
+        }
+        .scrolling-text {
+            color: #ffffff;
+            font-weight: 500;
+            white-space: nowrap;
+            padding: 0 20px;
+            animation: scroll 15s linear infinite;
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        @media (max-width: 768px) {
+            .news-button {
+                font-size: 12px;
+                padding: 0 10px;
+            }
+        }
+
 
         .navbar {
             padding: 1rem 2rem;
@@ -69,68 +204,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .latest-news {
-            background-color: #e91e63;
-            color: white;
-
-            padding: 1rem 2rem;
-            margin-right: 1rem;
-        }
-
-        .ticker-wrapper {
-            display: flex;
-            align-items: stretch;
-            height: 100px;
-            background-color: #00C8E8;
-        }
-
-        .ticker-label {
-            background-color: #FF007F;
-            color: white;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100%;
-            font-weight: bold;
-        }
-
-        .ticker {
-            flex-grow: 1;
-            overflow: hidden;
-        }
-
-        .ticker-content {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            white-space: nowrap;
-            animation: scroll 10s linear infinite;
-        }
-
-        .position-relative {
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-
-        img {
-            height: 100%;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        .ticker-content {
-            animation: scroll 50s linear infinite;
-        }
 
         .category-card {
             background: white;
@@ -173,21 +246,6 @@
         .category-card:hover {
             transform: translateY(-5px);
         }
-
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front,
-        .flip-card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 1rem;
-            box-shadow: 0 8px 8px rgba(168, 16, 16, 0.1);
-        }
-
 
         .footer-container {
             position: relative;
@@ -273,181 +331,228 @@
 
 <body>
     <header>
-        <div class="header-sec d-flex justify-content-between align-items-center p-3 "
-            style="background-image: url('{{ asset('assets/site/Chistmas-scaled.webp') }}'); background-size: cover; background-position: top">
-
-            <div class="w-75 d-flex justify-content-center">
-                <h3 class="text-white fw-bold text-center pt-3" style="padding-left: 55px">
-                    Pay <span class="text-warning">£70</span> to start a Qualification + Get
-                    <span class="text-warning">30%</span> Off on Bundle Video Courses.
-                </h3>
+        <div class="top-banner">
+            <div class="container">
+                <div class="row align-items-center py-3">
+                    <div class="col-md-9 text-center text-md-start">
+                        <h3 class="text-white fw-bold">
+                            Pay <span class="text-warning">£70</span> to start a Qualification + Get
+                            <span class="text-warning">30%</span> Off on Bundle Video Courses.
+                        </h3>
+                    </div>
+                    <div class="col-md-3 text-center text-md-end mt-3 mt-md-0 ">
+                        <a href="/christmas" class="btn btn-danger px-4 " style="border: 2px solid white; font-weight:600">Click Here</a>
+                    </div>
+                </div>
             </div>
-            <a href="{{ route('christmas') }}">
-                <button type="button"
-                    style="border: 3px solid white; background-color:rgb(173, 30, 30); margin-right: 8rem;"
-                    class="fw-bolder px-5 p-2 text-white">
-                    Click Here
-                </button>
+        </div>
+
+        <div class="secondary-header py-3">
+            <div class="px-md-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg-start mb-3 mb-lg-0">
+                        <p class="text-white mb-0 fs-5 fw-medium">
+                            Book Today | Level 3 Phlebotomy Part 1 & Part 2 | Only £350 Get Health & Safety Course
+                            Free
+                        </p>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-lg-end gap-2">
+                            <a href="/booksnow" class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Book
+                                Now</a>
+                            <a href="/contact"
+                                class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Contact Us</a>
+                            <form class="d-flex mt-2 mt-md-0" role="search">
+                                <div class="input-group">
+                                    <input class="form-control rounded-start-pill" type="search"
+                                        placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-info text-white fw-bold rounded-end-pill"
+                                        type="submit">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#">
+                <img src="assets/site/ILC-logo-1024x616.webp" alt="Inspire London College Logo" style="width: 150px; height: auto;">
             </a>
-
-        </div>
-
-        <div class="header-sec d-flex justify-content-between align-items-center p-3"
-            style="background-color:rgb(235, 54, 180)">
-            <div class="w-50 text-center d-flex fw-bold text-white"
-                style="padding-left: 50px; justify-content: center; padding-top: 13px">
-                <p>Book Today | Level 3 Phlebotomy Part 1 & Part 2 | Only £350 and Get Health & Safety Course Free
-                </p>
-            </div>
-
-            <div class="d-flex gap-5">
-                <a href="{{ route('booksnow') }}">
-                    <button type="button" class="btn btn-info border-0 text-white fw-bolder px-4"
-                        style="border-radius: 50px; padding: 10px 0px">
-                        Book Now
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-flex flex-row">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Endorsed Courses</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CPD Courses</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Phlebotomy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ofqual Qualifications</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CPD Video Training</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Care Courses</a>
+                    </li>
+                </ul>
+                <div class="d-none d-lg-flex align-items-center gap-2">
+                    <button class="btn text-white py-2 px-4" style="background-color: #FF007F; border-radius: 50px; font-size: 0.9rem;">
+                        Learning Platform
                     </button>
-                </a>
-                <a href="{{ route('contact') }}">
-                    <button type="button" class="btn btn-info border-0 text-white fw-bolder px-4 "
-                        style="border-radius: 50px; padding: 10px 0">
-                        Contact Us
+                    <button class="btn btn-info text-white px-3 py-2" style="border-radius: 50px; width: 180px; font-size: 0.9rem;">
+                        VLE
                     </button>
-                </a>
-                <form class="d-flex" role="search">
-                    <div class="input-group w-100">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-                            style="border-radius: 50px 0 0 50px;">
-                        <button class="btn btn-info text-white fw-bolder" type="submit"
-                            style="border-radius: 0 50px 50px 0;">Search</button>
-                    </div>
-
-
-                </form>
-
-            </div>
-        </div>
-
-        <nav class="navbar navbar-expand-lg p-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="{{ asset('assets/site/ILC-logo-1024x616.webp') }}" alt="Inspire London College Logo"
-                        style="width: 150px; height: auto;">
-                </a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto px-5 ">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
-                                data-bs-toggle="dropdown">
-                                Endorsed Courses
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
-                                data-bs-toggle="dropdown">
-                                CPD Courses
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
-                                data-bs-toggle="dropdown">
-                                Phlebotomy
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
-                                data-bs-toggle="dropdown">
-                                Ofqual Qualifications
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
-                                data-bs-toggle="dropdown">
-                                CPD Video Training
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fs-5" href="#" role="button"
-                                data-bs-toggle="dropdown">
-                                Care Courses
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="d-flex justify-content-center gap-3 px-5">
-                        <button class="btn px-4 text-white  "
-                            style="background-color: #FF007F; border-radius: 50px;">Learning Platform</button>
-                        <button class="btn btn-vle px-3 p-2 " style="padding: 0px 70px; width: 180px;">VLE</button>
-                    </div>
-
                 </div>
             </div>
         </nav>
 
-        <div class="category-section" id="categorySection">
-            <div class="container-fluid d-flex">
-                <div class="row flex-grow-1">
-                    <div class="col">
-                        <div class="category-card">
-                            <img src="{{ asset('assets/site/accounting-finance.jpg') }}" alt="Accounting & Finance"
-                                class="category-image">
-                            <div>Accounting & Finance</div>
-                        </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="category-card ">
-                            <img src="{{ asset('assets/site/admin-secretarial.jpg') }}" alt="Admin & Secretarial"
-                                class="category-image">
-                            <div>Admin & Secretarial</div>
-                        </div>
-                    </div>
 
-                    <div class="col">
-                        <div class="category-card">
-                            <img src="{{ asset('assets/site/business-management.jpg') }}" alt="Business Management"
-                                class="category-image">
-                            <div>Business Management</div>
-                        </div>
-                    </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center"
+                            data-bs-toggle="collapse" href="#endorsedCoursesCollapse">
+                            Endorsed Courses
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="endorsedCoursesCollapse">
+                            <ul class="nav flex-column ms-3 ">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('accounting') }}">Accounting and
+                                        Finance</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('admin') }}">Admin Secretarial &
+                                        PA</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('business') }}">Business Management</a>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('human') }}">HR Management</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('leadership') }}">Leadership $ management</a></li>
 
-                    <div class="col">
-                        <div class="category-card">
-                            <img src="{{ asset('assets/site/hr-management.jpg') }}" alt="HR Management"
-                                class="category-image">
-                            <div>HR Management</div>
+                            </ul>
                         </div>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center"
+                            data-bs-toggle="collapse" href="#cpdCoursesCollapse">
+                            CPD Courses
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="cpdCoursesCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('accounting') }}">Accounting $ Finance</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('beauty') }}">Beauty Therapy</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('childphychology') }}">Child Psychology</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('human') }}">HR Management</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('supply') }}">Supply Chain Management</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('workplace') }}">Workplace Management</a></li>
 
-                    <div class="col">
-                        <div class="category-card">
-                            <img src="{{ asset('assets/site/leadership-management.jpg') }}"
-                                alt="Leadership & Management" class="category-image">
-                            <div>Leadership & Management</div>
+                            </ul>
                         </div>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center"
+                            data-bs-toggle="collapse" href="#phlebotomyCollapse">
+                            Phlebotomy
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="phlebotomyCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('booksnow') }}">Level 3 Certicate Phebotomy (part 2 $ 2) </a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('level') }}">Level 3 Certicate Phelotomy (Part 2)</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Phebotmist Placement</a></li>
+                                <li class="nav-item"><a class="nav-link" href="">Live Blood Practical</a></li>
 
-                    <div class="col">
-                        <div class="category-card">
-                            <img src="{{ asset('assets/site/project-management.jpg') }}" alt="Project Management"
-                                class="category-image">
-                            <div>Project Management</div>
+                            </ul>
                         </div>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center"
+                            data-bs-toggle="collapse" href="#ofqualCollapse">
+                            Ofqual Qualifications
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="ofqualCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('business') }}">Business Management</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('cyber') }}">Cyber Security </a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('education') }}">Education $ training </a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('health') }}">Healt $ Safety</a></li>
 
-                    <div class="col">
-                        <div class="category-card">
-                            <img src="{{ asset('assets/site/all-categories.jpg') }}" alt="All Categories"
-                                class="category-image">
-                            <div>All Categories</div>
+                            </ul>
                         </div>
-                    </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center"
+                            data-bs-toggle="collapse" href="#videoTrainingCollapse">
+                            CPD Video Training
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="videoTrainingCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('business') }}">Business Skills</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('health') }}">Health $ Safety </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Professional Developer</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center"
+                            data-bs-toggle="collapse" href="#careCoursesCollapse">
+                            Care Courses
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="careCoursesCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link" href="{{ route('mandatory') }}">Manadatory</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('additional') }}">Additional Courses</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="mt-4">
+                    <button class="btn text-white py-2 px-4 w-100 mb-2"
+                        style="background-color: #FF007F; border-radius: 50px; font-size: 0.9rem;">
+                        Learning Platform
+                    </button>
+                    <button class="btn btn-info text-white px-3 py-2 w-100"
+                        style="border-radius: 50px; font-size: 0.9rem;">
+                        VLE
+                    </button>
                 </div>
             </div>
+            <div class="social-buttons d-flex justify-content-around">
+                <a href="#" class="social-button whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="#" class="social-button messenger-btn">
+                    <i class="fab fa-facebook-messenger"></i>
+                </a>
+            </div>
         </div>
+
+        <div class="category-section bg-white" id="categorySection" style="display:none;">
+            <div class="row">
+            </div>
+        </div>
+
 
 
         <script>
@@ -459,174 +564,160 @@
                 const categories = {
                     'Endorsed Courses': [{
                             name: 'Accounting & Finance',
-                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-calculator',
                             route: '/accounting'
                         },
                         {
-
                             name: 'Admin & Secretarial',
-                            icon: '<i class="fas fa-user-cog icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-user-cog',
                             route: '/admin'
-
                         },
                         {
                             name: 'Business Management',
-                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-hands-helping',
                             route: '/business'
                         },
                         {
                             name: 'HR Management',
-                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-user-tie',
                             route: '/human'
                         },
                         {
                             name: 'Leadership & Management',
-                            icon: '<i class="fas fa-user-check icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-user-check',
                             route: '/leadership'
                         },
                         {
                             name: 'Project Management',
-                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: 'project'
+                            icon: 'fas fa-project-diagram',
+                            route: '/project'
                         }
                     ],
                     'CPD Courses': [{
-                            name: 'Accounting $ Finance',
-                            icon: '<i class="fas fa-calculator icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            name: 'Accounting & Finance',
+                            icon: 'fas fa-calculator',
                             route: '/accounting'
                         },
                         {
                             name: 'Beauty Therapy',
-                            icon: '<i class="fas fa-leaf icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-leaf',
                             route: '/beauty'
-
                         },
                         {
-                            name: 'ChildPsychology',
-                            icon: '<i class="fas fa-child icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/childphychology'
-
+                            name: 'Child Psychology',
+                            icon: 'fas fa-child',
+                            route: '/childpsychology'
                         },
                         {
                             name: 'HR Management',
-                            icon: '<i class="fas fa-user-tie icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-user-tie',
                             route: '/human'
                         },
                         {
                             name: 'Supply Chain Management',
-                            icon: '<i class="fas fa-link icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-link',
                             route: '/supply'
                         },
                         {
                             name: 'Workplace Management',
-                            icon: '<i class="fas fa-project-diagram icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-project-diagram',
                             route: '/workplace'
                         }
                     ],
                     'Phlebotomy': [{
-                            name: 'Level 3 Certificate in Phlebotomy (Part 2 $ 2)',
-                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/bookssnow'
+                            name: 'Phlebotomy Level 3 Part 1 & 2',
+                            icon: 'fas fa-syringe',
+                            route: '/phlebotomy-lvl3'
                         },
                         {
-                            name: 'Level 3 Certificate in Phlebotomy (Part 2)',
-                            icon: '<i class="fas fa-syringe icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/bookssnow'
-
+                            name: 'Phlebotomist Placement',
+                            icon: 'fas fa-hands-helping',
+                            route: '/placement-programme'
                         },
                         {
-                            name: 'Phlebotomist Placement Programme',
-                            icon: '<i class="fas fa-user-nurse icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
-                        },
-                        {
-                            name: 'Level Bloods Practical Session',
-                            icon: '<i class="fas fa-eye-dropper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/level'
+                            name: 'Practical Sessions',
+                            icon: 'fas fa-vials',
+                            route: '/practical-sessions'
                         }
                     ],
                     'Ofqual Qualifications': [{
                             name: 'Business Management',
-                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-briefcase',
                             route: '/business'
                         },
                         {
                             name: 'Cyber Security',
-                            icon: '<i class="fas fa-unlock-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/cyber'
+                            icon: 'fas fa-unlock-alt',
+                            route: '/cyber-security'
                         },
                         {
                             name: 'Education & Training',
-                            icon: '<i class="fas fa-book-open icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
+                            icon: 'fas fa-chalkboard-teacher',
                             route: '/education'
                         },
                         {
                             name: 'Health & Safety',
-                            icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/health'
-                        },
-                        {
-                            name: 'Health & Social Care',
-                            icon: '<i class="fas fa-hand-holding-medical icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/social'
-                        },
-
+                            icon: 'fas fa-heartbeat',
+                            route: '/health-safety'
+                        }
                     ],
                     'CPD Video Training': [{
                             name: 'Business Skills',
-                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: 'fas fa-briefcase',
+                            route: '/business-skills'
                         },
                         {
                             name: 'Health & Safety',
-                            icon: '<i class="fas fa-hand-holding-heart icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
+                            icon: 'fas fa-heartbeat',
+                            route: '/health-safety'
                         },
                         {
-                            name: 'Business Skills',
-                            icon: '<i class="fas fa-hands-helping icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>'
-                        },
+                            name: 'Professional Development',
+                            icon: 'fas fa-user-graduate',
+                            route: '/professional-development'
+                        }
                     ],
                     'Care Courses': [{
-                            name: 'Mandatory Courses',
-                            icon: '<i class="far fa-newspaper icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/mandatory'
-
+                            name: 'Mandatory Training',
+                            icon: 'fas fa-file-alt',
+                            route: '/mandatory-training'
                         },
-
                         {
                             name: 'Additional Courses',
-                            icon: '<i class="far fa-list-alt icon-hover" style="font-size: 40px; padding-bottom: 4px"></i>',
-                            route: '/additional'
-
+                            icon: 'fas fa-plus-circle',
+                            route: '/additional-courses'
                         }
                     ]
-                }
+                };
 
                 function loadCategories(categoryName) {
-                     const row = categorySection.querySelector('.row');
-                   row.innerHTML = '';
+                    const row = categorySection.querySelector('.row');
+                    row.innerHTML = '';
 
-                 const catList = categories[categoryName] || [];
-                      catList.forEach(cat => {
-                 row.innerHTML += `
-                 <div class="col">
-                    <div class="category-card">
-                <a href="${cat.route || '#'}" class="category-link" style="text-decoration:none;color:black ;font-size:16px">
-                    <i class="category-icon">${cat.icon}</i>
-                    <div>${cat.name}</div>
-                </a>
-                      </div>
-                     </div>`;
-                        });
+                    const catList = categories[categoryName] || [];
+                    let rowContent = '';
 
-                        row.innerHTML += `
-                      <div class="col">
-                  <div class="category-card">
-                      <a href="/all-categories" class="d-block text-decoration-none">
-               <i class="category-icon" style="font-size: 40px; font-weight: bold;">≡</i>
-                 <div class="text-dark">All Categories</div>
-                </a>
-                 </div>
-                 </div>`;
-                 }
+                    catList.forEach(cat => {
+                        rowContent += `
+                       <div class="card text-center category-card bg-grey">
+<a href="${cat.route}" class="text-decoration-none text-dark d-flex flex-column justify-content-center align-items-center h-100">
+    <i class="${cat.icon} category-icon"></i>
+    <div>${cat.name}</div>
+</a>
+</div>
+`;
+                    });
+
+                    rowContent += `
+                    <div class="card text-center category-card">
+                        <a href="/all-categories" class="text-decoration-none text-dark d-flex flex-column justify-content-center align-items-center h-100">
+                            <i class="fas fa-th category-icon"></i>
+                            <div>All Categories</div>
+                        </a>
+                    </div>`;
+
+                    row.innerHTML = rowContent;
+                }
 
                 function showCategorySection(categoryName) {
                     loadCategories(categoryName);
@@ -656,6 +747,7 @@
                 categorySection.addEventListener('mouseenter', () => {
                     isHovering = true;
                 });
+
                 categorySection.addEventListener('mouseleave', () => {
                     isHovering = false;
                     setTimeout(hideCategorySection, 300);
@@ -669,10 +761,9 @@
                 });
             });
         </script>
-
-
-
     </header>
+
+
 
 
     @yield('content')
@@ -710,12 +801,12 @@
             setInterval(createStar, 100);
         });
     </script>
-    <footer class="footer-container" style="position: relative; overflow: hidden;">
-        <div class="container py-4">
-            <div class="row flex-wrap">
-                <div class="col-sm-3">
-                    <h3 class="text-white fw-bolder">Information</h3>
-                    <ul class="text-white px-1" style="list-style: none">
+    <footer class="footer-container bg-dark text-white py-4">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h3 class="fw-bolder">Information</h3>
+                    <ul class="px-0" style="list-style: none;">
                         <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
@@ -725,71 +816,63 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-3">
-                    <h3 class="text-white fw-bolder">Quick Links</h3>
-                    <ul class="text-white text-decoration-none px-1" style="list-style: none">
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h3 class="fw-bolder">Quick Links</h3>
+                    <ul class="px-0" style="list-style: none;">
                         <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Fees & Pricing</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Apply For Certificate</a>
-                        </li>
-                        <li><a href="#" class="text-white text-decoration-none">Apply Student Discount
-                                Card</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Apply H&S Care
-                                Certificate</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Apply For Certificate</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Apply Student Discount Card</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Apply H&S Care Certificate</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Request Info</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
                         <li><a href="#" class="text-white text-decoration-none">Jobs</a></li>
                     </ul>
                 </div>
 
-                <div class="col-sm-3">
-                    <h3 class="text-white fw-bolder">Popular Courses</h3>
-                    <p class="text-white">Level 3 Certificate in Phlebotomy (Part 1) Phlebotomy Course</p>
-                    <button class="px-3 p-2 fs-5 border-0" style="border: 18px solid green">Review as on <img
-                            src="{{ asset('assets/site/star-removebg-preview.png') }}" alt=""
-                            style="width: 30px;height:auto"><span class="fw-bolder">Trustpilot</span></button>
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h3 class="fw-bolder">Popular Courses</h3>
+                    <p>Level 3 Certificate in Phlebotomy (Part 1) Phlebotomy Course</p>
+                    <button class="px-3 p-2 fs-5 border-0" style="border: 18px solid green;">
+                        Review as on <img src="{{ asset('assets/site/star-removebg-preview.png') }}" alt="" style="width: 30px;">
+                        <span class="fw-bolder">Trustpilot</span>
+                    </button>
                 </div>
 
-                <div class="col-sm-3">
-                    <h3 class="text-white fw-bolder">Contact Info</h3>
-                    <ul class="text-white px-1" style="list-style: none">
+                <div class="col-12 col-sm-6 col-md-3 mb-4">
+                    <h3 class="fw-bolder">Contact Info</h3>
+                    <ul class="px-0" style="list-style: none;">
                         <li>Address: 123 Example Street, City</li>
                         <li>Email: info@example.com</li>
                         <li>Phone: +123-456-7890</li>
                     </ul>
-                    <div class="d-flex justify-content-start text-start gap-1 mt-4">
-                        <a href="#" class="btn p-0 bg-primary"
-                            style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
+
+                    <div class="d-flex gap-2 mt-4">
+                        <a href="#" class="btn p-0 bg-primary" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
                             <i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i>
                         </a>
-                        <a href="#" class="btn p-0"
-                            style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #25d366;">
+                        <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #25d366;">
                             <i class="fab fa-whatsapp" style="font-size: 20px; color: white;"></i>
                         </a>
-                        <a href="#" class="btn p-0"
-                            style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #0077b5;">
+                        <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #0077b5;">
                             <i class="fab fa-linkedin-in" style="font-size: 20px; color: white;"></i>
                         </a>
-                        <a href="#" class="btn p-0"
-                            style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #1DA1F2;">
+                        <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #1DA1F2;">
                             <i class="fab fa-twitter" style="font-size: 20px; color: white;"></i>
                         </a>
-                        <a href="#" class="btn p-0"
-                            style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #C13584;">
+                        <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: #C13584;">
                             <i class="fab fa-instagram" style="font-size: 20px; color: white;"></i>
                         </a>
-                        <a href="#" class="btn p-0"
-                            style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: red;">
+                        <a href="#" class="btn p-0" style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; background-color: red;">
                             <i class="fab fa-youtube" style="font-size: 20px; color: white;"></i>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center text-white mt-4 bg-black p-3">
-            <p class="mt-3 text-center fs-5">© Copyright 2013 – 2024 <span style="color: #FF007F">Inspire London
-                    College </span> All Rights Reserved | Powered by <span style="color: #FF007F">Whoopit
-                    Agency</span></p>
+
+        <div class="text-center text-white mt-5 bg-black p-3" style="position: relative; top:22px">
+            <p class="fs-5 mb-0">© Copyright 2013 – 2024 <span style="color: #FF007F">Inspire London College</span> All Rights Reserved | Powered by <span style="color: #FF007F">Whoopit Agency</span></p>
         </div>
     </footer>
 </body>

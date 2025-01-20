@@ -129,21 +129,19 @@
         }
 
         .plus-icon {
-     font-size: 1.5rem;
-     font-weight: bold;
-     margin-right: 0.5rem;
-     transition: transform 0.3s;
-     border: 3px solid black;
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
-     width: 20px;
-     height: 28px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+            transition: transform 0.3s;
+            border: 3px solid black;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 28px;
         }
 
-        /* .plus-icon.active {
-            transform: rotate(45deg);
-        } */
+
 
         .feature-card {
             border: 1px solid #e0e0e0;
@@ -253,107 +251,115 @@
 
 <body>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 text-white"
-        style="background: url('{{ asset('assets/site/Website.webp') }}') no-repeat center center; background-size: cover;">
-        <div class="text-center">
-            <h1 style="font-weight: 900; font-size: 80px">Merry Christmas & <br> Happy New Year</h1>
+    <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 text-white text-center"
+    style="background: url('{{ asset('assets/site/Website.webp') }}') no-repeat center center; background-size: cover;">
+    <div class="px-3">
+        <h1 class="fw-bold display-4 display-md-3">Merry Christmas & <br> Happy New Year</h1>
 
-            <p class="fw-bold mt-3 text-start fs-4">
-                Upskill yourself while saving big this holiday season with our festive <br> special offers
-                and step into the New Year with endless opportunities
-            </p>
+        <p class="fw-bold mt-3 fs-5">
+            Upskill yourself while saving big this holiday season with our festive <br class="d-none d-md-block">
+            special offers and step into the New Year with endless opportunities
+        </p>
 
-            <button class="px-4 py-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                style="background-color: rgb(3, 63, 3); border-radius: 8px">
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3 mt-3">
+            <button class="btn btn text-white px-4 py-2 fw-bold " style="background-color: rgb(3, 63, 3)">
                 View Qualification Offer
             </button>
-            <button class="px-4 py-2 border-0 text-black custom-hover fw-bolder" style="border-radius: 8px">
+            <button class="btn btn-light text-dark px-4 py-2 fw-bold ">
                 View Bundle Offer
             </button>
         </div>
     </div>
-    <section class="container">
-        <div class="text-sec p-5">
+</div>
 
-            <button class="px-4 mb-3 py-2 border-0 text-white custom-hover-green me-2 fw-bolder"
-                style="background-color: rgb(3, 63, 3); border-radius: 8px">
-                View Qualification Offer
-            </button>
-            <h1>Make Your Dream Career Merry and Bright with Our Festive Qualification Offer</h1>
-            <p class="fs-4">It’s never too late to finish the year with a purpose and reach your career goals with our
-                Ofqual
-                qualifications that are more affordable than before. Secure your qualification with just a <span
-                    class="text-danger fw-bolder">£70</span> initial
-                deposit and pay the rest in easy instalments. Plus, enjoy a limited-time <span
-                    class="text-danger fw-bolder">30%</span> course discount.</p>
-        </div>
+<section class="container my-5">
+    <div class="text-sec p-3">
+        <button class="btn btn text-white mb-3 fw-bold " style="background-color: rgb(3, 63, 3)">
+            View Qualification Offer
+        </button>
+        <h1 class="fs-2 fs-md-1">Make Your Dream Career Merry and Bright with Our Festive Qualification Offer</h1>
+        <p class="fs-5">
+            It’s never too late to finish the year with a purpose and reach your career goals with our Ofqual
+            qualifications that are more affordable than before. Secure your qualification with just a
+            <span class="text-danger fw-bold">£70</span> initial deposit and pay the rest in easy installments.
+            Plus, enjoy a limited-time <span class="text-danger fw-bold">30%</span> course discount.
+        </p>
+    </div>
 
-        <div class="card" style="border: none;">
-            <div class="row px-5 g-1">
-                <div class="col-md-6 p-3 d-flex justify-content-between"
-                    style="border: 2px solid grey; margin-bottom: 20px;">
-                    <img src="{{ asset('assets/site/111.webp') }}" alt=""
-                        style="width: 250px; height: 200px;border-radius:10px">
-                    <div class="px-2 mt-3">
-                        <h2>Business Management</h2>
-                        <p>Become a healthcare professional this festive season to make a positive impact on people’s
-                            lives</p>
-                        <button class="px-4 py-2 border-0 text-white custom-hover-red me-2 fw-bolder"
-                            style="background-color: rgb(3, 63, 3); border-radius: 8px;">
-                            Explore Courses
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 p-3 d-flex justify-content-between"
-                    style="border: 2px solid grey; margin-bottom: 20px;">
-                    <img src="{{ asset('assets/site/114.webp') }}" alt=""
-                        style="width: 250px; height: 200px;border-radius:10px">
-                    <div class="px-2 mt-3">
-                        <h2>Health and Social Care</h2>
-                        <p>Become a healthcare professional this festive season to make a positive impact on people’s
-                            lives</p>
-                        <button class="px-4 py-2 border-0 text-white custom-hover-red me-2 fw-bolder"
-                            style="background-color: rgb(3, 63, 3); border-radius: 8px;">
-                            Explore Courses
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 p-3 d-flex justify-content-between"
-                    style="border: 2px solid grey; margin-bottom: 20px;">
-                    <img src="{{ asset('assets/site/112.webp') }}" alt=""
-                        style="width: 250px; height: 200px;border-radius:10px">
-                    <div class="px-2 mt-3">
-                        <h2>Cyber Security</h2>
-                        <p>Become a healthcare professional this festive season to make a positive impact on people’s
-                            lives</p>
-                        <button class="px-4 py-2 border-0 text-white custom-hover-red me-2 fw-bolder"
-                            style="background-color: rgb(3, 63, 3); border-radius: 8px;">
-                            Explore Courses
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-md-6 p-3 d-flex justify-content-between"
-                    style="border: 2px solid grey; margin-bottom: 20px;">
-                    <img src="{{ asset('assets/site/113.webp') }}" alt=""
-                        style="width: 250px; height: auto; border-radius:10px">
-                    <div class="px-2 mt-3">
-                        <h2>Education & Training</h2>
-                        <p>Become a healthcare professional this festive season to make a positive impact on people’s
-                            lives</p>
-                        <button class="px-4 py-2 border-0 text-white custom-hover-red me-2 fw-bolder"
-                            style="background-color: rgb(3, 63, 3); border-radius: 8px;">
-                            Explore Courses
-                        </button>
-                    </div>
+    <div class="row g-3">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card border border-secondary h-100 d-flex flex-column flex-md-row p-3">
+                <img src="{{ asset('assets/site/111.webp') }}"
+                     class="img-fluid rounded w-100 mb-3 mb-md-0"
+                     style=" object-fit: cover;">
+                <div class="ms-md-3 text-center text-md-start">
+                    <h2 class="fs-4 mt-3">Business Management</h2>
+                    <p class="mb-3">
+                        Become a healthcare professional this festive season to make a positive impact on people’s lives.
+                    </p>
+                    <button class="btn text-white fw-bold" style="background-color: rgb(3, 63, 3)">Explore Courses</button>
                 </div>
             </div>
         </div>
 
 
-    </section>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card border border-secondary h-100 d-flex flex-column flex-md-row p-3">
+                <img src="{{ asset('assets/site/114.webp') }}"
+                     class="img-fluid rounded w-100 mb-3 mb-md-0"
+                     style=" object-fit: cover;">
+                <div class="ms-md-3 text-center text-md-start">
+                    <h2 class="fs-4 mt-3">Health and Social Care</h2>
+                    <p class="mb-3">
+                        Become a healthcare professional this festive season to make a positive impact on people’s lives.
+                    </p>
+                    <button class="btn text-white fw-bold" style="background-color: rgb(3, 63, 3);">
+                        Explore Courses
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card border border-secondary h-100 d-flex flex-column flex-md-row p-3">
+                <img src="{{ asset('assets/site/112.webp') }}"
+                     class="img-fluid rounded w-100 mb-3 mb-md-0"
+                     style=" object-fit: cover;">
+                <div class="ms-md-3  text-center text-md-start">
+                    <h2 class="fs-4 mt-3">Cyber Security</h2>
+                    <p class="mb-3">
+                        Become a healthcare professional this festive season to make a positive impact on people’s lives.
+                    </p>
+                    <button class="btn text-white fw-bold" style="background-color: rgb(3, 63, 3);">
+                        Explore Courses
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card border border-secondary h-100 d-flex flex-column flex-md-row p-3">
+                <img src="{{ asset('assets/site/113.webp') }}"
+                     class="img-fluid rounded w-100 mb-3 mb-md-0"
+                     style="object-fit: cover;">
+                <div class="ms-md-3 text-center text-md-start">
+                    <h2 class="fs-4 mt-3">Education & Training</h2>
+                    <p class="mb-3">
+                        Become a healthcare professional this festive season to make a positive impact on people’s lives.
+                    </p>
+                    <button class="btn text-white fw-bold" style="background-color: rgb(3, 63, 3);">
+                        Explore Courses
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
 
     <div class="mt-5" style="background-color: ghostwhite;">
         <section class="container">
@@ -363,91 +369,82 @@
                     Bundle Offer
                 </button>
                 <h1>Become Skillful for Less with Our Festive Special Bundle Offer </h1>
-                <p class="fs-4">This New Year, treat yourself with a gift of knowledge. Learn as many skills as you
-                    want at a reasonable price with our <span class="text-danger fw-bolder">festive special bundle
-                        offer.</span> Get 6 bundle video courses of your
-                    desired category at an incredible <span class="text-danger fw-bolder">30% OFF</span> and make this
-                    festive season an exciting learning
-                    adventure.</p>
+                <p class="fs-4">This New Year, treat yourself with a gift of knowledge. Learn as many skills as you want at
+                    a reasonable price with our <span class="text-danger fw-bolder">festive special bundle offer.</span> Get 6
+                    bundle video courses of your desired category at an incredible <span class="text-danger fw-bolder">30%
+                    OFF</span> and make this festive season an exciting learning adventure.</p>
             </div>
 
             <div class="card g-3" style="border: none; background-color: transparent;">
-                <div class="card g-3 mb-4" style="border: none; background-color: transparent;">
-                    <div class="row px-5 g-3">
-                        <div class="col-sm-4 p-2 text-center">
-                            <div
-                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: #ffffff;">
-                                <img src="{{ asset('assets/site/Business-Skills.webp') }}" alt=""
-                                    style="width: 100%; height: auto;">
-                                <div class="px-3 mt-3">
-                                    <h3 class="fs-3">Business Skills</h3>
-                                    <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
-                                    <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px;">
-                                        Explore Courses
-                                    </button>
-                                </div>
-                            </div>
+                <div class="row px-5 g-3">
+                    <div class="col-sm-12 col-md-4 p-2 text-center">
+                        <div class="border border-secondary rounded-3 p-3" style="background-color: #ffffff;">
+                            <img src="{{ asset('assets/site/Business-Skills.webp') }}" alt=""
+                                class="img-fluid rounded mb-3" style="max-width: 100%; height: auto;">
+                            <h3 class="fs-3">Business Skills</h3>
+                            <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
+                            <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
+                                style="background-color: rgb(3, 63, 3); border-radius: 8px;">
+                                Explore Courses
+                            </button>
                         </div>
+                    </div>
 
-                        <div class="col-sm-4 p-2 text-center">
-                            <div
-                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: #ffffff;">
-                                <img src="{{ asset('assets/site/Health-Safety.webp') }}" alt=""
-                                    style="width: 100%; height: auto;">
-                                <div class="px-3 mt-3">
-                                    <h3>Health & Safety</h3>
-                                    <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
-                                    <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px;">
-                                        Explore Courses
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="col-sm-12 col-md-4 p-2 text-center">
+                        <div class="border border-secondary rounded-3 p-3" style="background-color: #ffffff;">
+                            <img src="{{ asset('assets/site/Health-Safety.webp') }}" alt=""
+                                class="img-fluid rounded mb-3" style="max-width: 100%; height: auto;">
+                            <h3>Health & Safety</h3>
+                            <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
+                            <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
+                                style="background-color: rgb(3, 63, 3); border-radius: 8px;">
+                                Explore Courses
+                            </button>
                         </div>
+                    </div>
 
-                        <div class="col-sm-4 p-2 text-center">
-                            <div
-                                style="border: 2px solid grey; border-radius: 8px; padding: 15px; background-color: #ffffff;">
-                                <img src="{{ asset('assets/site/Health-and-social-care-4.webp') }}" alt=""
-                                    style="width: 100%; height: auto;">
-                                <div class="px-3 mt-3">
-                                    <h3>Health & Social Care</h3>
-                                    <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
-                                    <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
-                                        style="background-color: rgb(3, 63, 3); border-radius: 8px;">
-                                        Explore Courses
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="col-sm-12 col-md-4 p-2 text-center">
+                        <div class="border border-secondary rounded-3 p-3" style="background-color: #ffffff;">
+                            <img src="{{ asset('assets/site/Health-and-social-care-4.webp') }}" alt=""
+                                class="img-fluid rounded mb-3" style="max-width: 100%; height: auto;">
+                            <h3>Health & Social Care</h3>
+                            <p class="fw-bolder fs-4">Bundle of 6 – Get 30% OFF</p>
+                            <button class="px-4 py-2 m-2 border-0 text-white custom-hover-red me-2 fw-bolder"
+                                style="background-color: rgb(3, 63, 3); border-radius: 8px;">
+                                Explore Courses
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
+
         <section class="p-5" style="background-color: rgb(122, 7, 7);">
-            <div class="text-sec" style="margin-left: 18rem">
-                <h1 class="px-5" style="color: white;">Want to Know More About Our Festive <br>Special Offers?
-                </h1>
+            <div class=" container text-sec" >
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <h1 class="px-3 py-4 text-start text-md-start" style="color: white;">
+                        Want to Know More About Our Festive Special <br> Offers?
+                    </h1>
+                </div>
+
+
             </div>
-            <div class="d-flex justify-content-center g-3">
+            <div class="d-flex flex-wrap justify-content-center g-3">
                 <div>
-                    <p class="text-white fs-5" style="margin-right:8rem">Reach out to our friendly team and get your
-                        queries resolved quickly to avail these <br> limited-time offers.
+                    <p class="text-white fs-5 p-1 p-sm-3 p-md-4 text-start text-md-start">
+                        Reach out to our friendly team and get your queries resolved quickly to avail these limited-time <br> offers.
                     </p>
                 </div>
-                <div style="position:relative; top:-20px">
-                    <button class="px-4 p-2 text-danger fs-4" style="border-radius:7px; border:none;">
+                <div class="d-flex flex-column justify-content-center align-items-center" style="position:relative; top:-20px">
+                    <button class="px-4 py-2 text-danger fs-4 mb-3 mb-md-0" style="border-radius:7px; border:none;">
                         <i class="fa-solid fa-phone"></i> Call Now
                     </button>
-                    <button class="px-4 p-2 fs-4 "
-                        style="background-color: #25D366; color:white; border-radius:7px;border:none">
-                        <i class="fab fa-whatsapp" style="margin-right: 5px;"></i>
-
-                        WhatsApp</button>
-
+                    <button class="px-4 py-2 fs-4 w-md-auto mb-3 mb-md-0" style="background-color: #25D366; color:white; border-radius:7px; border:none">
+                        <i class="fab fa-whatsapp" style="margin-right: 5px;"></i> WhatsApp
+                    </button>
                 </div>
+
+
             </div>
         </section>
 
@@ -692,8 +689,11 @@
 
     <footer style="background: url('assets/site/preview.jpg') no-repeat center center; background-size: cover;">
         <div class="text-center p-5">
+            <!-- Logo -->
             <img src="assets/site/115.png" alt="Logo" style="width: 180px">
-            <div class="d-flex justify-content-center text-start gap-2 mt-4 p-3">
+
+            <!-- Social Media Icons -->
+            <div class="d-flex flex-wrap justify-content-center text-start gap-2 mt-4 p-3">
                 <a href="#" class="btn p-0 bg-primary"
                     style="width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;">
                     <i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i>
@@ -723,10 +723,16 @@
                     <i class="fab fa-twitter" style="font-size: 20px; color: white;"></i>
                 </a>
             </div>
-            <img src="assets/site/sliderBottom.png" alt="Slider Bottom" style="width: 600px" class="pb-3">
+
+            <!-- Slider Bottom Image -->
+            <img src="assets/site/sliderBottom.png" alt="Slider Bottom" style="width: 100%; max-width: 600px;" class="pb-3">
+
+            <!-- Footer Text -->
             <h4 class="text-white">© 2024 – inspirelondoncollege.co.uk – All Rights Reserved</h4>
         </div>
     </footer>
+
+
 
     <script>
         function createStar() {

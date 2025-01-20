@@ -82,48 +82,48 @@
 @section('content')
     <div style="background-color: ghostwhite; border-bottom: 2px solid red" class="p-5">
         <section>
-            <div class="text-sec d-flex">
-                <div class="flex-shrink-0" style="max-width: 50%; padding-right: 20px;">
+            <div class="text-sec d-flex flex-wrap">
+                <div class="col-12 col-md-6 mb-4 mb-md-0 px-md-3">
                     <img src="{{ asset('assets/site/phlebotomy-part-1n.webp') }}" alt="Phlebotomy Image"
-                        style="max-width: 100%; height: auto;border-radius:20px">
-
+                        class="img-fluid rounded" style="max-width: 100%; border-radius: 20px;">
                 </div>
 
-                <div class="flex-grow-1 text-start mt-5">
-                    <h3 class="px-5">Live Bloods Practical Session (One Session)
-                    </h3>
-                    <div class="row g-3 px-5 pt-3">
-                        <div class="col-md-4">
-                            <div class="card border-dotted p-4 text-center" style="background-color: #ffffff; border:1px solid #f8f7f7; border-radius: 0px 13px 13px 13px">
+                <div class="col-12 col-md-6 mt-4 mt-md-0 text-start">
+                    <h3 class="px-3 px-md-5">Live Bloods Practical Session (One Session)</h3>
+                    <div class="row g-3 d-flex align-items-stretch">
+                        <div class="col-12 col-md-4">
+                            <div class="card border-dotted p-4 text-center h-100"
+                                style="background-color: #ffffff; border: 1px solid #f8f7f7; border-radius: 0px 13px 13px 13px;">
                                 <h6>COURSE LEVEL</h6>
                                 <h4 class="text-primary p-3">Level 3</h4>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 0px 13px 13px 13px">
+                        <div class="col-12 col-md-4">
+                            <div class="card border-dotted p-4 text-center h-100"
+                                style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 0px 13px 13px 13px;">
                                 <h6 class="pb-3">COURSE TYPE</h6>
                                 <h4 class="text-primary p-2">CPD Accredited Course</h4>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="card p-4 text-center" style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 0px 13px 13px 13px">
+                        <div class="col-12 col-md-4">
+                            <div class="card border-dotted p-4 text-center h-100"
+                                style="background-color: #ffffff; border: 1px dotted #f8f7f7; border-radius: 0px 13px 13px 13px;">
                                 <h6>AWARDING BODY</h6>
-                                <h4 class="text-primary fs-3 p-3">Step Ahead CPD </h4>
+                                <h4 class="text-primary fs-3 p-3">Step Ahead CPD</h4>
                             </div>
                         </div>
-
                     </div>
-                    <h1 class="text-center pt-3 " style="color:deeppink">£199.00 £80.00</h1>
-                    <div class="selection-panel" >
 
-                        <div class="d-flex align-items-center px-5 pb-4">
-                            <input type="number" class="form-control quantity-input p-2 mt-3 fs-4 fw-bolder text-danger" value="1" min="1" max="10" id="quantity"
-                                style="background-color: transparent; width: 90px; text-align: center; border-radius: 20px 0px 0px 20px;border:2px solid #f51ab3">
-                            <button class="add-basket-btn ms-2 fs-5" onclick="addToBasket()" style="width: 100%">Add to basket</button>
-                        </div>
+                    <h1 class="text-center pt-3 text-danger">£199.00 <span class="text-muted" style="text-decoration: line-through;">£80.00</span></h1>
+                    <div class="d-flex justify-content-center px-3 px-md-5 pb-4">
+                        <input type="number" class="form-control quantity-input text-center p-2 fs-4 fw-bold text-danger"
+                            value="1" min="1" max="10" id="quantity"
+                            style="max-width: 100px; border-radius: 20px 0 0 20px; border: 2px solid #f51ab3;">
+                        <button class="btn btn-primary fs-5 ms-2 w-100" onclick="addToBasket()">Add to basket</button>
                     </div>
                 </div>
             </div>
+
          </div>
 
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -216,50 +216,56 @@
 
                         </p>
 
-                        <form style="background-color: #e6f1fc;border-radius:20px" class="w-75">
-
-                            <div class="form-row p-5">
-                                <div>
-                                    <h1 class="text-center fw-bolder" style="color: #64a1da">Enquire Now!
-                                    </h1>
-                                    <p class="fs-5 p-3">For further details about this course send us a message through this enquiry form.
-
-                                    </p>
+                        <form style="background-color: #e6f1fc; border-radius: 20px;" class="container w-100 w-md-75 mx-auto">
+                            <div class="form-row p-3 p-md-5">
+                                <div class="text-center mb-4">
+                                    <h1 class="fw-bolder" style="color: #64a1da;">Enquire Now!</h1>
+                                    <p class="fs-5">For further details about this course, send us a message through this enquiry form.</p>
                                 </div>
-                              <div class="col-md-12 mb-3">
-                                <label for="validationServer01" class="p-1 fs-4">First name</label>
-                                <input type="text" class="form-control is-valid p-3" id="validationServer01"   required>
-                              </div>
-                              <div class="col-md-12 mb-3">
-                                <label for="validationServer02" class="p-1 fs-4">Email</label>
-                                <input type="text" class="form-control is-valid p-3" id="validationServer02"   required>
-                              </div>
-                              <div class="col-md-12 mb-3">
-                                <label for="validationServer02" class="p-1 fs-4">Phone</label>
-                                <input type="number" class="form-control is-valid p-3" id="validationServer02" required>
-                              </div>
-                              <div class="col-md-12 mb-3">
-                                <label for="validationServer02" class="p-1 fs-4">Your Message</label>
-                                <textarea name="" id="" cols="30" rows="10" style="width: 100%"></textarea>
-                              </div>
 
-                              <div class="form-check p-4">
-                                <input class="form-check-input is-invalid " type="checkbox" value="" id="invalidCheck3" required>
-                                <label class="form-check-label " >
-                                  I agree to ILC <span style="color: #64a1da">Privacy Policy</span> and <span style="color: #64a1da">term and Condition</span>
-                                </label>
+                                <div class="col-12 mb-3">
+                                    <label for="validationServer01" class="p-1 fs-5">First Name</label>
+                                    <input type="text" class="form-control is-valid p-3" id="validationServer01" required>
+                                </div>
 
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input is-invalid text-black" type="checkbox" value="" id="invalidCheck3" required>
-                                <label class="form-check-label" for="invalidCheck3">
-                                 I would like to recive further offer
-                                </label>
+                                <div class="col-12 mb-3">
+                                    <label for="validationServer02" class="p-1 fs-5">Email</label>
+                                    <input type="email" class="form-control is-valid p-3" id="validationServer02" required>
+                                </div>
 
-                              </div>
-                              <button class="btn mt-3 px-3 fs-4 text-white" type="submit" style="background-color: #f06ac8">Submit form</button>
+                                <div class="col-12 mb-3">
+                                    <label for="validationServer03" class="p-1 fs-5">Phone</label>
+                                    <input type="number" class="form-control is-valid p-3" id="validationServer03" required>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <label for="validationServer04" class="p-1 fs-5">Your Message</label>
+                                    <textarea class="form-control p-3" id="validationServer04" rows="5" required></textarea>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input is-invalid text-secondary" type="checkbox" id="invalidCheck1" required>
+                                    <label class="form-check-label" for="invalidCheck1">
+                                        I agree to ILC <span style="color: #64a1da;">Privacy Policy</span> and <span style="color: #64a1da;">Terms and Conditions</span>.
+                                    </label>
+                                </div>
+
+                                <div class="form-check mb-3">
+                                    <input class="form-check-input is-invalid" type="checkbox" id="invalidCheck2" required>
+                                    <label class="form-check-label" for="invalidCheck2">
+                                        I would like to receive further offers.
+                                    </label>
+                                </div>
+
+                                <div class="text-lg-start text-center">
+                                    <button class="btn mt-3 px-lg-5 px-3 fs-5 text-white w-md-100 w-lg-auto" type="submit" style="background-color: #f06ac8;">
+                                        Submit Form
+                                    </button>
+                                </div>
+
                             </div>
                         </form>
+
             </div>
 
         </div>
