@@ -40,6 +40,84 @@
             color: #333;
             font-size: 0.9rem;
         }
+        @media (min-width: 1024px) and (max-width: 1440px) {
+    .navbar .nav-link {
+        font-size: 0.9rem;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .navbar-brand img {
+        max-width: 120px;
+    }
+
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar-nav {
+        gap: 0.2rem;
+    }
+
+    .btn {
+        font-size: 0.85rem !important;
+        padding: 0.4rem 1rem !important;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .navbar .nav-link {
+        font-size: 0.85rem;
+        padding-left: 0.4rem !important;
+        padding-right: 0.4rem !important;
+    }
+
+    .navbar-brand img {
+        max-width: 110px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .navbar-expand-xl .navbar-nav .dropdown-menu {
+        position: static;
+        border: none;
+        padding-left: 1.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-nav .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.btn {
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+    padding: 0.7rem 1.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
 
         .category-section .row {
             display: flex;
@@ -341,374 +419,300 @@
                         </h3>
                     </div>
                     <div class="col-md-3 text-center text-md-end mt-3 mt-md-0 ">
-                        <a href="/christmas" class="btn btn-danger px-4 " style="border: 2px solid white; font-weight:600">Click Here</a>
+                        <a href="/christmas" class="btn btn-danger px-4 "
+                            style="border: 3px solid white; font-weight:600">Click Here</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="secondary-header py-3">
-            <div class="px-md-4">
-                <div class="row align-items-center">
-                    <div class="col-lg-7 text-center text-lg-start mb-3 mb-lg-0">
-                        <p class="text-white mb-0 fs-5 fw-medium">
-                            Book Today | Level 3 Phlebotomy Part 1 & Part 2 | Only £350 Get Health & Safety Course
-                            Free
-                        </p>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="d-flex flex-column flex-md-row align-items-center justify-content-lg-end gap-2">
-                            <a href="/bookssnow" class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Books
-                                Now</a>
-                            <a href="/contact"
-                                class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill">Contact Us</a>
-                            <form class="d-flex mt-2 mt-md-0" role="search">
-                                <div class="input-group">
-                                    <input class="form-control rounded-start-pill" type="search"
-                                        placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-info text-white fw-bold rounded-end-pill"
-                                        type="submit">Search</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div class=" py-3 px-3" style="background-color: #ff1493">
+            <div class="row gy-3 mx-0">
+              <div class="col-lg-7 text-center text-lg-start">
+                <p class="text-white mb-0 fs-5 fw-medium">
+                  Book Today | Level 3 Phlebotomy Part 1 & Part 2 | Only £350 Get Health & Safety Course Free
+                </p>
+              </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="#">
-                <img src="assets/site/ILC-logo-1024x616.webp" alt="Inspire London College Logo" style="width: 150px; height: auto;">
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto d-flex flex-row">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Endorsed Courses</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CPD Courses</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Phlebotomy</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Ofqual Qualifications</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CPD Video Training</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Care Courses</a>
-                    </li>
-                </ul>
-                <div class="d-none d-lg-flex align-items-center gap-2">
-                    <button class="btn text-white py-2 px-4" style="background-color: #FF007F; border-radius: 50px; font-size: 0.9rem;">
-                        Learning Platform
-                    </button>
-                    <button class="btn btn-info text-white px-3 py-2" style="border-radius: 50px; width: 180px; font-size: 0.9rem;">
-                        VLE
-                    </button>
+              <div class="col-lg-5">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-lg-end gap-2">
+                  <div class="d-flex flex-column flex-sm-row gap-2 w-100 w-md-auto">
+                    <a href="{{ route('booksnow') }}" class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill w-100 w-sm-auto">Books Now</a>
+                    <a href="{{ route('contact') }}" class="btn btn-info text-white fw-bold px-4 py-2 rounded-pill w-100 w-sm-auto">Contact Us</a>
+                  </div>
+
+                  <form class="d-flex w-100 w-md-auto mt-2 mt-md-0" role="search">
+                    <div class="input-group">
+                      <input class="form-control rounded-start-pill border-0" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-info text-white fw-bold rounded-end-pill" type="submit">Search</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar navbar-expand-xl navbar-light bg-white sticky-top">
+            <div class="container-fluid px-xl-5">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/site/ILC-logo-1024x616.webp" alt="Inspire London College Logo" class="img-fluid" style="max-width: 150px;">
+                </a>
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item dropdown px-xl-2 px-lg-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Endorsed Courses
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown px-xl-2 px-lg-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                CPD Courses
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown px-xl-2 px-lg-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Phlebotomy
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown px-xl-2 px-lg-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Ofqual Qualifications
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown px-xl-2 px-lg-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                CPD Video Training
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown px-xl-2 px-lg-1">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Care Courses
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-xl-flex gap-2">
+                        <button class="btn text-white px-3 py-2" style="background-color: #FF007F; border-radius: 50px; font-size: 0.85rem; min-width: 140px;">
+                            Learning Platform
+                        </button>
+                        <button class="btn btn-info text-white px-3 py-2" style="border-radius: 50px; font-size: 0.85rem; min-width: 140px;">
+                            VLE
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
 
-
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header border-bottom">
                 <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body ">
-                <ul class="navbar-nav">
+            <div class="offcanvas-body d-flex flex-column">
+                <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link d-flex justify-content-between align-items-center"
-                            data-bs-toggle="collapse" href="#endorsedCoursesCollapse">
+                        <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#endorsedCoursesCollapse">
                             Endorsed Courses
                             <i class="fas fa-chevron-down"></i>
                         </a>
                         <div class="collapse" id="endorsedCoursesCollapse">
-                            <ul class="nav flex-column ms-3 ">
-                                <li class="nav-item"><a class="nav-link" href="{{ route('accounting') }}">Accounting and
-                                        Finance</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('admin') }}">Admin Secretarial &
-                                        PA</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('business') }}">Business Management</a>
-                                </li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('human') }}">HR Management</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('leadership') }}">Leadership $ management</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex justify-content-between align-items-center"
-                            data-bs-toggle="collapse" href="#cpdCoursesCollapse">
-                            CPD Courses
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="collapse" id="cpdCoursesCollapse">
                             <ul class="nav flex-column ms-3">
-                                <li class="nav-item"><a class="nav-link" href="{{ route('accounting') }}">Accounting $ Finance</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('beauty') }}">Beauty Therapy</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('childphychology') }}">Child Psychology</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('human') }}">HR Management</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('supply') }}">Supply Chain Management</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('workplace') }}">Workplace Management</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex justify-content-between align-items-center"
-                            data-bs-toggle="collapse" href="#phlebotomyCollapse">
-                            Phlebotomy
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="collapse" id="phlebotomyCollapse">
-                            <ul class="nav flex-column ms-3">
-                                <li class="nav-item"><a class="nav-link" href="{{ route('phlebotomy') }}">Level 3 Certicate Phebotomy (part 2 $ 2) </a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('phlebotmists') }}">Level 3 Certicate Phelotomy (Part 2)</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('level') }}">Phebotmist Placement</a></li>
-                                <li class="nav-item"><a class="nav-link" href="">Live Blood Practical</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex justify-content-between align-items-center"
-                            data-bs-toggle="collapse" href="#ofqualCollapse">
-                            Ofqual Qualifications
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="collapse" id="ofqualCollapse">
-                            <ul class="nav flex-column ms-3">
-                                <li class="nav-item"><a class="nav-link" href="{{ route('business') }}">Business Management</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('cyber') }}">Cyber Security </a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('education') }}">Education $ training </a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('health') }}">Healt $ Safety</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex justify-content-between align-items-center"
-                            data-bs-toggle="collapse" href="#videoTrainingCollapse">
-                            CPD Video Training
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="collapse" id="videoTrainingCollapse">
-                            <ul class="nav flex-column ms-3">
-                                <li class="nav-item"><a class="nav-link" href="{{ route('business') }}">Business Skills</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('health') }}">Health $ Safety </a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Professional Developer</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link d-flex justify-content-between align-items-center"
-                            data-bs-toggle="collapse" href="#careCoursesCollapse">
-                            Care Courses
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <div class="collapse" id="careCoursesCollapse">
-                            <ul class="nav flex-column ms-3">
-                                <li class="nav-item"><a class="nav-link" href="{{ route('mandatory') }}">Manadatory</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{ route('additional') }}">Additional Courses</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('accounting') }}">Accounting and Finance</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('admin') }}">Admin Secretarial & PA</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('business') }}">Business Management</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('human') }}">HR Management</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('leadership') }}">Leadership & Management</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
-                <div class="mt-4">
-                    <button class="btn text-white py-2 px-4 w-100 mb-2"
-                        style="background-color: #FF007F; border-radius: 50px; font-size: 0.9rem;">
+
+                <div class="mt-auto">
+                    <button class="btn text-white w-100 mb-2 py-2" style="background-color: #FF007F; border-radius: 50px; font-size: 0.9rem;">
                         Learning Platform
                     </button>
-                    <button class="btn btn-info text-white px-3 py-2 w-100"
-                        style="border-radius: 50px; font-size: 0.9rem;">
+                    <button class="btn btn-info text-white w-100 py-2" style="border-radius: 50px; font-size: 0.9rem;">
                         VLE
                     </button>
+
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a href="#" class="btn btn-outline-success rounded-circle">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-primary rounded-circle">
+                            <i class="fab fa-facebook-messenger"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="social-buttons d-flex justify-content-around">
-                <a href="#" class="social-button whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-                <a href="#" class="social-button messenger-btn">
-                    <i class="fab fa-facebook-messenger"></i>
-                </a>
-            </div>
         </div>
+
 
         <div class="category-section bg-white" id="categorySection" style="display:none;">
             <div class="row">
             </div>
         </div>
+        <div class="bg-danger">
 
 
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const categorySection = document.getElementById('categorySection');
-                const navItems = document.querySelectorAll('.navbar-nav .dropdown');
-                let isHovering = false;
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const categorySection = document.getElementById('categorySection');
+                    const navItems = document.querySelectorAll('.navbar-nav .dropdown');
+                    let isHovering = false;
 
-                const categories = {
-                    'Endorsed Courses': [{
-                            name: 'Accounting & Finance',
-                            icon: 'fas fa-calculator',
-                            route: '/accounting'
-                        },
-                        {
-                            name: 'Admin & Secretarial',
-                            icon: 'fas fa-user-cog',
-                            route: '/admin'
-                        },
-                        {
-                            name: 'Business Management',
-                            icon: 'fas fa-hands-helping',
-                            route: '/business'
-                        },
-                        {
-                            name: 'HR Management',
-                            icon: 'fas fa-user-tie',
-                            route: '/human'
-                        },
-                        {
-                            name: 'Leadership & Management',
-                            icon: 'fas fa-user-check',
-                            route: '/leadership'
-                        },
-                        {
-                            name: 'Project Management',
-                            icon: 'fas fa-project-diagram',
-                            route: '/project'
-                        }
-                    ],
-                    'CPD Courses': [{
-                            name: 'Accounting & Finance',
-                            icon: 'fas fa-calculator',
-                            route: '/accounting'
-                        },
-                        {
-                            name: 'Beauty Therapy',
-                            icon: 'fas fa-leaf',
-                            route: '/beauty'
-                        },
-                        {
-                            name: 'Child Psychology',
-                            icon: 'fas fa-child',
-                            route: '/childphychology'
-                        },
-                        {
-                            name: 'HR Management',
-                            icon: 'fas fa-user-tie',
-                            route: '/human'
-                        },
-                        {
-                            name: 'Supply Chain Management',
-                            icon: 'fas fa-link',
-                            route: '/supply'
-                        },
-                        {
-                            name: 'Workplace Management',
-                            icon: 'fas fa-project-diagram',
-                            route: '/workplace'
-                        }
-                    ],
-                    'Phlebotomy': [{
-                            name: 'Phlebotomy Level 3 Part 1 & 2',
-                            icon: 'fas fa-syringe',
-                            route: '/phlebotomy'
-                        },
-                        {
-                            name: 'Phlebotomist Placement',
-                            icon: 'fas fa-hands-helping',
-                            route: '/phlebotmists'
-                        },
-                        {
-                            name: 'Blood Level Practice',
-                            icon: 'fas fa-vials',
-                            route: '/level'
-                        }
-                    ],
-                    'Ofqual Qualifications': [{
-                            name: 'Business Management',
-                            icon: 'fas fa-briefcase',
-                            route: '/business'
-                        },
-                        {
-                            name: 'Cyber Security',
-                            icon: 'fas fa-unlock-alt',
-                            route: '/cyber'
-                        },
-                        {
-                            name: 'Education & Training',
-                            icon: 'fas fa-chalkboard-teacher',
-                            route: '/education'
-                        },
-                        {
-                            name: 'Health & Safety',
-                            icon: 'fas fa-heartbeat',
-                            route: '/health'
-                        }
-                    ],
-                    'CPD Video Training': [{
-                            name: 'Business Skills',
-                            icon: 'fas fa-briefcase',
-                            route: '/business'
-                        },
-                        {
-                            name: 'Health & Safety',
-                            icon: 'fas fa-heartbeat',
-                            route: '/health'
-                        },
-                        {
-                            name: 'Professional Development',
-                            icon: 'fas fa-user-graduate',
-                            route: '/professional-development'
-                        }
-                    ],
-                    'Care Courses': [{
-                            name: 'Mandatory Training',
-                            icon: 'fas fa-file-alt',
-                            route: '/mandatory'
-                        },
-                        {
-                            name: 'Additional Courses',
-                            icon: 'fas fa-plus-circle',
-                            route: '/additional'
-                        }
-                    ]
-                };
+                    const categories = {
+                        'Endorsed Courses': [{
+                                name: 'Accounting & Finance',
+                                icon: 'fas fa-calculator',
+                                route: '/accounting'
+                            },
+                            {
+                                name: 'Admin & Secretarial',
+                                icon: 'fas fa-user-cog',
+                                route: '/admin'
+                            },
+                            {
+                                name: 'Business Management',
+                                icon: 'fas fa-hands-helping',
+                                route: '/business'
+                            },
+                            {
+                                name: 'HR Management',
+                                icon: 'fas fa-user-tie',
+                                route: '/human'
+                            },
+                            {
+                                name: 'Leadership & Management',
+                                icon: 'fas fa-user-check',
+                                route: '/leadership'
+                            },
+                            {
+                                name: 'Project Management',
+                                icon: 'fas fa-project-diagram',
+                                route: '/project'
+                            }
+                        ],
+                        'CPD Courses': [{
+                                name: 'Accounting & Finance',
+                                icon: 'fas fa-calculator',
+                                route: '/accounting'
+                            },
+                            {
+                                name: 'Beauty Therapy',
+                                icon: 'fas fa-leaf',
+                                route: '/beauty'
+                            },
+                            {
+                                name: 'Child Psychology',
+                                icon: 'fas fa-child',
+                                route: '/childphychology'
+                            },
+                            {
+                                name: 'HR Management',
+                                icon: 'fas fa-user-tie',
+                                route: '/human'
+                            },
+                            {
+                                name: 'Supply Chain Management',
+                                icon: 'fas fa-link',
+                                route: '/supply'
+                            },
+                            {
+                                name: 'Workplace Management',
+                                icon: 'fas fa-project-diagram',
+                                route: '/workplace'
+                            }
+                        ],
+                        'Phlebotomy': [{
+                                name: 'Phlebotomy Level 3 Part 1 & 2',
+                                icon: 'fas fa-syringe',
+                                route: '/phlebotomy'
+                            },
+                            {
+                                name: 'Phlebotomist Placement',
+                                icon: 'fas fa-hands-helping',
+                                route: '/phlebotmists'
+                            },
+                            {
+                                name: 'Blood Level',
+                                icon: 'fas fa-vials',
+                                route: '/level'
+                            }
+                        ],
+                        'Ofqual Qualifications': [{
+                                name: 'Business Management',
+                                icon: 'fas fa-briefcase',
+                                route: '/business'
+                            },
+                            {
+                                name: 'Cyber Security',
+                                icon: 'fas fa-unlock-alt',
+                                route: '/cyber'
+                            },
+                            {
+                                name: 'Education & Training',
+                                icon: 'fas fa-chalkboard-teacher',
+                                route: '/education'
+                            },
+                            {
+                                name: 'Health & Safety',
+                                icon: 'fas fa-heartbeat',
+                                route: '/health'
+                            }
+                        ],
+                        'CPD Video Training': [{
+                                name: 'Business Skills',
+                                icon: 'fas fa-briefcase',
+                                route: '/business'
+                            },
+                            {
+                                name: 'Health & Safety',
+                                icon: 'fas fa-heartbeat',
+                                route: '/health'
+                            },
+                        ],
+                        'Care Courses': [{
+                                name: 'Mandatory Training',
+                                icon: 'fas fa-file-alt',
+                                route: '/mandatory'
+                            },
+                            {
+                                name: 'Additional Courses',
+                                icon: 'fas fa-plus-circle',
+                                route: '/additional'
+                            }
+                        ]
+                    };
 
-                function loadCategories(categoryName) {
-                    const row = categorySection.querySelector('.row');
-                    row.innerHTML = '';
+                    function loadCategories(categoryName) {
+                        const row = categorySection.querySelector('.row');
+                        row.innerHTML = '';
 
-                    const catList = categories[categoryName] || [];
-                    let rowContent = '';
+                        const catList = categories[categoryName] || [];
+                        let rowContent = '';
 
-                    catList.forEach(cat => {
-                        rowContent += `
+                        catList.forEach(cat => {
+                            rowContent += `
                        <div class="card text-center category-card bg-grey">
-<a href="${cat.route}" class="text-decoration-none text-dark d-flex flex-column justify-content-center align-items-center h-100">
-    <i class="${cat.icon} category-icon"></i>
-    <div>${cat.name}</div>
-</a>
-</div>
-`;
-                    });
+                     <a href="${cat.route}" class="text-decoration-none text-dark d-flex flex-column justify-content-center align-items-center h-100">
+                     <i class="${cat.icon} category-icon"></i>
+                    <div>${cat.name}</div>
+                         </a>
+                      </div>
+                      `;
+                        });
 
-                    rowContent += `
+                        rowContent += `
                     <div class="card text-center category-card">
                         <a href="/all-categories" class="text-decoration-none text-dark d-flex flex-column justify-content-center align-items-center h-100">
                             <i class="fas fa-th category-icon"></i>
@@ -716,51 +720,51 @@
                         </a>
                     </div>`;
 
-                    row.innerHTML = rowContent;
-                }
-
-                function showCategorySection(categoryName) {
-                    loadCategories(categoryName);
-                    categorySection.style.display = 'block';
-                }
-
-                function hideCategorySection() {
-                    if (!isHovering) {
-                        categorySection.style.display = 'none';
+                        row.innerHTML = rowContent;
                     }
-                }
 
-                navItems.forEach(item => {
-                    const dropdownLink = item.querySelector('.nav-link.dropdown-toggle');
-                    dropdownLink.addEventListener('mouseenter', () => {
-                        isHovering = true;
-                        const categoryName = dropdownLink.textContent.trim();
-                        showCategorySection(categoryName);
+                    function showCategorySection(categoryName) {
+                        loadCategories(categoryName);
+                        categorySection.style.display = 'block';
+                    }
+
+                    function hideCategorySection() {
+                        if (!isHovering) {
+                            categorySection.style.display = 'none';
+                        }
+                    }
+
+                    navItems.forEach(item => {
+                        const dropdownLink = item.querySelector('.nav-link.dropdown-toggle');
+                        dropdownLink.addEventListener('mouseenter', () => {
+                            isHovering = true;
+                            const categoryName = dropdownLink.textContent.trim();
+                            showCategorySection(categoryName);
+                        });
+
+                        item.addEventListener('mouseleave', () => {
+                            isHovering = false;
+                            setTimeout(hideCategorySection, 300);
+                        });
                     });
 
-                    item.addEventListener('mouseleave', () => {
+                    categorySection.addEventListener('mouseenter', () => {
+                        isHovering = true;
+                    });
+
+                    categorySection.addEventListener('mouseleave', () => {
                         isHovering = false;
                         setTimeout(hideCategorySection, 300);
                     });
-                });
 
-                categorySection.addEventListener('mouseenter', () => {
-                    isHovering = true;
+                    document.addEventListener('click', (event) => {
+                        if (!categorySection.contains(event.target) && !event.target.closest('.dropdown')) {
+                            isHovering = false;
+                            hideCategorySection();
+                        }
+                    });
                 });
-
-                categorySection.addEventListener('mouseleave', () => {
-                    isHovering = false;
-                    setTimeout(hideCategorySection, 300);
-                });
-
-                document.addEventListener('click', (event) => {
-                    if (!categorySection.contains(event.target) && !event.target.closest('.dropdown')) {
-                        isHovering = false;
-                        hideCategorySection();
-                    }
-                });
-            });
-        </script>
+            </script>
     </header>
 
 
