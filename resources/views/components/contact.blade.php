@@ -64,12 +64,12 @@
                 </div>
 
                 <div class="col-md-6">
-                    <div class="form-container p-3" style="background-color: #a1d7f0; border-radius: 20px;">
+                    <div class="form-container p-3 mt-2" style="background-color: #a1d7f0; border-radius: 20px;">
                         <div class="form-wrapper p-3">
                             <h2 class="mb-2 text-black">Contact us</h2>
                             <p class="text-muted mb-4 text-white fs-6 fs-bolder">We look forward to hearing from you.</p>
 
-                            <form>
+                            <form >
                                 <div class="row mb-3">
                                     <div class="col-12 col-md-6 mb-3">
                                         <label for="firstName" class="form-label text-black">First Name*</label>

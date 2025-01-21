@@ -467,7 +467,6 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                                 Endorsed Courses
                             </a>
-
                         </li>
                         <li class="nav-item dropdown px-xl-2 px-lg-1">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -516,7 +515,7 @@
             <div class="offcanvas-body d-flex flex-column">
                 <ul class="navbar-nav flex-grow-1">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#endorsedCoursesCollapse">
@@ -530,6 +529,73 @@
                                 <li class="nav-item"><a class="nav-link py-2" href="{{ route('business') }}">Business Management</a></li>
                                 <li class="nav-item"><a class="nav-link py-2" href="{{ route('human') }}">HR Management</a></li>
                                 <li class="nav-item"><a class="nav-link py-2" href="{{ route('leadership') }}">Leadership & Management</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#cpdCoursesCollapse">
+                            CPD Courses
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="cpdCoursesCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('accounting') }}">Accounting and Finance</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('beauty') }}">Beauty Therapy</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('childphychology') }}">Child Psychology</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('human') }}">HR Management</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('supply') }}">Supply Chain Management</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('workplace') }}">Workplace Management</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#phlebotomyCollapse">
+                            Phlebotomy
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="phlebotomyCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('phlebotomy') }}">Phlebotomy Level 3 Part 1 $ 2</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('phlebotmists') }}">Phlebotmist Placement</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('level') }}">Blood Level</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#ofqualQualificationsCollapse">
+                            Ofqual Qualifications
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="ofqualQualificationsCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('business') }}">Business Management</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('cyber') }}">Cyber Security</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('education') }}">Education & Training</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('health') }}">Health & Safety</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#cpdVideoTrainingCollapse">
+                            CPD Video Training
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="cpdVideoTrainingCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('business') }}">Business Skills</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('health') }}">Health & Safety</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#careCoursesCollapse">
+                            Care Courses
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="collapse" id="careCoursesCollapse">
+                            <ul class="nav flex-column ms-3">
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('mandatory') }}">Mandatory Training</a></li>
+                                <li class="nav-item"><a class="nav-link py-2" href="{{ route('additional') }}">Additional Courses</a></li>
                             </ul>
                         </div>
                     </li>
@@ -556,13 +622,15 @@
         </div>
 
 
+
+
+
+
         <div class="category-section bg-white" id="categorySection" style="display:none;">
             <div class="row">
             </div>
         </div>
         <div class="bg-danger">
-
-
 
             <script>
                 document.addEventListener('DOMContentLoaded', function() {

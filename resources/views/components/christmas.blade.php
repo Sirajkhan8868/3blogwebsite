@@ -376,7 +376,7 @@
             </div>
 
             <div class="card g-3" style="border: none; background-color: transparent;">
-                <div class="row px-5 g-3">
+                <div class="row px-5 g-3 mb-5">
                     <div class="col-sm-12 col-md-4 p-2 text-center">
                         <div class="border border-secondary rounded-3 p-3" style="background-color: #ffffff;">
                             <img src="{{ asset('assets/site/Business-Skills.webp') }}" alt=""
@@ -618,7 +618,7 @@
         <div class="container py-5">
             <h1 class="text-center mb-5">Why Learn with Us?</h1>
 
-            <div class="row g-4">
+            <div class="row g-4 mb-4">
                 <div class="col-md-4 col-lg-2">
                     <div class="feature-card" style="border: 2px dashed grey; padding: 10px;">
                         <img src="{{ asset('assets/site/icon5.svg') }}" alt="Flexible Learning" class="feature-icon">

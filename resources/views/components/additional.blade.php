@@ -36,7 +36,7 @@
                                 <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
                                     <img src="{{ asset('assets/site/Complaints-Handling.webp') }}" alt="" style="width: 100%; height: auto;">
                                     <div class="px-3 mt-3">
-                                        <p>Complants Handling & Care Setting</p>
+                                        <p>Complants Handling & Care</p>
                                         <h6 class="fw-bolder" style="text-decoration: underline">$35.00</h6>
 
                                         <button
@@ -132,7 +132,7 @@
                                         <h6 class="fw-bolder" style="text-decoration: underline">$34.000</h6>
 
                                         <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        class="px-4 py-2 mb-3 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
                                         style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                         Add to Basket
                                     </button>
@@ -254,7 +254,7 @@
                                         <h6 class="fw-bolder" style="text-decoration: underline">$35.000</h6>
 
                                         <button
-                                        class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                        class="px-4 py-2 mb-3 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
                                         style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                         Add to Basket
                                     </button>

@@ -91,7 +91,7 @@
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
                                     <button
-                                    class="px-4 py-2 mb-4 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
+                                    class="px-4 py-2 mb-3 mt-2 border-0 text-white custom-hover-green me-2 fw-bolder"
                                     style="background-color: rgb(113, 178, 231); border-radius: 40px">
                                     Add to Basket
                                 </button>

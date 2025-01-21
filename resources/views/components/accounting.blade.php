@@ -72,7 +72,7 @@
                             <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
                                 <img src="{{ asset('assets/site/05.webp') }}" alt=""
                                     style="width: 100%; height: auto;">
-                                <div class="px-3 mt-3">
+                                <div class="px-3 mt-4">
                                     <p>Level 3 in Accounting and finance </p>
                                     <h6 class="fw-bolder" style="text-decoration: underline">10.000</h6>
 
