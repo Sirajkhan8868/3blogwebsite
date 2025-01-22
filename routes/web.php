@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\Auth\BlogController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +27,7 @@ Route::get('/header', [BlogController::class, 'header'])->name('header');
 Route::get('/christmas', [BlogController::class, 'christmas'])->name('christmas');
 Route::get('/bookssnow', [BlogController::class, 'booksnow'])->name('booksnow');
 Route::get('/contact', [BlogController::class, 'contact'])->name('contact');
+
 Route::get('/human', [BlogController::class, 'human'])->name('human');
 Route::get('/view', [BlogController::class, 'view'])->name('view');
 Route::get('/project', [BlogController::class, 'project'])->name('project');
@@ -34,6 +37,8 @@ Route::get('/accounting', [BlogController::class, 'accounting'])->name('accounti
 Route::get('/admin', [BlogController::class, 'admin'])->name('admin');
 Route::get('/education', [BlogController::class, 'education'])->name('education');
 Route::get('/business', [BlogController::class, 'business'])->name('business');
+Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
+Route::middleware(['auth:admin'])->get('/admin/contact-logs', [AdminController::class, 'viewContactLogs'])->name('admin.contact-logs');
 
 Route::get('/beauty', [BlogController::class, 'beauty'])->name('beauty');
 Route::get('/childphychology', [BlogController::class, 'childphychology'])->name('childphychology');

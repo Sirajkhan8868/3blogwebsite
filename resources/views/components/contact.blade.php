@@ -68,51 +68,51 @@
                         <div class="form-wrapper p-3">
                             <h2 class="mb-2 text-black">Contact us</h2>
                             <p class="text-muted mb-4 text-white fs-6 fs-bolder">We look forward to hearing from you.</p>
+                            <form action="{{ route('contact.store') }}" method="POST">
+                                @csrf
 
-                            <form >
-                                <div class="row mb-3">
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <label for="firstName" class="form-label text-black">First Name*</label>
-                                        <input type="text" class="form-control" id="firstName" required style="border: 2px solid black; padding: 12px;">
-                                    </div>
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <label for="lastName" class="form-label text-black">Last Name*</label>
-                                        <input type="text" class="form-control" id="lastName" required style="border: 2px solid black; padding: 12px;">
-                                    </div>
+                                <div class=" mb-3">
+                                    <label for="firstName" class="form-label text-black w-100 ">First Name*</label>
+                                    <input type="text" class="form-control" id="firstName" name="first_name" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label text-black">Last Name*</label>
+                                    <input type="text" class="form-control" id="lastName" name="last_name" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="email" class="form-label text-black">Email*</label>
-                                    <input type="email" class="form-control" id="email" required style="border: 2px solid black; padding: 12px;">
+                                    <input type="email" class="form-control" id="email" name="email" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="phone" class="form-label text-black">Phone*</label>
-                                    <input type="tel" class="form-control" id="phone" required style="border: 2px solid black; padding: 12px;">
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="subject" class="form-label text-black">Subject*</label>
-                                    <input type="text" class="form-control" id="subject" required style="border: 2px solid black; padding: 12px;">
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="message" class="form-label text-black">Your message</label>
-                                    <textarea class="form-control" id="message" rows="4" style="border: 2px solid black; padding: 12px;"></textarea>
+                                    <textarea class="form-control" id="message" name="message" rows="4"></textarea>
                                 </div>
 
                                 <div class="mb-3">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="privacyPolicy" required>
+                                        <input class="form-check-input" type="checkbox" id="privacyPolicy" name="privacy_policy" value="1" required>
                                         <label class="form-check-label text-black" for="privacyPolicy">
-                                            I agree to the <a href="#" class="text-danger">Privacy Policy</a> and <a href="#" class="text-danger">Terms & Conditions</a>
+                                            I agree to the Privacy Policy and Terms & Conditions
                                         </label>
                                     </div>
                                 </div>
 
                                 <div class="mb-4">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="emailOffers">
+                                        <input class="form-check-input" type="checkbox" id="emailOffers" name="email_offers" value="1">
                                         <label class="form-check-label text-black" for="emailOffers">
                                             I would like to receive further email offers
                                         </label>
@@ -120,11 +120,8 @@
                                 </div>
 
                                 <button type="submit" class="btn btn-light px-4">Send</button>
-
-                                <p class="mt-4 text-muted small">
-                                    We are compliant with UK-GDPR. We will keep your details safe & secure
-                                </p>
                             </form>
+
                         </div>
                     </div>
                 </div>

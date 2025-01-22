@@ -81,7 +81,6 @@
                                     </button>
                                 </div>
                             </div>
-
                         </div>
                         <div class="col-sm-3  text-center">
                             <div style="border: 2px solid grey; border-radius: 8px;  background-color: transparent;">
