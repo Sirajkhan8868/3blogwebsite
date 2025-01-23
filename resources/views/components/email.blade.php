@@ -44,6 +44,7 @@
             <h2>New Contact Us Message</h2>
         </div>
         <div class="content">
+
             <p><strong>Name:</strong> {{ $details['first_name'] }} {{ $details['last_name'] }}</p>
             <p><strong>Email:</strong> {{ $details['email'] }}</p>
             <p><strong>Phone:</strong> {{ $details['phone'] }}</p>

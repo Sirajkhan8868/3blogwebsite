@@ -28,21 +28,23 @@ class ContactController extends Controller
         $validated['email_offers'] = $request->has('email_offers');
 
         Contact::create($validated);
+
         AdminContactLog::create($validated);
 
         $adminEmail = "admin@example.com";
+
         $details = [
             'first_name' => $validated['first_name'],
             'last_name' => $validated['last_name'],
             'email' => $validated['email'],
             'phone' => $validated['phone'],
             'subject' => $validated['subject'],
-            'message' => $validated['message'] ?? '',
+            'message' => $validated['message'],
         ];
 
         Mail::send('components.email', ['details' => $details], function ($message) use ($adminEmail) {
             $message->to($adminEmail)
-                ->subject('New Contact Us Message');
+                    ->subject('New Contact Us Message');
         });
 
         if (count(Mail::failures()) > 0) {
@@ -50,7 +52,6 @@ class ContactController extends Controller
                 'failures' => Mail::failures(),
                 'request_data' => $validated,
             ]);
-
             return redirect()->back()->with('error', 'Your message was saved but failed to send email notification.');
         }
 
