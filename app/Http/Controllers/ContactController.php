@@ -11,7 +11,6 @@ class ContactController extends Controller
 {
     public function store(Request $request)
     {
-
         set_time_limit(120);
 
         $validated = $request->validate([
@@ -26,22 +25,20 @@ class ContactController extends Controller
         ]);
 
         Contact::create($validated);
-
         AdminContactLog::create($validated);
 
         $adminEmail = "admin@example.com";
-        Mail::raw(
-            "New Contact Us message received:\n\n" .
-            "Name: {$validated['first_name']} {$validated['last_name']}\n" .
-            "Email: {$validated['email']}\n" .
-            "Phone: {$validated['phone']}\n" .
-            "Subject: {$validated['subject']}\n" .
-            "Message: {$validated['message']}\n",
-            function ($message) use ($adminEmail) {
+
+        try {
+            Mail::send('emails.contact_notification', $validated, function ($message) use ($adminEmail) {
                 $message->to($adminEmail)
                         ->subject('New Contact Us Message');
-            }
-        );
+            });
+        } catch (\Exception $e) {
+            \Log::error('Failed to send contact email: ' . $e->getMessage());
+
+            return redirect()->back()->with('error','Your message was saved but failed to send email notification.');
+        }
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');
     }

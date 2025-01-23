@@ -48,17 +48,15 @@ Route::get('/workplace', [BlogController::class, 'workplace'])->name('workplace'
 Route::get('/phlebotomy', [BlogController::class, 'phlebotomy'])->name('phlebotomy');
 Route::get('/phlebotmist', [BlogController::class, 'phlebotmist'])->name('phlebotmist');
 Route::get('/phlebotmists', [BlogController::class, 'phlebotmists'])->name('phlebotmists');
-
 Route::get('/level', [BlogController::class, 'level'])->name('level');
 
 Route::get('/cyber', [BlogController::class, 'cyber'])->name('cyber');
 Route::get('/health', [BlogController::class, 'health'])->name('health');
 Route::get('/social', [BlogController::class, 'social'])->name('socail');
 
-
-
 Route::get('/additional', [BlogController::class, 'additional'])->name('additional');
 Route::get('/mandatory', [BlogController::class, 'mandatory'])->name('mandatory');
+
 
 
 
