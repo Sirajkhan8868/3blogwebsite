@@ -24,20 +24,34 @@ class ContactController extends Controller
             'email_offers' => 'nullable|boolean',
         ]);
 
+        $validated['privacy_policy'] = $request->has('privacy_policy');
+        $validated['email_offers'] = $request->has('email_offers');
+
         Contact::create($validated);
         AdminContactLog::create($validated);
 
         $adminEmail = "admin@example.com";
+        $details = [
+            'first_name' => $validated['first_name'],
+            'last_name' => $validated['last_name'],
+            'email' => $validated['email'],
+            'phone' => $validated['phone'],
+            'subject' => $validated['subject'],
+            'message' => $validated['message'] ?? '',
+        ];
 
-        try {
-            Mail::send('emails.contact_notification', $validated, function ($message) use ($adminEmail) {
-                $message->to($adminEmail)
-                        ->subject('New Contact Us Message');
-            });
-        } catch (\Exception $e) {
-            \Log::error('Failed to send contact email: ' . $e->getMessage());
+        Mail::send('components.email', ['details' => $details], function ($message) use ($adminEmail) {
+            $message->to($adminEmail)
+                ->subject('New Contact Us Message');
+        });
 
-            return redirect()->back()->with('error','Your message was saved but failed to send email notification.');
+        if (count(Mail::failures()) > 0) {
+            \Log::error('Failed to send contact email', [
+                'failures' => Mail::failures(),
+                'request_data' => $validated,
+            ]);
+
+            return redirect()->back()->with('error', 'Your message was saved but failed to send email notification.');
         }
 
         return redirect()->back()->with('success', 'Your message has been sent successfully!');

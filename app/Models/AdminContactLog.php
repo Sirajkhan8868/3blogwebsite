@@ -9,5 +9,12 @@ class AdminContactLog extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['first_name','last_name','email','phone','subject','message',];
+    protected $fillable = [
+        'first_name',
+        'last_name',
+        'email',
+        'phone',
+        'subject',
+        'message',
+    ];
 }

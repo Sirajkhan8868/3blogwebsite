@@ -37,8 +37,9 @@ Route::get('/accounting', [BlogController::class, 'accounting'])->name('accounti
 Route::get('/admin', [BlogController::class, 'admin'])->name('admin');
 Route::get('/education', [BlogController::class, 'education'])->name('education');
 Route::get('/business', [BlogController::class, 'business'])->name('business');
-Route::post('contact', [ContactController::class, 'store'])->name('contact.store');
-Route::middleware(['auth:admin'])->get('/admin/contact-logs', [AdminController::class, 'viewContactLogs'])->name('admin.contact-logs');
+Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/admin/contact-logs', [AdminController::class, 'viewContactLogs'])->name('admin.contact-logs');
+
 
 Route::get('/beauty', [BlogController::class, 'beauty'])->name('beauty');
 Route::get('/childphychology', [BlogController::class, 'childphychology'])->name('childphychology');
